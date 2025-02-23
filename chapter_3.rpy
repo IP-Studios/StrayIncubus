@@ -1,0 +1,2484 @@
+label season2_chapter_3:
+    $ chapter = 15
+    define jamie = Character("Jamie", color = "f5c13d")
+    define vollstahl = Character("Vollstahl", color = "f5c13d")
+    define Klyn = Character("Klyn", color = "f5c13d")
+    define jillia = Character("Jillia", color = "f5c13d")
+    define illya = Character("Illya", color = "f5c13d")
+    define dohkong = Character("Dohkong", color = "f5c13d")
+    #Title: Of Goblins and Elves.
+
+#1) Alchemist's hut in the ninja village:
+    cndy ".,,"
+    cndy "Is she gonna be okay?"
+    gbrla "Yeah... She's just unconscious."
+    #Torr waltzes in.
+    tr "Centoria!!!"
+    cndy "?!" (multiple=2)
+    gbrla "?!" (multiple=2)
+    cndy "Torr?! When did you get ba-"
+    tr "Like 5 minutes ago!"
+    tr "What happened to Centoria?!"
+    gbrla "She's fine. Don't worry, Torr."
+    tr "..."
+    tr "I heard Yumi and Stephanie got injured too?"
+    ymi "I'm okay, don't worry." #Comes in.
+    gbrla "I told Stephanie not to move too much for a day or two, but she seems fine too."
+    cndy "How did your mission go? Anyone injured?"
+    tr "Well, no... Thanks to Anabelle..."
+    tr "It was a handful of goblins kidnapping the women. They tried to attack us when we went to rescue the missing girls. They were no match for us though. Anabelle killed seven of them herself. I killed two and the midget didn't kill anyone."
+    cndy "I see... That's good."
+    tr "Did [mc_name] return yet?"
+    cndy "Not yet..."
+    hly "{size=-10}Are you sure you're up to it?{/size}"
+    cndy "?" (multiple=2)
+    tr "?!" (multiple=2)
+    vns "I'm fine, Hailey. I have stuff to do here..." #Venus and hailey go in.
+    gbrla "Venus?"
+    vns "I'm told a few people are injured?"
+    gbrla "Yeah... One of Stephanie's arms is swollen... I'm not sure if it's broken or not..."
+    vns "..."
+    vns "Where is she?"
+    gbrla "She's in the lab."
+    vns "I'll go take a look."
+    hly "Venus... Wait..."
+    #She leaves.
+    gbrla "..."
+    gbrla "Is she okay?"
+    hly "..."
+    #Skip
+
+#2) Zycris is going to his room.
+    z "..." #It's dark.
+    #Sits down, looks sad.
+    if s_lst >= 9:
+        s "Darling? Are you in here?" #Comes from the outside.
+        z "..."
+        z "Seira..."
+        z "I..."
+        s "..."
+        s "Are you okay?"
+        z "..."
+        z "I don't..."
+        z "...know."
+        s "..."
+        s "What happened?"
+        # if fought twice: against_athena = 14
+        # if fought then left: against_athena = 9
+        # if left then left: against_athena = 7
+        # if left then fought: against_athena = 12
+        # if left then negotiated: against_athena = 8
+        z "I did what I thought was right..."
+        s "..."
+        if against_athena == 14:
+            z "I fought Athena."
+            z "That's twice now."
+            z "I almost won, Seira..."
+            z "I almost won."
+            z "Athena's..."
+            z "Well, minion, I suppose. She interfered before I could finish Athena off..."
+            z "And Venus had to kill her."
+            s "You almost finished Athena off?!"
+            z "Yeah..."
+            z "I think..."
+            z "But Seira..."
+            z "Athena's minion..."
+            z "She was Venus's dear childhood friend..."
+            z "And Venus had to kill her to protect me..."
+            s "..."
+            z "She didn't want to fight, actually..."
+            z "Venus..."
+            z "She just wanted us to back off."
+            z "But... What Athena was doing... What she's doing everyday to those people..."
+            z "What she did in the town of the faceless god."
+            z "It's wrong."
+            z "I couldn't let that stand."
+            s "..."
+            s "You know there's no going back from decisions like these, I trust?"
+            z "Yeah..."
+            s "..."
+        elif against_athena == 12: #if fought once and left or the other way round
+            z "I fought Athena this time."
+            z "I actually..."
+            z "I..."
+            z "I liked it..."
+            z "I almost won, Seira..."
+            z "I almost won."
+            z "Athena's..."
+            z "Well, minion, I suppose. She interfered before I could finish Athena off..."
+            z "And Venus had to kill her."
+            s "You almost finished Athena off?!"
+            z "Yeah..."
+            z "I think..."
+            z "But Seira..."
+            z "Athena's minion..."
+            z "She was Venus's dear childhood friend..."
+            z "And Venus had to kill her to protect me..."
+            s "..."
+            z "She didn't want to fight, actually..."
+            z "Venus..."
+            z "She just wanted us to back off."
+            z "But... What Athena was doing... What she's doing everyday to those people..."
+            z "What she did in the town of the faceless god."
+            z "It's wrong."
+            z "I couldn't let that stand."
+            s "..."
+            s "You know there's no going back from decisions like these, I trust?"
+            z "Yeah..."
+            s "..."
+        elif against_athena == 9 or against_athena == 7:
+            z "I left a boy to die..."
+            z "I had a choice between letting him die and trying to fight Athena."
+            z "And she had a fury there too..."
+            z "Venus was there too... She asked me to back off from the fight."
+            z "So I did..."
+            z "The fury..."
+            z "She was Venus's childhood friend... We would've had to kill her too..."
+            s "..."
+            s "So you just left..."
+            z "Yeah..."
+            s "..."
+        else:
+            z "I made a deal with her..."
+            z "Athena."
+            z "I made her spare a boy's life in exchange for me not interfering with her curse over the town."
+            z "So even though this one person had been spared, the rest of them will still suffer."
+            z "I had a choice between walking away and trying to fight Athena."
+            z "And she had a fury there too..."
+            z "Venus was there too... She asked me to back off from the fight."
+            z "So I did..."
+            z "The fury..."
+            z "She was Venus's childhood friend... We would've had to kill her too..."
+            s "..."
+            s "So you just left..."
+            z "I made Athena spare one boy. But yeah... We left."
+            s "..."
+        s "Want to talk more about it?" #Gets close to him.
+        z "..."
+        z "No..."
+        s "..."
+        #Grabs his face.
+        s "Look..."
+        s "I can't make these decisions for you..."
+        s "And I already told you there's no such thing as a right or a wrong choice in situations like these."
+        s "Just know this, baby."
+        s "I will always be at your back. Whatever you decide."
+        s "And I will always be proud of you. Whatever you become."
+        z "..."
+        #Their faces are very close.
+        #Z goes for a kiss.
+        s "Hmmm~..."
+        #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+        #Aggressively plays with her boobs while doing so.
+        #Throws her on all four and rams her, has a choice to try anal.
+        #Z warns S that he's gonna be rough, she says she'd like that.
+    else:
+        $ dummy += 1
+        #Skip to him sleeping on his own in the darkness.
+
+#3) Meeting: 	
+    #-If fought athena, all the ninja celebrate Z's coming back asking about his fight with her. Helena is caught evesdroping on them looking conflicted (she believes that they actually have a chance against athena and is now willing to defy her.)
+    #-If didn't fight athena, Helena may not defy athena later on.
+    #Stephanie's mission returns with no casualities. She's frustrated saying they just let them go.
+    #Anabelle reports that several cities have been abandoned after being attacked by bandits.	
+
+    stfny "We were totally helpless... I couldn't even lay a finger on him."
+    stfny "He was crazy strong."
+    hly "Stronger than your mom?"
+    stfny "Yeah... I think so..."
+    stfny "I would say he's even stronger than Seira..."
+    stfny "His long ranged attack is ridiculous. My shield barely held against it for five second."
+    hly "How on earth did you all make it out of the fight, then?"
+    stfny "..."
+    stfny "They just..."
+    stfny "Let us go..."
+    hlna "..."
+    hly "Why would they let you go?"
+    stfny "I don't know..."
+    stfny "A girl interfered... Axius's daughter, I think... She said something to him about me b-"
+    hlna "Look. It doesn't matter how exactly you all made it out alive. The important thing is that you all did."
+    a "Next time, we may not be so lucky, Helena."
+    a "We have four new missions already, and the last batch of ninjas just got home. A few of them are too injured to take a new mission. And almost all of them are still too tired to take one."
+    a "So... Do we accept these missions? Or do we turn them down?"
+    hlna "..."
+    z "I can take a mission if needed. I'm not really tired."
+    if against_athena >= 12:
+        hly "You fought Athena herself, [mc_name]... You should really get some rest..."
+        hlna "..." #Focus a bit on her.
+        a "Is it true you almost defeated her, [mc_name]?"
+        z "..."
+        z "Probably... If it weren't for her fury..."
+        z "I might've..."
+        a "..."
+    else:
+        hly "You faced Athena herself, [mc_name]... You should really get some rest..."
+        a "..."
+    a "Something is going on..."
+    a "Something big..."
+    a "On our way to our mission, we traveled through three villages. All three were abandoned recently."
+    a "It's almost as if someone is behind all this chaos..."
+    #Cut to axius.
+
+
+#4) Athena and Axius:
+    #After the meeting, Axius is sitting infront of a chess board.
+    #He's contacted by athena using an orb.
+    athna "I hear you have been busy..."
+    athna "A dozen villages abandoned. Three burnt the ground."
+    athna "What is the meaning of this, incubus?"
+    axs "You told me the ninja villages were our enemies, didn't you?"
+    athna "What of it?"
+    axs "Attacking them directly is not the way to go..."
+    axs "This is."
+    athna "..."
+    athna "You..."
+    axs "They are too strong to attack directly."
+    axs "But... If we exhaust them first."
+    axs "If the ninjas don't get the chance to sit down after one mission because they get sent on another right away..."
+    athna "..."
+    #Checkmate move on the chess board after spreading the pieces away from the king.
+    axs "That's how we'll beat them."
+    athna "..."
+    #Cut.
+
+#5) Z meets Jenny in the ninja village:
+    #Looks like he didn't get enough sleep.
+    z "..." #Going to check on the wounded.
+    cndy "[mc_name]?"
+    z "..."
+    z "Hey, Candy."
+    z "How are you?"
+    cndy "I'm okay, thanks for asking..."
+    z "No injuries or anything from your last mission?"
+    cndy "No. I'm fine."
+    z "I see..."
+    cndy "..."
+    cndy "Are you okay? You look..."
+    z "Hm?"
+    Character("Voice from behind", color = "c44f00") "Like you didn't get enough sleep."
+    z "I actually didn't sleep very well..."
+    z "..."
+    z "Who-" #Turns around.
+    z "..."
+    z "......"
+    z "........."
+    z "I guess I'm still dreaming."
+    jnfr "No you're not, you dummy!"
+    z "..."
+    z "What?!"
+    z "Jenny?! The fuck are you doing here?!"
+    jnfr "Wow... That's quite the warm welcome..."
+    z "No! I didn't mean..."
+    z "It's just... Does Jamie have business with the ninja village or something?"
+    z "But if so, why are you wearing a white belt? Did you both join the ninja village?"
+    z "Or did you two brea-"
+    jnfr "No, not exactly..."
+    z "..."
+    z "Are you maybe here to issue a mission?"
+    jnfr "I guess you can say that, yeah..."
+    jnfr "But I also wanted to help, and Helena told me I should join up if I want to help so I did. She said I could still leave any time I want, but I don't see that heppening any time soon..."
+    z "What's-"
+    tmra "Apparently, her betrothed has been trading with bandits and he doesn't feel safe trading with them anymore."
+    tmra "And he thinks if they learn he cut ties with them, they might try to kill him or something."
+    tmra "I just had to listen to what he had to say. For their safety, they'll stay here for the time being until the bandit issue has been settled."
+    jnfr "..."
+    jnfr "Hey, cutie."
+    jnfr "Tamara, right?"
+    tmra "Yeah... Hey..."
+    z "I see..."
+    jnfr "Jamie has always been secretive about who he does business with, so I don't know too much about it... I just know that he and my mom were dealing with fishy people..."
+    z "So they're both potentially asking for protection from the same people..."
+    tmra "Yeah... I think that might be the case too."
+    tmra "Sadly, both of them refuse to share all the details, so we can't really be sure."
+    gbrla "Jenny!"
+    gbrla "Oh hey, [mc_name]!"
+    z "Hi there, Gabbie."
+    gbrla "Can I borrow Jenny for a few minutes? She's helping us with treating the injured."
+    z "Oh?"
+    jnfr "Yeah... I'm not really good at it, but it's the least I can do to be useful around here. Seeing how you guys are protecting us, giving us food and a place to stay, and all of that..."
+    #They leave.
+    tmra "..."
+    tmra "What are you looking at?"
+    z "Nice to see you too, Tamara."
+    #Leaves.
+    cndy "I kinda wanna eat something..."
+    z "I could use something to eat too..."
+    z "Wanna go grab something?"
+    cndy "Sure..."
+
+#6) Eating scene:
+    #Skip to them at the foody place
+    z "What was she like?" #Walking towards the foody place
+    cndy "Well, I don't really remember much..."
+    cndy "She somehow got Centoria first."
+    cndy "Even though Centoria had three clones."
+    cndy "She was somehow able to tell which one was the real Centoria, and then-"
+    cnt "And then she approached me. Really quickly. She's probably more or less as fast as you."
+    z "Oh. Hey, Centoria."
+    cnt "Hey, [mc_name]. Hey, Candy."
+    if invite_misty >= 1:
+        cnt "What do you guys wanna eat? We have roasted birds, potato chips, and turtle soup."
+        z "Turtle soup?"
+        misty "It's my own recipe. You haven't tried it so far?"
+        z "I don't believe so..."
+        misty "You should really try it."
+        z "..."
+        z "By the way, how are you doing, Misty?"
+        misty "I'm doing just fine, thanks, [mc_name]."
+        misty "How about you? I heard your last mission was crazy."
+        z "Ehh... I'm okay... It's Venus I'm most worried about..."
+        misty "Yeah... I heard about that too..."
+        z "..."
+        cndy "Can I have the potato chips?"
+        misty "Sure."
+        pause(1)
+        menu:
+            "Get the turtle soup.":
+                z "I want to try the turtle soup, actually."
+                misty "Oh? Okay, you got it!"
+                $ misty_aff += 2
+            "Get something else.":
+                z "I'll have the same, please."
+                misty "Sure!"
+        #Skip a bit.
+        #Centoria and misty are sitting down with them.
+        misty "Why?"
+        cnt "I think her ability doesn't work unless she whispers it in your ear?"
+        cndy "Yeah. Something similar happened to me."
+        cndy "I was hiding behind a tree. I don't know how she was able to spot me, but she whispered to me too..."
+        cndy "And then..."
+        cndy "..."
+        cndy "I just remember waking up like 30 minutes after."
+        cndy "I must've lost consciousness..."
+        z "..."
+        z "Do you remember what she said to you?"
+        cndy "..."
+        cndy "No..."
+        cndy "I just remember it being..."
+        cndy "Hmmm..."
+        cnt "Soothing?"
+        cnt "Like my mother singing me a lullaby before going to bed."
+        cndy "Yeah..."
+        cnt "I actually..."
+        cnt "I do actually remember my mother singing to me now..."
+        cnt "When I was young..."
+        cnt "I didn't remember anything from my parents before, but now..."
+        cnt "Which makes sense because my mother died giving birth to me and my father never stuck around long enough for even that..."
+        z "..."
+        misty "I'm sorry..."
+        cnt "Thanks, Misty..."
+        cnt "I remember it though..."
+        cnt "My mother's face..."
+        cnt "But it's weird, because she's not..."
+        z "..."
+        z "Not what?"
+        cnt "Well, I think it's just the magic... I'm just confused..."
+        tr "You started eating without me?!"
+        z "Oh. Hey, Torr."
+        z "How are you do-"
+        tr "Na-uh!"
+        tr "How are YOU doing?"
+        z "..."
+        z "I'm fine, Torr. Thanks."
+        tr "..."
+        tr "Can I get some food?"
+        misty "I'll get you some right away."
+        #Sits down.
+    else:
+        #if didn't invite misty, there's a spider in the bg.
+        cnt "What do you guys wanna eat? We have roasted skeevers or potato chips?"
+        cndy "Can I have the potato chips?"
+        z "Me too please..."
+        cnt "Sure."
+        #Skip a bit.
+        #Centoria is sitting down with them.
+        z "Why?"
+        cnt "I think her ability doesn't work unless she whispers it in your ear?"
+        cndy "Yeah. Something similar happened to me."
+        cndy "I was hiding behind a tree. I don't know how she was able to spot me, but she whispered to me too..."
+        cndy "And then..."
+        cndy "..."
+        cndy "I just remember waking up like 30 minutes after."
+        cndy "I must've lost consciousness..."
+        z "..."
+        z "Do you remember what she said to you?"
+        cndy "..."
+        cndy "No..."
+        cndy "I just remember it being..."
+        cndy "Hmmm..."
+        cnt "Soothing?"
+        cnt "Like my mother singing me a lullaby before going to bed."
+        cndy "Yeah..."
+        cnt "I actually..."
+        cnt "I do actually remember my mother singing to me now..."
+        cnt "When I was young..."
+        cnt "I didn't remember anything from my parents before, but now..."
+        cnt "Which makes sense because my mother died giving birth to me and my father never stuck around long enough for even that..."
+        z "..."
+        cnt "I remember it though..."
+        cnt "My mother's face..."
+        cnt "But it's weird, because she's not..."
+        z "..."
+        z "Not what?"
+        cnt "Well, I think it's just the magic... I'm just confused..."
+        tr "You started eating without me?!"
+        z "Oh. Hey, Torr."
+        z "How are you do-"
+        tr "Na-uh!"
+        tr "How are YOU doing?"
+        z "..."
+        z "I'm fine, Torr. Thanks."
+        tr "..."
+        tr "Can I get some food?"
+        cnt "Yeah. Give me a second."
+        #Sits down.
+    z "Goblins?"
+    tr "Yeah."
+    tr "Like eight... No, nine of them."
+    z "They decided to raid the village on thier own?"
+    tr "Well, not raid... More like kidnap women who they catch alone in the woods nearby."
+    z "I see..."
+    z "There were some goblins venturing all the way north when I joined the ninja village..."
+    z "But those were mostly sent by Axius when he was looking for me, I think..."
+    z "Is it normal for them to do things like this often?"
+    a "No. It's not." #It's annie and yumi with the cat.
+    z "Oh hey, guys! How long have you been standing there."
+    #Yumi and the cat sit next to torr who doesn't look happy about the cat.
+    a "Goblins hardly venture into human territory. But we've been recieving several reports about them doing so in the last couple of days."
+    z "..."
+    z "What could that mean?"
+    a "I'm not sure... But something is up..."
+    a "Increased bandit activity is also being reported and we're being flooded with missions."
+    a "Aren't goblins tepically found near elf villages?"
+    tr "Yeah. We have a goblin village close to us."
+    cnt "Us too. There has been a conflict between my city and the nearby goblins for decades now."
+    a "..."
+    a "By the way, Centoria..."
+    a "There has been a litter from your city."
+    cnt "Eh?!"
+    a "From the crowned prince himself."
+    a "It involves you too, [mc_name]."
+    z "?"
+    #Skip to yumi, centoria and z being briefed by helena.
+    z "They asked for me?"
+    hlna "Personally, yes."
+    hlna "For Centoria too of course. And another high ranking ninja. As they said it's of the highest importance to them."
+    hlna "So I picked Yumi as she and Hailey are the least injured of the higher ranking ninjas. And I need Hailey for another mission."
+    z "I understand Centoria and a high ranking ninja but why me?"
+    hlna "Well, you've apparently become something of a celebrity around the continent."
+    hlna "The demi-god ninja."
+    hlna "Of course, the title did not orignially belong to you. It's an old title that people have been hearing for years. That's probably why it took off again so quickly."
+    z "An old title?"
+    ymi "My brother. That's what people used to call him. He was the first demi-god ninja."
+    z "Sirius?"
+    hlna "And since Sirius is not active as a ninja any more, you seem to have inherited the title from him."
+    hlna "I must admit, you have done really well yourself of course."
+    z "..."
+    hlna "Well, back to your mission..."
+    hlna "The princess, Illya the Third. It's gonna be her birth week in two days. She needs a body guard while traveling around as a part of the celebration."
+    hlna "She apparently wants to visit villages around the city walls as well. Which is probably going to be very dangerous, even more so considering that the local goblins have been repeatedly attacking the elven city recently."
+    z "I see..."
+    z "That does sound dangerous..."
+    z "Wait, did you say birth week?"
+    cnt "It's elven tradition to celebrate not the day on which you were born, but the whole week."
+    z "I see..."
+    cnt "Oh, and this is a major even, since the princess will turn twenty. It means she..."
+    z "Hm?"
+    cnt "It means she can make a major change to the elven way of life."
+    cnt "It's supposed to teach her responsibility. She's expected to one day rule the city, after all."
+    z "Hmmm..."
+    hlna "Normally, seeing how many other missions we have, I'd not prioritise a mission like this."
+    hlna "However, our alliance with the elves is paramount. I'll have to humour them on this."
+    hlna "You'll leave tomorrow at dawn. The mission leader will be Yumi. The objective is simple; protect the princess at all cost."
+    hlna "But... I would still try to limit the loss of goblin lives as much as I could."
+    z "Yeah... Understood."
+    hlna "We'll discuss your points from both missions after you return."
+
+#7) Torr sparing with Anabelle:
+    #Z is walking around.
+    #Hears sparing sounds.
+    z "?"
+    #Goes to it.
+    z "..."
+    z "(Is that...)"
+    a "Good. Always minimise the area your opponent can hit."
+    a "Grip your sword more tightly."
+    tr "..."
+    a "Yeah. That's it."
+    a "Here I come."
+    #Anabelle beats her easily. But Torr blocks a few times.
+    #Z can tell when torr makes a mistake.
+    z "(No! Don't rush!)"
+    #Torr's sword flies next to Z's foot when she falls.
+    a "[mc_name]? How long have you been standing there?"
+    z "Just a minute or two."
+    z "Did Torr ask you to train her?"
+    a "Yeah... Actually..."
+    tr "I asked both her and Seira. But Seira is busy today, so only Anabelle is teaching me right now."
+    z "Hmmm..."
+    #Picks up the sword.
+    a "..."
+    #Anabelle gives it to torr.
+    tr "..."
+    z "Let's see what you learnt."
+    tr "I don't think I can beat you just yet, [mc_name]."
+    z "We're just practicing. It doesn't matter who wins."
+    tr "Okay, good point..."
+    #Beats Torr again.
+    tr "Oh..."
+    z "Well, it was much better than what happened the first time we tried that..."
+    tr "Heh..." #Smiles.
+    a "Can I have that for a minute?"
+    tr "Sure."
+    tr "I need to go talk to my team about tomorrow's mission anyway."
+    tr "Thanks for your help, Anabelle."
+    a "Any time, honey."
+    z "Your team?"
+    z "You're the mission leader?"
+    tr "Yep."
+    tr "First time I'm the mission leader. Hehehehe..."
+    z "Your team is..."
+    tr "Candy and Gabbie."
+    z "Oh, Gabbie is going on a mission?"
+    tr "Yeah... We needed a medic on the team, so it was supposed to be Venus. But Helena said she doesn't want to give her missions just yet."
+    z "Yeah... I see."
+    tr "See you, guys."
+    a "Bye."
+    z "..."
+    z "She's grown a lot more mature, hasn't she?"
+    z "I'm really prou-"
+    #Hits her head against sth.
+    tr "Awww!"
+    tr "..."
+    #Leaves.
+    z "..."
+    z "Wanna give it a go?"
+    a "Sure..."
+    a "..."
+    a "You know..."
+    a "I've been..."
+    a "...meaning to talk to you."
+    a "It's just we never got a chance to properly talk... With Sirius, and then the mission, and..."
+    z "Yeah... I get you."
+    a "..."
+    a "About what happened in..."
+    a "In Kalytro..."
+    a "After you fought Nari and we barely made it out alive..."
+    z "..."
+    z "Yeah..."
+    z "Listen-" (multiple=2)
+    a "So I w-" (multiple=2)
+    z "..." (multiple=2)
+    a "..." (multiple=2)
+    z "You go first."
+    a "..."
+    a "Okay..."
+    a "I just wanted to say..."
+    a "Should we just pretend it never..."
+    a "You know..."
+    z "..."
+    z "I guess that's probably for the best..."
+    z "(I really can't see myself being with this girl...)"
+    z "(She's totally out of my league...)"
+    z "(Right?)"
+    a "It was just a tiny mistake... I don't want things between us to be awkward forever..."
+    z "(And her saying it was a mistake just proves that...)"
+    z "I get you. Yeah."
+    a "So..."
+    a "We forget about it?"
+    z "Sure."
+    a "And swear to never do it again?"
+    z "Yeah."
+    a "You know, so... Like not even other stuff..."
+    z "Of course, that goes without saying..."
+    z "You're like an older sister to me... It's just..."
+    a "Wrong."
+    z "Exactly."
+    z "Honestly, you're totally right."
+    z "We absolutely can't do this again... Any of it..."
+    a "Oh, I'm so glad you understand... You are really mature, you know..."
+    a "And I just didn't want things to be awekward between us. I really think of you as my little brother and I didn't want to lose that, you know?"
+    z "Of course. I didn't want to lose what we have either."
+    z "And I have a huge amount of respect for you, Annie. I really think of you as my older sister."
+    a "Ohhh... Thanks..."
+    a "So let's just forget about it and never mention it in any way at all?"
+    z "Sounds good."
+    z "Nothing of any sort regarding it. May it die in our memories and be done with it."
+    a "Exactly."
+    z "Right?"
+    a "Yeah..."
+    z "Yup..."
+    a "Hmmm..."
+    z "..."
+    a "..."
+    z "..."
+    a "..."
+    a "Sooo... Ready to spar?"
+    z "Yup. Let's do it!"
+    a "..."
+    #looks at him while he's about to attack.
+    #Suddenly blushes and loses her focus, so he beats her easily.
+    z "Eh?! Are you okay?"
+    z "Sorry! I think I swung a bit too hard?!"
+    a "No, no... It's not..."
+    a "Listen, I think I might've overestimated my stamina... I think I should take a break after all."
+    z "I see."
+    a "Let's call it a day?"
+    z "Sure."
+    a "Sorry we had to cut it short... I'll make it up to you some other time, I promise..."
+    z "It's okay, you don't need to worry about that."
+    z "Here... Let me help you up."
+    #Pulls her a bit too close to him.
+    a "..." #Blushes again.
+    a "See you around!" #Leaves.
+    z "..."
+    z "(So much for it not being awkward...)"
+
+#8) Alchemist's hut:
+    #Going to his room.
+    #Scene with Margot and Gabbie.
+
+#9) Scene with Jenny:
+    #Helena is showing Jenny and Jamie the bath.
+    #Z is passing by.
+    hlna "We didn't really have any men around here for such a long time that there are no rules against men and women using it at the same time."
+    hlna "I guess now we should have some put in effec-"
+    z "Hey."
+    hlna "Oh, Hey there, [mc_name]."
+    hlna "I was showing Jenny and her betrothed around."
+    z "Wouldn't that have been more convenient during the day?"
+    hlna "Yeah. But I had lots to attend to earlier. And I didn't have anyone available to do it. So I though why not do it myself."
+    hlna "And I had nothing else to do for the rest of the evening..."
+    z "I see..."
+    jnfr "You guys have such a wonderful place here..."
+    jamie "A bigger room would've been nice..."
+    jamie "Aww..." #Jenny hits him.
+    jnfr "He's just in shock after everything that happened."
+    z "..."
+    z "What did happen?"
+    jnfr "..." #Looking at jamie
+    jamie "I..."
+    jamie "I was just dealing with the wrong people... And I was too deep in it..."
+    z "What people? What did you-"
+    jamie "Look... If we're going to talk about this, at least get me a drink."
+    z "..."
+    menu:
+        "Invite him and Jenny to drink in the bath.":
+            z "There is wine in the bathing room..."
+            jnfr "Ohhh... I'm dying for a warm bath."
+            jamie "..."
+            z "So? What do you say? Shall we?"
+            jamie "I suppose why not."
+            jnfr "Hold on... I'm not going in to be the only girl with two guys..." #Sus.
+            z "Then Helena why don't you join us?"
+            hlna "Eh?"
+            z "You said you had nothing to do, right?"
+            hlna "Yeah..."
+            jnfr "So it's settled then?"
+            z "Yup. Let's go."
+            jnfr "You guys go on ahead. I'll get something from my room and be right behind you."
+            #Skip.
+            hlna "Ahhhh... This is so good..."
+            jamie "Yeah... It's not bad at all..."
+            jamie "Wasn't expecting something so luxurious here..."
+            jnfr "Sorry to keep you guys waiting."
+            z "No worries."
+            z "I'll get the wine."
+            jnfr "I'll help."
+            z "Hmmm... This sho-"
+            jnfr "Pssst."
+            z "?"
+            #Hands him cards.
+            z "What's this."
+            jnfr "Something to spice things up."
+            z "..."
+            #Looks at them.
+            z "Where did you get this..."
+            jnfr "Esyl, I think..."
+            jnfr "This fat guy with a weird mustache was selling them..."
+            z "..."
+            jnfr "So? Shall we?"
+            z "Sure..."
+            z "So..."
+            z "Instead of just drinking..."
+            #Shows them the cards.
+            z "Jenny and I have an idea on how to make this more interesting."
+            jamie "Interesting?"
+            hlna "What are those cards?"
+            jnfr "They are game cards I got from Esyl."
+            hlna "What kind of game? I'm not usually good at games..."
+            jnfr "It's just a drinking game. And don't worry, it doesn't involve skills at playing or anything like that."
+            hlna "Drinking game?"
+            hlna "Those games where you'll ultimately get drunk?"
+            jnfr "Pretty much."
+            hlna "I don't know if I should be getting drunk... I have to protect the village if anything happens..."
+            z "You've been stressed over the village's safety for a while now, Helena. Even you have to let go a little sometimes."
+            z "I single handedly dealt with the attacker the last time. And I'm pretty sure at least Anabelle and Seira are even more capable than me."
+            z "In the unlikely scenario where something should happen while you and I are here, those two will manage."
+            hlna "..."
+            hlna "I suppose you have a point."
+            hlna "So? How does one play?"
+            jnfr "Okay, so..."
+            jnfr "We're supposed to play in pairs. Since Jamie and I are betrothed, it makes sense that we should be a pair."
+            z "I guess you and I are a pair then, Helena."
+            hlna "Okay, sure."
+            jnfr "Great!"
+            jnfr "I'll start to show you guys how it's done."
+            #Physically explains how it's done.
+            jnfr "You draw a card..."
+            jnfr "You read whatever is written on it."
+            jnfr "For example this card says: Slap a player from the opposing team on any part on the body you want."
+            jnfr "Well... I'm supposed to do what's on the card and slap on of you guys. But I don't want to."
+            jnfr "So... If I don't do what's written I have to drink."
+            #drinks.
+            jnfr "And... Well, once someone can't drink any more... They're out. They lose, basically."
+            jnfr "Easy enough, right?"
+            hlna "Yeah."
+            jnfr "Okay, let's play clockwise."
+            jnfr "Helena, you're up."
+            #Draws a card.
+            hlna "..."
+            hlna "Your partner must take off their top."
+            hlna "..."
+            z "But I'm not wearing a top..."
+            jnfr "Well that means she drinks."
+            hlna "Ah..."
+            #Drinks.
+            #Jamie draws.
+            jamie "Drink twice."
+            jamie "Oh... That's not great..."
+            #Drinks twice.
+            jamie "This wine is really good quality, I have to admit..."
+            jnfr "See? I told you the village is not such a bad place..."
+            jamie "Maybe you're right..."
+            z "Okay, I'm up."
+            #Draws.
+            z "Arm wrestle a member of the opposing team. If you lose, drink twice. If you win, kiss the other."
+            jamie "Eh?"
+            jamie "I'm guessing you're going to arm wrestle me."
+            z "No, Imma wrestle Jenny and kiss you..."
+            z "Of course I'm gonna wrestle you, dude..."
+            jamie "..."
+            #They arm wrestle.
+            jamie "You're quite jacked, huh..."
+            jamie "I guess you need to be if you're going to be a ninja."
+            z "We do get quite a bit of physical exercise, so yeah..."
+            jamie "Heh... But in arm wrestling, technique is more important than muscle."
+            z "Is it now?"
+            jamie "Of course! I'll show you how I'll beat you with my technique."
+            z "You do a lot of arm wrestling in your day?"
+            jamie "..."
+            jamie "Well, no. But I-"
+            jamie "Oh, this is just a foolish trick to try to annoy me before we start, you sneaky bastard!"
+            z "Not really..."
+            jamie "Let's let our arms talk for us, shall we?"
+            z "Sure."
+            #Z wins in a second.
+            jamie "Wait! No! I wasn't ready!"
+            jamie "Someone should count down from three!"
+            jnfr "I'll do it."
+            jnfr "Three..."
+            jnfr "Two..."
+            jnfr "One..."
+            jnfr "Go!"
+            #Z wins in a second.
+            jamie "Ah!"
+            jamie "Wait! I thought it'd be three, two, one, zero!"
+            z "Dude..."
+            jnfr "Come on, Jamie... It's just a game..."
+            jamie "No, no, dear. This guy is just using my unpreparedness."
+            jamie "You know how sneaky those ninjas are."
+            z "Jenny, can you count down from three to zero?"
+            jnfr "Yeah, fine..."
+            z "When we hear zero, we both start. Sounds good?"
+            jamie "Heh... You should've taken the win you got while you could."
+            jamie "Deal!"
+            z "Let's go, Jenny."
+            jnfr "Three..."
+            jnfr "Two..."
+            jnfr "One..."
+            jnfr "Zero!"
+            #Jamie manages to hold Z for a second.
+            jamie "See?! It's working! Now I can turn this ar-"
+            #Z totally destroys him.
+            jamie "..."
+            jamie "No! Wai-"
+            z "Shhhhhhhh..."
+            z "Excuse me, I have a kiss to claim."
+            jamie "..."
+            z "..."
+            z "Ready?" #To jenny.
+            jnfr "Y-Yeah..."
+            z "(Jamie is kinda looking...)"
+            z "(And so is Helena.)"
+            z "(Guess I should...)"
+            menu:
+                "(...go all out with a strong kiss.)":
+                    jnfr "Hmm..."
+                    jnfr "Hmmmnnn~?"
+                    jnfr "Ahhhnn~..."
+                    jnfr "Hanhhh~..."
+                    $ jnfr_lst += 1
+                    $ hlna_lst += 1
+                    $ jxj -= 3
+                "(...give her a nice PG-13 kiss.)":
+                    jnfr "Hmm..."
+                    jnfr "Nnm..."
+            z "Okay... It's your turn, Jenny."
+            jnfr "Right..."
+            jnfr "If there's someone shorter than you on the opposing team, they drink. And for every member taller than you, you drink once."
+            jnfr "Hmmm... So Helena is slightly shorter than I am..."
+            jnfr "And you're way taller, [mc_name]..."
+            z "So both you and Helena drink."
+            jnfr "Damn... You haven't drunk a single time so far..."
+            z "What can I say, I'm just good."
+            jnfr "Hmmm..." #Sus.
+            jnfr "Cheers."
+            hlna "Cheers!"
+            #They drink.
+            hlna "The opposing team drinks."
+            jnfr "Damn..."
+            #They drink.
+            jamie "The opposing team drinks twice, but you have to be blindfolded for the rest of the game."
+            jamie "Eh?"
+            jamie "Wh-"
+            jnfr "Do it Jamie. [mc_name] hasn't drunk the whole game. We'll totally end up losing unless he gets to drink."
+            jamie "..."
+            jamie "Okay, good point... Must be why he managed to beat me in arm wrestling."
+            z "Ahuh..."
+            jamie "Okay... I can't see anything." #Puts on a blindfold.
+            z "Guess we have to drink, Helena."
+            hlna "..."
+            z "Okay, let's see."
+            z "Slap a player from the opposing team on any part on the body you want."
+            z "Oh, same card as the one we started with."
+            jnfr "I guess some of them have replicas."
+            z "Hmmm..."
+            menu:
+                "Use the card to spank Jenny.":
+                    z "I'll slap..."
+                    z "Jenny."
+                    jnfr "Hmmmm..."
+                    jnfr "I wonder where you'll do it..."
+                    z "Me too..."
+                    jamie "..."
+                    #Bends over and gives him her ass.
+                    z "..."
+                    hlna "..." #Surprised.
+                    jnfr "Awwww~!!!"
+                    jnfr "Ahh~..."
+                    jamie "Jenny?! Are you okay?"
+                    jnfr "Yeah... It..."
+                    jnfr "It wasn't bad, don't worry..."
+                    jamie "Hmmm..."
+                "Use the card to slap Jamie.":
+                    z "I'll slap..."
+                    z "Jamie."
+                    jamie "Ugh..."
+                    jamie "Let's get it ov-"
+                    #Slaps him.
+                    jamie "Offghh!"
+                    jamie "Awwww..."
+                    jamie "Did you have to do it so hard..."
+                    jnfr "It's just a game, Jamie... Man up."
+                    jamie "Humpf..."
+                "Drink.":
+                    z "I'll just skip this one."
+                    jnfr "Boooo..."
+                    z "Yeah, yeah."
+            jnfr "Okay, my turn."
+            jnfr "All players on the opposite team must take off their tops."
+            hlna "Oh..."
+            jnfr "You can drink instead if you're not comfortable with it..."
+            hlna "Hmmm..."
+            hlna "No I'm okay... I've had plenty to drink already. I don't want to lose to early."
+            #Takes off her bra.
+            jnfr "..."
+            z "(Interesting...)"
+            jnfr "I guess since [mc_name] isn't wearing a top, I guess I have to drink."
+            hlna "Suck on on whichever body part of your partner's that you want. If you do so, the other team drinks."
+            hlna "..."
+            z "Eh... It-"
+            #Approaches him.
+            jnfr "..."
+            #Kneels.
+            z "Helena?"
+            #Grabs his hand.
+            #Sucks on his thumb secudtively.
+            $ hlna_lst += 1
+            hlna "..." #Gets up.
+            hlna "{i}Clears her throat.{/i} Who's next?"
+            jamie "Me..."
+            jamie "Oh... How am I supposed to rea-"
+            jnfr "I'll do it." #Takes it from him.
+            jnfr "Your partner must take off their top."
+            jnfr "Oh no, oh no... Whatever am I to do..."
+            jamie "What are yo-"
+            #Takes off her top.
+            jnfr "I'm not losing."
+            jamie "You could've just drunk..."
+            jnfr "I could've, but then we would've lost in a few round."
+            jamie "Hmmm... I guess it's just a game..."
+            z "Eh? Wait we can't see your..."
+            jnfr "Hm? Did you say something, Mr.Pervert?"
+            z "But..."
+            z "..."
+            z "Fine... My turn."
+            z "Play 'fuck, marry and kill'. The one you kill drinks."
+            z "Okay..."
+            define y_r_u_g_counter = 0 #Move to top of script
+            label y_r_u_g:
+            menu:
+                "Fuck Jenny and marry Helena.":
+                    z "I'd fuck Jenny... Marry Helena... And kill Jamie."
+                    jnfr "Oooh, how romantic..." #Sus.
+                    z "I must admit I'm more into doing one than the other two."
+                    jnfr "..."
+                    $ jnfr_lst += 1
+                    jamie "I'm guessing it's killing me?"
+                    z "Heh... Sure..."
+                "Fuck Helena and marry Jenny.":
+                    z "I'd fuck Helena... Marry Jenny... And kill Jamie."
+                    hlna "..."
+                    $ hlna_lst += 1
+                    jnfr "That was a romantic proposal..."
+                    z "More romantic than the one you currently have, I imagine..."
+                    jnfr "..."
+                    jamie "Hey... I can be very romantic, you know..."
+                    jnfr "Of course you can, dearest..."
+                "More options." if y_r_u_g_counter == 0:
+                    #Why are you geh meme.
+                    $ y_r_u_g_counter = 1
+                    jump y_r_u_g
+            jnfr "Okay, let's see."
+            jnfr "Give a lap dance to someone from the opposing team. They must drink after."
+            jnfr "Easy."
+            jamie "Wait, you're really going to do this?!"
+            jnfr "Oh, don't worry, Jamie. [mc_name] is like a little brother to me."
+            jamie "Hmmm..."
+            #Gives Z a lap dance.
+            #He gets an erection.
+            $ jnfr_lst += 1
+            hlna "..."
+            $ hlna_lst += 1
+            jnfr "I can see I did well..."
+            z "I guess so..."
+            #Z drinks.
+            hlna "Okay..."
+            hlna "Pick two people you'd have a threesome with. Anyone not picked must drink."
+            hlna "..."
+            hlna "Well... I guess [mc_name]..."
+            hlna "And Jenny..."
+            jnfr "Ooooh... That sounds interesting..."
+            jamie "Your loss..."
+            #Drinks.
+            jnfr "I'll get it for you, dear."
+            jnfr "Take one drink for every player you've had sex with."
+            jamie "Oh..."
+            #Doesn't drink.			
+            #IF THEY FUCKED, THEY BOTH DRINK.
+            label they_fucked:
+                jnfr "..." #Looks at Z.
+                hlna "..."
+                hlna "Wha..."
+                jamie "Hm? What?"
+                hlna "..."
+                hlna "No, it's nothing..."
+                $ hlna_lst += 1
+            #If they didn't fuck, no one drinks.			
+            z "Okay, my turn."
+            z "You and your partner each take a piece of clothing off each other. If you don't, you both drink."
+            z "..." #Looks at helena.
+            z "We can both drink if you prefer no-"
+            hlna "No, no. Let's do it."
+            z "..."
+            z "I'm not saying no to that."
+            #Hlna takes off Z's pants and admire his dick for a bit.
+            $ hlna_lst += 2
+            jnfr "See something you like, Helena?"
+            hlna "?!"
+            hlna "That's not..."
+            hlna "..."
+            hlna "Who's next..."
+            jnfr "That'd be me..." #Stands up to grab a card
+            jnfr "Oh..." #Falls on Z. Her boobs are in his face.
+            jnfr "Sorry... I think I'm a bit tipsy..."
+            z "We can st-"
+            jnfr "Na-uh. I'm fine. We can continue. I'm not gonna lose."
+            z "Sure..."
+            jnfr "Kiss any member of the opposing team. If you do they must drink."
+            jamie "..."
+            jnfr "Well..."
+            #Goes to Z.
+            jnfr "By the way, Jamie. I'm only doing this so we can win."
+            jnfr "[mc_name] is literally like a little bro-"
+            jnfr "Hmmmn~..." #Z starts kissing her.
+            jnfr "Hmmmnnnn~... Uhmmnn~..." #They make out.
+            jnfr "Hmnn~..." #They break the kiss.
+            $ jnfr_lst += 1
+            jnfr "..."
+            jnfr "Now, drink."
+            z "Yeah, yeah."
+            #Drinks.
+            menu:
+                "Tell Jenny she can also do the same to Helena.":
+                    z "Wait."
+                    z "You want to win, right?"
+                    jnfr "Of course!"
+                    z "The card didn't say you can only do this to one member of the other team, did it?"
+                    jnfr "..."
+                    #Checks the card.
+                    jnfr "I guess not..."
+                    jnfr "..." #looks at Helena.
+                    hlna "..."
+                    #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+                    #Goes to her.
+                    jnfr "I've..."
+                    jnfr "I've never... You know... With a girl..."
+                    hlna "I haven't either..."
+                    jnfr "..."
+                    jnfr "Hmnn~..." #Kisses her a bit.
+                    jnfr "Ahhnmm~..." #Makes out with helena.
+                    jnfr "Mnnn~..."
+                    jnfr "..."
+                    jnfr "Fuck... That's totally different..."
+                    jnfr "Girls are much softer, aren't they..."
+                    hlna "Y-Yeah..."
+                    jnfr "Okay, now drink."
+                    #Hlna drinks.					
+                "Don't remind her.":
+                    z "..."
+            hlna "Okay..."
+            hlna "All players on the opposite team must take off their tops."
+            hlna "Again, huh..."
+            jnfr "Well... I guess I had it coming..."
+            #Takes off her towel.
+            z "(Nice...)"
+            jnfr "..." #Catches him looking and smiles at him.
+            jnfr "Jamie is topless, so you drink, Helena."
+            #She drinks.
+            jnfr "Okay, here's your card, Jamie."
+            jnfr "..."
+            jnfr "Oh..."
+            jamie "What?"
+            jnfr "Joker card: Your partner must give oral sex to a member of the opposing team and that person drinks thrice. If you refure, you drink five times."
+            jamie "What?!"
+            jnfr "..."
+            jnfr "Well..."
+            jnfr "Yeah... I forgot to mention the cards tend to get spicier the deeper you go into the draw."
+            jamie "But..."
+            jamie "Fuck... I've already drunk quite a bit... I'm dizzy... I don't think I can take much more drinking..."
+            jamie "..."
+            jamie "Do it."
+            jnfr "..."
+            #Smiles seductively.
+            jnfr "But, are you sur-"
+            jamie "Yeah... It's just a game after all, right?"
+            jnfr "Of course."
+            z "(Damn... Is this really about to happen...)"
+            z "(Is it because he's quite drunk that he agreed to this?)"
+            jnfr "Oh... Darling, don't worry... This doesn't mean anything..."
+            jamie "Yeah..."
+            jnfr "..."
+            jnfr "Wanna move to the edge?"
+            z "Sure."
+            jnfr "..." #kneels next to his dick.
+            hlna "..."
+            jnfr "Muaahhh~..." #Kisses it.
+            jnfr "Hmmmnn~..."
+            jnfr "Ghhhnnnmm~..." #Starts sucking.
+            jamie "Can you be a bit more quiet about it?"
+            jnfr "Hmmggkkknnn~..."
+            jnfr "Can't help it... It's quite hard to take it in my mouth..."
+            jamie "Ehhh..."
+            jnfr "Ghhhmmmnnn~..."
+            jnfr "Gahhhhmmmnnnn~... Mnnhhh~..."
+            z "Ohhhh..."
+            jamie "..."
+            jamie "How long do you have to do this..."
+            jnfr "Hmmn~..."
+            z "Ehhh... I don't think she can talk right not..."
+            z "But to answer your question... I think until I finish?"
+            jamie "Ughh..."
+            jnfr "Hmnnn~... Uhhhmmnn~..."
+            z "Oh shit... Not that fast, Jenny... I'm..."
+            z "Ohhh fuck..."
+            #Cums.
+            jnfr "Ughhhmmm~!!!"
+            jnfr "Ahhhhnnn~..."
+            $ jnfr_lst += 2
+            jamie "..."
+            jamie "Is it over?"
+            z "Yeah..."
+            jamie "Ugh..."
+            z "Okay, my turn."
+            z "You decide. You can make two members of each team kiss or drink."
+            jnfr "Wait, I'm gonna go clean this mess up."
+            z "..."
+            menu:
+                "Stop Jenny and make her kiss Jamie like this.":
+                    z "Wait."
+                    jnfr "Hm?"
+                    z "Kiss Jamie."
+                    jnfr "Hu-"
+                    z "Like this." #Whispers.
+                    jnfr "..."
+                    jnfr "......"
+                    jnfr "........."
+                    jnfr "Heh..."
+                    jnfr "Dear..." #Goes to Jamie.
+                    jamie "?"
+                    jnfr "Muuuahhh!" (multiple=2) #Kisses him
+                    jamie "Hmmm?!" (multiple=2)
+                    jnfr "Hehehehehe..."
+                "Let her clean up and make them drink after.":
+                    z "Okay, you two should drink after you're done."
+                    jnfr "Yeah."
+            z "(What about our team...)"
+            menu:
+                "Kiss Helena.":
+                    z "Say..."
+                    z "Let's just kiss?"
+                    hlna "..."
+                    hlna "Y-Yeah..."
+                    hlna "..."
+                    z "Here I come..."
+                    hlna "..."
+                    hlna "Hmmmn~..."
+                    hlna "Mmmm~..."
+                    hlna "Hahhnn~..."
+                    $ hlna_lst += 2
+                    z "Are you okay?"
+                    hlna "Yeah..."
+                    hlna "I just feel hot after doing that..."
+                    hlna "This game is making me feel young again, heh..."
+                    $ hlna_aff += 4
+                "You both drink.":
+                    z "Let's just both drink, Helena."
+                    hlna "..."
+                    hlna "Sure..."
+                    #Both drink.
+            jnfr "Okay..."
+            jnfr "Joker card-"
+            jamie "Oh, shit! Not again..."
+            jamie "This game was a bad idea, after all..." #Takes off blindfold.
+            jnfr "Stop acting like a child, Jamie... It's just a game..."
+            jamie "I don't want to watch my wife being fucked, thank you very much."
+            jnfr "I'm not even your wife, yet! And it's not like there's even any cards for that!"
+            jnfr "Look... This says..."
+            jnfr "Joker card: pick a member of your team and a member of the opposing team to carry you. The one who can carry you the longest gets to have sex with you while the other has to watch."
+            jnfr "..."
+            jamie "..."
+            jnfr "If you don't, then you and your partner drink 10 times."
+            jamie "Come the fuck on!"
+            jnfr "Oh..."
+            jnfr "I guess I was wrong..."
+            jnfr "I mean, we can drink ten times... We'll lose, but there's no way you can carry me longer than [mc_name]..."
+            jamie "..."
+            jamie "You know fucking what..."
+            jamie "Do you really think I can't carry you more than that blond elf?"
+            z "Not an elf... And you're also blond..."
+            jamie "No, no. This is fucking personal now. You get to kiss my wife and even get your dick sucked by her. I won't let this stand."
+            jamie "Jenny. Come over here. I'm gonna show you I can carry you way longer than that twat!"
+            jamie "Sure he's a bit more jacked than me, so what?!"
+            jamie "Let's do this!"
+            z "Are you sure y-"
+            jamie "Very."
+            jnfr "..."
+            jnfr "Okay... Let's do it..." #Smiles.
+            jnfr "Try your best, dear."
+            jamie "I will."
+            jamie "Helena. You count."
+            hlna "Sure."
+            #Carries her.
+            hlna "One..."
+            hlna "Two..."
+            hlna "Three..."
+            hlna "Four..."
+            hlna "Five..."
+            hlna "Six..."
+            hlna "Seven..."
+            hlna "Eight..."
+            hlna "Nine..."
+            hlna "Ten..."
+            hlna "Eleven..."
+            hlna "Twel-"
+            #They fall.
+            jamie "Ughh!" (multiple=2)
+            jnfr "Eeep!" (multiple=2)
+            jamie "Twelve, huh..."
+            hlna "Actually, it wasn't twe-"
+            z "Nah. Let him have the twelve."
+            z "Jenny."
+            jnfr "Yeah."
+            #Carries her.
+            hlna "One..."
+            hlna "Two..."
+            hlna "Three..."
+            hlna "Four..."
+            hlna "Five..."
+            hlna "Six..."
+            hlna "Seven..."
+            hlna "Eight..."
+            hlna "Nine..."
+            hlna "Ten..."
+            hlna "Eleven..."
+            hlna "Twelve..."
+            hlna "Thirteen..."
+            z "Okay, let's put you-"
+            jnfr "Heyyyy... Come on, you can do better than that."
+            z "..."
+            hlna "Sixteen..."
+            z "Do you want me to totally destroy him or something?"
+            jnfr "He's always this cocky guy who thinks he's better than everyone, so yeah. I'd like to see that."
+            jnfr "At least every once in a while."
+            z "..."
+            z "You do realise that I'm literally about to fuck you right in front of him, right?"
+            z "Isn't that a good enough lesson in humility?"
+            jnfr "Maybe it won-" (multiple=2)
+            hlna "Thirty three..." (multiple=2)
+            jamie "Okay, okay... I lose..."
+            jnfr "..."
+            jnfr "You actually admit you lost?"
+            jamie "Yeah, so what?"
+            jnfr "..."
+            jamie "Please... Let's stop the game now..."
+            jnfr "..."
+            jnfr "What happened with your business?"
+            jamie "What?"
+            jnfr "Why did you suddenly get scared that the people you deal with will come after you?"
+            jnfr "Tell me that at least."
+            jamie "..."
+            jamie "Let me sleep on it..."
+            jamie "I promise I'll tell you everything when I'm ready..."
+            jnfr "..."
+            jnfr "Fine."
+            jnfr "I think Jamie and I had enough to drink anyway."
+            jnfr "Let's call it a day?"
+            z "Ehhh..."
+            jnfr "I'll make it up to you, I promise..." #Smol font.
+            z "I'll take you up on that, okay?"
+            jnfr "Yep."
+            #They leave.
+            hlna "Gods... Were you two really going to..."
+            hlna "You know..."
+            z "We-"
+            hlna "No, no. I don't want to know..."
+            hlna "Well, I should probably sleep early tonight anyhow."
+            hlna "You're traveling tomorrow, so you should do the same."
+            #Wants to get up but falls on Z.
+            z "Are you okay?"
+            hlna "..."
+            z "I'd say sober up a bit first, maybe?"
+            hlna "Ehh... But-"
+            z "How about I help you loosen up your muscles?"
+            hlna "Loosen them up, you say?"
+            z "Yeah. Seira and I do it to each other all the time."
+            z "I mean, we used to... It's been a while actually..."
+            hlna "How do you mean loosen them up?"
+            z "Okay, I'll show you."
+            #Messages her shoulders.
+            hlna "Ehhh... You're a bit ro-"
+            hlna "..."
+            hlna "Ooooohhh~..."
+            hlna "That feels..."
+            hlna "Greaaat..."
+            z "See? I told you."
+            #I'm here W <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+        "Drop the subject.":
+            z "Well. I should get going anyway."
+            z "I'll leave you guys to your tour."
+            jnfr "Good night."
+            z "Night..."
+
+
+
+#10) Axius and the team that attacked Stephanie's team:
+    axs "..."
+    axs "Are they dead?"
+    nari "..."
+    axs "Are they?"
+    nari "No."
+    axs "..."
+    axs "You had very simple instructions, Nari."
+    axs "Get me the the town's alchemist."
+    axs "And kill anyone who interferes."
+    nari "I did bring you the alchemist."
+    axs "Yes. But you didn't kill a single ninja."
+    axs "Were they stronger than you and your team?"
+    nari "..."
+    axs "Grown weak, have you? Four kunoichi can beat your team now?"
+    nari "..."
+    axs "Perhaps next time Alura should lead the missions?"
+    nari "No."
+    nari "Alura works for me, not you Axius."
+    axs "Most of the work she does for you seems to be in the bedroom these days."
+    nari "How dare you..."
+    nari "Say that again."
+    axs "..."
+    alura "..." #Scared.
+    nari "Go on."
+    irna "..."
+    axs "You're dismissed."
+    axs "All of you."
+    axs "Nari..."
+    axs "Do not fail me again."
+    axs "Or it'll be the last time you do."
+    #They leave.
+    #Irna is walking back to her room (ALONE!)
+    #Opens the door and wants to change.
+    irna "*{i}Sighs.{/i}"
+    nari "Why did you stop me?"
+    irna "EEEP?!"
+    irna "..."
+    irna "What are you doing here, Nari?"
+    nari "..."
+    nari "Irena."
+    nari "Why did you stop me from killing the girl?"
+    nari "What is that you know?"
+    irna "..."
+    irna "I..."
+    irna "It's just..."
+    irna "It's how incubi are, Nari."
+    irna "My father isn't special in this regard, really."
+    nari "..."
+    nari "Expl-"
+    irna "Go and ask Nixie about it."
+    irna "She's the same as that girl."
+    irna "There's others too, I'm sure..."
+    irna "The only difference Nixie was from the rest of them is that her mother was a succubus and thus my father found her useful."
+    nari "..."
+    nari "You mean..."
+    nari "How many bast-"
+    irna "Probably dozens of them out there."
+    nari "..."
+    nari "How could you tell that girl was one of them?"
+    irna "I can always tell..."
+    irna "Can't say I like the fact that I do. But I can tell."
+    nari "..."
+    irna "You..."
+    nari "Hm?"
+    irna "You could've just ignored me and killed them all."
+    irna "Why didn't you?"
+    nari "..."
+    nari "Do you think it's right?"
+    nari "What we're doing..."
+    irna "..."
+    nari "..."
+    nari "Good night, my lady." #Leaves.
+    irna "Nari."
+    nari "?"
+    irna "Do you..."
+    irna "Do you remember anything now?"
+    irna "From your past?"
+    nari "..."
+    nari "A bit..."
+    nari "Sometimes... In my dreams... I can see little shards of it..."
+    nari "I've been dreaming quite often lately..."
+    nari "..."
+    nari "Irena..."
+    nari "Does your father have sleep nymphs under his command?"
+    irna "Sleep nymphs?"
+    irna "Not that I know of..."
+    nari "I see..."
+    #Leaves.
+    irna "..."
+    irna "(If Nari turns on my father...)"
+    irna "(And with [mc_name]'s help...)"
+    irna "(Maybe...)"
+    irna "(Just maybe...)"
+
+#) Nari dreams about his sister giving him his necklace and a big wave:
+    #He remembers someone saying Nari
+    #Auge appears and tells him that's not really his name.
+    #He asks Auge who she is and asks if she's the one giving him dreams.
+    #She says she's there to help him remember.
+    #Auge says "Remember..." and shows him a ship.	
+    #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+#11) Arrival at elven city:
+    #Tourny is already beginning when they arrive.
+    #It is a jousting competition at first.
+    z "..."
+    z "This is interesting..."
+    z "What are they doing with those sticks?"
+    cnt "It's jousting."
+    z "Hm?"
+    cnt "The two people on horseback will try to knock their opponent off using the lance."
+    cnt "Whoever falls loses."
+    z "..."
+    z "I see."
+    cnt "Oh! It's Ser Klyn!"
+    z "Hm?"
+    z "The guy on the white horse?"
+    cnt "That's him, yeah."
+    cnt "He's never lost a single tourny."
+    cnt "He's the commander of the royal guards."
+    cnt "Or well, he was when I was last here."
+    z "I see..."
+    z "And the guy in the full armour?"
+    cnt "..."
+    cnt "I actually don't know him... I don't think..."
+    ymi "He's rather small, isn't he?"
+    z "Yeah..."
+    Character("Announcer") "And for the final round of our jousting tournament..."
+    Character("Announcer") "We have..."
+    Character("Announcer") "Ser Klyn!"
+    Character("Announcer") "Versus!"
+    Character("Announcer") "Ser Vollstahl!"
+    Character("Announcer") "May the stronger fighter win!"
+    #They begin.
+    #Vollstahl wins it.
+    cnt "Eh?!"
+    z "..."
+    z "That was surprising..."
+    ymi "I thought Klyn has never lost before."
+    z "You know what they say, first time for everything."
+    cnt "I guess..."
+    illya "Centoryyyy!"
+    #The princess hugs centoria similar to how torr's family huged her.
+    vollstahl "My lady... That'sh no way for a prinshesh to behave."
+    illya "Sorrrryyy..."
+    illya "You must be [mc_name], right?"
+    z "Yes. And you must be princess Illya."
+    illya "I am. Nice to finally meet you, [mc_name]."
+    z "Nice to meet you too, princess."
+    illya "No need to princess me every five minutes. Illya will do."
+    z "Gotcha."
+    illya "Hi, there. I'm Illya." #Goes to yumi.
+    ymi "Hi, prin-"
+    illya "Ah-uh. Illya."
+    ymi "..."
+    ymi "Hey, Illya. My name's Yumi."
+    illya "Nice to meet you."
+    illya "Ooooh, you guys look really scary with all of those weapons and armour and stuff."
+    illya "Oh, speaking of lots of armour..."
+    illya "This is Vollstahl. The commander of the royal guard."
+    cnt "Oh? I thought it was ser Klyn?"
+    klyn "Not since this guy showed up a few months back."
+    klyn "I have yet to best him once."
+    vollstahl "Sher Klyn ish too humble. I'm shure he beshted me onshe or twishe at least while shparring."
+    cnt "Nice to meet you, ser."
+    vollstahl "You two, young Shentoria. The prinshesh told ush lotsh about you."
+    vollstahl "Shall we ischcort your gueshtsh to the cashtle, my lady?"
+    illya "Yeah. My dad must be waiting."
+    #They go to the castle.
+
+#12) Elven castle:
+    #The castle is magistic.
+    ymi "Gods... Look at that..."
+    cnt "Yeah... The castle has always been a marvel."
+    z "Damn..."
+    #Z notices goblins working and cleaning around the castle.
+    z "Aren't those..."
+    cnt "Hm?"
+    z "They're goblins, aren't they?"
+    cnt "Yeah?"
+    z "I thought the elves and the goblins were trying to kill each other?"
+    illya "Not all of them."
+    illya "That's exactly why I need you guys."
+    illya "Many goblins work here in our city. They are even granted residence in our city. I made sure of that."
+    z "These goblins live in the city with the elves?"
+    illya "Gabro and Lishten? They live with us in the castle."
+    z "..."
+    z "I don't want to sound like an asshole, but are they able to fit in?"
+    illya "Aside from having difficulty learning our language, they fit in just fine."
+    illya "I've been teaching the ones who work in the castle the common tongue myself."
+    vollstahl "You are shometimesh too ricklesh, my lady."
+    illya "Nonsense. Don't listen to Vollstahl."
+    illya "Goblins are a bit different than us, sure. But they aren't mindless monsters, [mc_name]."
+    illya "I'd imagine you wouldn't want people to assume the same about you just because you're an incubus, right?"
+    z "No... I mean, yes..."
+    z "I just thought..."
+    z "..."
+    illya "..." #Smiling.
+    z "Princess..."
+    z "What did you mean when you said that's why you needed us?"
+    illya "..."
+    illya "I..."
+    #Interepted by Vollstahl telling them they're about to meet the crowned prince.
+    #The royal guard whom Z works with are all bald dark skinned topless women with nipple piercings.
+    #Z asks why the guards have no weapons, the prince makes them demonstrate their powerful af magic saying that elves are specialists in magic.
+    #The don't have weapons, they can conjure them with magic, they also heavily rely on magic.
+    #The prince brags about how he provided well paying jobs for the goblins and helped civilise them. Gives some credits to illya.
+    #The prince says he'll also lend them a dozen of his personal gaurd when they leave to the nearby villages and says he doesn't understand why his daughter wants to visit these peasants.
+    #Z (with centoria) gets a mission to protect the princess of Centoria's vilage of some sort. Her father specifies that he's not to be further than 1 meter away outside of the city and can be instructed to be up to 20
+    #meters away inside the city.
+    #A magic bond is formed by a sorceress working in the castle.
+    #The sorceress who works for the prince is a hooded figure who never shows any part of her skin (She's a goblin!)
+    #The prince tells them that local goblins recently attacked the elf city a few times and the princess insists on visiting the outskirts of the city as a part of her birthweek celebrations like she always does. A body guard is needed for the princess.
+    #The sorceress made Illya a talking snow man.
+
+#13) Intimate situations with Yumi:
+    #Yumi has to apply a potion from gabbie and venus to heal up properly. Z has to apply it when Centoria isn't around leading to sexual stuff.
+
+
+#14) Fencing tournament:
+    #In the fencing tourny (no magic is allowed) Z is asked to compete by the princess.
+    #Vollstahl, the king's personal gaurd, wins againts Z. Vollstahl is a short man, who always wears an full armour and a helmet covering all of his body. (He's actually a goblin who betrays the elves later on and joins axius).
+    #The winner is decided by who stops just before hitting their opponent. Vollstahl is very respectful towards Z after winning.
+    #Before beating Z Vollstahl totally destroys Yumi.
+    #Z wins sth for second place.
+
+#15) Magic tournament:
+    #Illya is in Z's team (boding between them)
+    #The elves are absurdly strong in magic.
+
+#16) Illusion tournament:
+    #The sorceress who's fully covered puts them into an illusion they need to escape.
+    #Illya is again in Z's team (boding between them)
+
+#17) Taking a bath with Illya and Centoria:
+    #Since he can't be far from her, they all take a bath together.
+
+#18) Goblin tournament:
+    #This whole thing was suggested by Illya's father. She doesn't like the idea because it establishes that the goblins are beneath the elves and that they should transform.
+    #There is an event for goblins, who ever wins gets a potion that transorms them into elves.
+    #Z is surprised that such a potion exists. The elves explain that the and the goblins have a common ancestory and with a powerful potion you can accend to an elf as a goblin but the potion is very expensive. 
+
+#19) Illya's plan:
+    #Later to Z's team alone after playing together in the tournament and bonding with them.
+    illya "I want us and the goblins to reach a peace agreement."
+    illya "The constant fighting is not good for anyone."
+    illya "Visiting the nearby villages is a lie I told to my father, so he'll hire you."
+    illya "I'm the one who asked him to hire you personally. Not him."
+    illya "And I'm sorry. I didn't hire you because you are a great warrior. I'm sure you're very capable. But I hired you because you are an incubus."
+    z "..."
+    z "What are you talking about..."
+    illya "You of all people should be able to understand your race being misunderstood and hated and seen as mere monsters."
+    z "..."
+    illya "I want to visit the goblins around the city. I want to talk to them."
+    illya "If they agree to my plan... I can finally do it and free everyone from this damned situation."
+    z "..."
+    z "What exactly is your plan, Illya?"
+    illya "I'll make them all citizens of the elven city."
+    z "You..."
+    z "You want the goblins as citizens here?"
+    z "You know that not all the goblins are like the ones who live here, right?"
+    illya "Yeah, yeah. They'll have to adjust and so will we, I know."
+    illya "I'm not an idiot. I know it'll create dozens of problems."
+    illya "But I'd rather have to solve those than have the pointless conflict that we have right now."
+    illya "And in a decade or two, we will have gotten used to each other."
+    illya "It'll take time and effort. But we can do it."
+    illya "It is the best solution."
+    z "I don't think your father will agree to it, do you?"
+    illya "He won't."
+    illya "But..."
+    illya "I've just turned twenty."
+    z "..."
+    z "The major change to the elven way of life."
+    z "Your first decision..."
+    z "This will be it..."
+    illya "You know about that?"
+    z "Centoria told me..."
+    illya "Well, yes."
+    z "..."
+    z "(This girl...)"
+    z "(She's very interesting...)"
+    #Stares at Z
+    illya "My plan is, however, very difficult. I'll need lots of help if I am to do it."
+    illya "Will you guys help me?"
+    z "How?"
+    illya "Do your job. Protect me while I try doing all of this."
+    illya "And tell noone about this."
+    z "..."
+    z "I assume not even your father."
+    illya "Espicially not my father."
+    illya "Not until the foundation for the plan is laid down."
+    illya "I'll tell him myself then."
+    z "..."
+    ymi "You know, Illya..."
+    ymi "A goblin tried to rape me once."
+    illya "..."
+    ymi "A couple of others tried to kill me."
+    ymi "I've killed a few goblins myself too."
+    illya "..."
+    ymi "But I've seen plenty of humans try to do the same..."
+    ymi "And I've heard all my life that I woman should not come withen two villages from an incubus."
+    ymi "Yet here I am friends with one."
+    ymi "So know this, Illya..."
+    ymi "I'll go with you to where the goblins live..."
+    ymi "And make sure that if any of these green shits tries to lay a finger on you, they'll be cut them to shreds."
+    z "..."
+    illya "Centory?"
+    cnt "Of course I'll be with you, Illya."
+    illya "..." #Looks at Z.
+    z "..."
+    z "Yumi, I'd like to take charge of the expedition in goblin territory."
+    ymi "Sure."
+    z "Thanks."
+    z "Centoria, you'll pose as the princess the whole time."
+    cnt "Of course."
+    z "Yumi, if you get as much as a whiff of a potential attack, grab the princess and run back to the city. Leave Centoria and I behind if you must."
+    ymi "I will."
+    z "Princess, you'll keep your face hidden and dress like a handmaiden to hide your identity."
+    illya "Okay, b-"
+    z "And I also want the two goblins I saw working outside the caslte to come with us."
+    illya "Eh?"
+    illya "Explain."
+    z "They're a sign of good faith. If the goblins see their own walking with the princess, they might get the imrpression that we come peacefully and that goblins and elves can cooperate."
+    illya "I see, I see..."
+    illya "Not a bad idea at all."
+    illya "Anything else?"
+    z "Yes. Carry a weapon. A knife or something you can hide in your clothes."
+    illya "But I don't know how to use a knife."
+    z "Trust me, princess, it's not that hard."
+    z "..."
+    z "Your father said he'd send some of his guards with us..."
+    illya "Yeah... That's also a problem..."
+    z "Actually..."
+    z "You wouldn't know how to forge your father's signature, would you?"
+    illya "Hm?"
+    #Skip
+
+#20) Outside the city:
+    #At the gate.
+    Character("Guard") "Halt!" #Stops Z's wagon.
+    z "..."
+    Character("Guard") "Where are you going? And what have you got inside that wagon?"
+    cnt "Stand down, Edgar." #Peeks out of the wagon.
+    Character("Edgar") "Princess?"
+    Character("Edgar") "What are you-"
+    cnt "Let us through."
+    cnt "And keep it down, will you? I don't want everyone to know about this."
+    Character("Edgar") "But-"
+    z "Here are your orders from the prince himself. We didn't publically announce this for the princess's safety. You understand, I trust?"
+    Character("Edgar") "..." #Reads the letter.
+    Character("Edgar") "This is the prince's signiture..."
+    z "Edgar. The prince knew you could be trusted. That's why we picked the time when you're the one stationed on the gate. So tell no one about this, yeah?"
+    Character("Edgar") "The prince sai-"
+    z "Not a word to anyone, get me?"
+    Character("Edgar") "Y-Yes, of course, my lord."
+    z "Good man."
+    #Goes forward.
+    #Sees goblins going inside the city with their papers being checked.
+    z "What's going on there?"
+    illya "These goblins work in the city, but they don't live in it."
+    illya "My father specified that any goblin who is to live in the city, must either have worked in the city for 10 years, or have a job which requires they stay in the city."
+    z "..." 
+    #Looks at the goblins.
+    #They advance.
+    z "..."
+    z "Are we close?"
+    illya "Yes. Their biggest camp is behind that hill."
+    illya "Their leader, the pale goblin they call her, apparently lives there."
+    z "..."
+    illya "Believe me, [mc_name]. I'm well informed. I've been asking the goblins we have in the city about this for months."
+    z "I see..."
+    illya "They told me I could find the pale goblin here today. She moves around from one camp to the other, you see..."
+    z "That's a bit weird..."
+    illya "I guess goblins have a different way of life to us. The elves also used to move around following resources like water from one season to the other."
+    illya "Until they decided to settle down in one place and use tunnels to bring the water to them a few centuries ago."
+    illya "Maybe it's similar for the goblins."
+    z "..."
+    z "Wait..."
+    z "You said they told you you could find the pale goblin here {i}today{/i}?"
+    illya "Yes?"
+    z "You told them which exact day you planned to go there?"
+    illya "Yeah. Because they told me it can change from one day to the other."
+    z "..."
+    z "And these goblins..."
+    z "Are they the ones that enter and leave the city everyday?"
+    illya "Of course. The ones who live in the city wouldn't know all of th-"
+    z "Fuck! Halt!"
+    illya "What?! Why?!"
+    z "They know-"
+    #The two goblins are killed first with spears. 
+    z "!!!"
+    #Someone tries throwing a spear at illya thinking she's not important but Z catches it.
+    z "Yumi! Centoria! Take her and run!"
+    illya "Bu-"
+    ymi "Fuck! He's right! Come on!" #Pulls illya
+    illya "Wai-"
+    #Ymi pumps into a a big woman.
+    ymi "..." #Backs off to see there's actually also a minotaur.
+    ymi "What the fuck..." #Terrified.
+    #Wants to plant her sword into the ground.
+    #A magic chain is shown on her arm just before she hits in the ground.
+    #Her magic doesn't work.
+    ymi "..."
+    ymi "What?!"
+    z "(She can't use magic?!)"
+    #The big woman is swinging her axe at yumi
+    ymi "Fuck! Get back!" #Pushes illya away to take the hit herself.
+    ymi "..." #Getting ready to take it.
+    # Transformed Z blocks the big woman with his sword.
+    ymi "..."
+    ymi "(He stopped it?!)"
+    z "Get it together, Yumi."
+    ymi "..."
+    ymi "Sorry about that..."
+    #Throws a smoke bomb on the floor.
+    #The whole place is filled with smoke and by the time it clears she, centoria, and illya ran away.
+    Character("Big woman") "After them!"
+    #Goblins run after them.
+    #Z teleports there and blocks the way.
+    Character("Big woman") "Kill him!"
+    #Goblins attack him.
+    #They stop mid-way and are terrified by his face.
+    #He absorbs them.
+    Character("Big woman") "What the..."
+    z "..."
+    Character("Big woman") "Do you have a death wish, boy?"
+    Character("Big woman") "Why do you risk your life for them? You're not even an elf."
+    z "(She can tell I'm not an elf?)"
+    z "..."
+    z "(She looks almost half minatour but she's actually quite intelligent)"
+    z "(That's the minatour that attacked me when I was with Torr and Candy in the woods. I can tell.)"
+    z "(I thought it served Axius... Is he involved in the goblin-elf conflict somehow?)"
+    z "I can ask the same of you."
+    z "Why would you fight alongside goblins?"
+    z "The minatour behind you..."
+    z "He once tried to kill me."
+    z "On Axius's orders."
+    z "Are you working for him?"
+    Character("Big woman") "..."
+    Character("Big woman") "Minatours... Half-breeds... Goblins... Incubi... Does it really matter which we are and who we work with?"
+    Character("Big woman") "The other races look at us like demons equally. Like vermin that should be eradicated."
+    Character("Big woman") "I would've hoped the attack on the incubus city would've tought you as much?"
+    z "(I guess she's some kind of a half breed...)"
+    z "..."
+    z "So you just... Kill them? That's your solution?"
+    Character("Big woman") "It's a war, boy. Hundreds will die no matter what. I'd rather most of the dead be from them than from us."
+    z "The princess-"
+    Character("Big woman") "Enough talking. Move, boy. I need to catch the princess before she reaches the city gates."
+    Character("Big woman") "More or I'll cut you to shreds."
+    z "You think you could?"
+    z "Go on, then. Cut me to shreds." #Looks scary.
+    #A chain appears on his arm.
+    z "?!" #Loses his magic.
+    z "What the-"
+    #Barely dodges an axe attack from her.
+    z "..."
+    z "(I can't use magic?!)"
+    z "(Can I even beat all of these goblins and this monster without magic?!)"
+    z "(Fuck...)"
+    #The golins are closing in on him.
+    Character("Big woman") "Stand back. I'll handle him. You go after the princess."
+    z "(Shit... I can't both stop the goblins and fight her.)" #Looks away from her at the goblins.
+    Character("Big woman") "You sure you want to be looking away from me while we fight, boy?"
+    z "..."
+    z "(I have to finish her off quickly and follow the goblins and the other minatour.)"
+    #They fight. Z is winning with difficulty.
+    #She's physically crazy strong and when Z stops her axe she just punches him a few times.
+    #While fighting, more goblins show up.
+    z "(Fuck... Even if I can defeat her, am I gonna have enough strength to beat all of these goblins after?)"
+    #Manages to punch her making her nose bleed.
+    #She pauses.
+    Character("Big woman") "..."
+    Character("Big woman") "You're strong."
+    Character("Big woman") "Change of plans."
+    Character("Big woman") "Goblins! Chain him!"
+    z "Wha-"
+    #Magic chains appear on all of his limbs until he can't move anymore."
+    z "Fuck..." #Looks at his chains.
+    #Turns to the big woman. She's punches him in the face and fade out.
+
+#21) Goblin camp:
+    #Z wakes up in the dungeons.
+    z "Ughhh..."
+    "He's waking up..."
+    z "..."
+    #Sees it's two elves. A man and a pregnant woman.
+    z "Who..."
+    Character("Pregnant Woman") "Are you okay?"
+    z "No... My head hurts..."
+    z "..."
+    z "Where am I?"
+    Character("Man") "The goblin's dungeon."
+    Character("Man") "They threw you in about an hour ago."
+    z "..."
+    z "I see..."
+    Character("Man") "What's your name, friend?"
+    z "[mc_name]."
+    Character("Man") "[mc_name]?"
+    Character("Man") "Quite an unusual name for an elf, isn't it?"
+    Character("Sye") "I'm Sye. And this is my wife Helle."
+    z "..."
+    z "I'm not an elf."
+    Character("Man") "You're not?"
+    z "No..."
+    z "I-"
+    Character("Goblin girl") "You're up, huh?"
+    Character("Goblin girl") "Are you hungry? Meals are supposed to be served at noon once a day, but I can get you something to eat since you weren't here at noon."
+    Character("Goblin girl") "Or maybe you already ate before you were captured?"
+    z "..."
+    Character("Goblin girl") "Are you okay? You were hit pretty hard on your head..."
+    z "Who are you?"
+    Character("Goblin girl") "Dohkong. I'm responsible for the prisoners."
+    z "You speak our language?"
+    Dohkong "Yes. My parents worked for years in the elven city. They've been teaching me how to speak it since I was a child."
+    Dohkong "And I've always gotten plenty of practice talking to the prisoners."
+    z "..."
+    z "Awfully cheerful for someone in your position."
+    Dohkong "Ahahahah..."
+    Dohkong "I know the prisoners have it hard. I don't see any reason to make thier stay here any harsher."
+    Dohkong "So? I gave you my name..."
+    z "..."
+    z "[mc_name]."
+    Dohkong "Are you hungry, [mc_name]? As I said I could get you something to eat."
+    z "I'm fine... Thank you."
+    Dohkong "How did you get captured, if I may ask?"
+    z "..."
+    z "I was escorting the princess... And some goblins and a minatour being led by a huge woman ambushed us."
+    Dohkong "Oh? And what happened to the princess?"
+    z "She got away. At least I hope so."
+    Dohkong "So you stayed behind to give her a chance to escape?"
+    z "..."
+    Dohkong "That's quite noble. Are you a royal guard?"
+    z "(She's just making casual conversation...)"
+    z "(I never thought I'd have such a normal conversation with a goblin...)"
+    z "(Maybe the princess had a point about them?)"
+    z "I can't very well reveal such information to the enemy, can I, Dohkong?"
+    Dohkong "Ahahah... So I'm your enemy? That's sad to hear."
+    z "You wouldn't say that the elves and the goblins are enemies?"
+    Dohkong "Sadly, the realistic answer is probably yes, they are enemies."
+    z "Sadly? The goblins are the ones who have been attacking and raiding the elven city!"
+    Dohkong "Did I attack or raid anyone? For the record I very much disagree with doing that."
+    Dohkong "Sadly... The pale goblin has been distant lately... Listening to her new advisor, who's been advising her to attack the elves every chance they get..."
+    Dohkong "But it's not really up to me. Is it up to you that the goblins born for workers inside the elven city are given potions to transform into elves?"
+    z "What?"
+    Dohkong "..."
+    Dohkong "I guess I can't expect you to know much about that? Doesn't affect you after all, does it?"
+    z "..."
+    Dohkong "..."
+    Dohkong "Hey... You do live in the elven city, don't you?"
+    z "..."
+    Dohkong "You don't? Where are you from then?"
+    Dohkong "What are you doing protecting the princess?"
+    z "I won't say."
+    Dohkong "..."
+    Dohkong "Fine, fine."
+    Dohkong "I don't know how you got to work for the elves. But look... They aren't the perfect pure creatures they claim to be."
+    Dohkong "I know we the goblins are sadly the last ones to talk. I know goblins all around the continent commit all kinds of ugly deeds."
+    Dohkong "But..."
+    Dohkong "The elven city... The land where it's built belonged to the goblins long ago."
+    Dohkong "It's been more than a century since they first elves drove the goblins out of those lands, of course..."
+    z "..."
+    Dohkong "I'm sorry... I know you suffered a bit of head trauma before you got here... The last thing you need is to be thinking about such a complicated coflict..."
+    Character("Helle") "Dohkong... I have a little stomachache... Can you get me something for that?"
+    Dohkong "Sure thing. Give me a minute."
+    z "..."
+    z "You're pregnant..."
+    Character("Helle") "Yes. I'll be giving birth in two or three weeks."
+    Character("Sye") "[mc_name]... Is it true you're a member of the royal guard?"
+    z "No..."
+    Character("Sye") "So were you lying when you said you were protecting the princess?"
+    z "Also, no... It's complicated..."
+    #Explains.
+    Character("Sye") "So they didn't get the princess?"
+    z "I can't be sure... But I don't think they did, no."
+    Character("Helle") "That's a relief..."
+    Character("Sye") "..."
+    Character("Sye") "So you were requested to guard the princess by the crowned prince himself, right?"
+    z "Yeah."
+    Character("Sye") "So you must be a very capable warrior."
+    z "I can handle myself."
+    Character("Sye") "I can fight as well. Helle too. We're both very good sorcerers."
+    Character("Sye") "Sadly the goblins have gotten very good at using magic sealing spells to stop us elves from using our superior magic."
+    Character("Sye") "But... If you can fight without magic until we manage to break the seals and aid you, we stand a chance of escaping this place."
+    z "..."
+    z "How do you break the seal?"
+    Character("Sye") "Isn't it obvious?"
+    z "..."
+    z "You kill the goblin who placed it..."
+    Character("Sye") "Yes. That's the safest option. But getting out the range of their seal spell would also work."
+    z "I see..."
+    z "It's quite risky, wouldn't you say?"
+    z "Your wife is pregnant here..."
+    Character("Helle") "I..."
+    Character("Helle") "We don't our child to be born and grow up in captivity, [mc_name]..."
+    Character("Helle") "I'd rather take the risk..."
+    z "..."
+    z "Alright..."
+    z "Let's plan this tomorrow..."
+    z "It's already too late to try to escape now... And we'll need some sleep if we're going to do something like this."
+    Character("Helle") "..." (multiple=2)
+    Character("Sye") "..." (multiple=2)
+    Character("Sye") "So be it."
+    #Z is sleeping.
+    Character("Helle") "AAAAAAH!"
+    z "?!"
+    Character("Helle") "Fuck! Sye! It's..."
+    Character("Helle") "The baby... It's coming..."
+    Character("Sye") "Gods... No, no, no... It's too early..."
+    Character("Sye") "What do I do, Helle?!"
+    Character("Helle") "I don't know... Fuck... Help me, Sye..."
+    Character("Helle") "[mc_name]... Help..."
+    z "..."
+    Character("Sye") "..."
+    Character("Sye") "Dohkong!"
+    Character("Sye") "Dohkong! Are you there?!"
+    Dohkong "Guys... What's with all th-"
+    Character("Sye") "Help! Please! It's Helle! She's..."
+    Dohkong "..."
+    Dohkong "Oh no..."
+    Character("Sye") "Please Dohkong... Help us..."
+    Dohkong "I..."
+    Character("Sye") "Can you deliver a baby?"
+    Dohkong "Goblin babies... Not elf babies..."
+    Character("Sye") "It's the same! We're not different from the goblins! Please!"
+    Dohkong "..."
+    Dohkong "I..."
+    Character("Sye") "Dohkong!"
+    Dohkong "Fuck! Okay!"
+    #Opens the door.
+    Dohkong "Okay, Helle... Calm down... Breathe slowly, okay?"
+    Dohkong "..."
+    Dohkong "It'll be okay... Don't worry..."
+    Character("Helle") "The baby... Is it-"
+    Dohkong "The baby will be okay... I just need you to push."
+    z "..."
+    Dohkong "Come on, Helle... You can do this..."
+    Character("Helle") "I can't... Ahhhhhhh! I..."
+    Dohkong "You got this! Go on!"
+    Character("Helle") "AHHHHH! AAAAHH!"
+    "{i}Baby crying.{/i}?"
+    z "..."
+    Dohkong "..." #Crying a bit.
+    Dohkong "Eheh..."
+    Dohkong "Ehehehe... Look! Helle! It's a boy! Look!"
+    Character("Helle") "..." #Takes the baby
+    Dohkong "Look! Sy-"
+    Character("Sye") "..." #Is gonna hit her on her head.
+    #Z blocks him but Dohkong still gets knocked out.
+    z "The fuck do you think you're doing?!"
+    Character("Sye") "The gate is open! She was distracted! Now is our chance to escape!"
+    z "..."
+    z "You almost killed her..."
+    z "She was only distracted because she was helping your wife deliver your fucking child."
+    Character("Sye") "Yes... But it was the only way."
+    Character("Sye") "She is the one holding the seals on our magic."
+    Character("Sye") "We had no hope of escaping while our magic was sealed."
+    z "I thought the goblins who placed the seal were holding our seals."
+    Character("Sye") "Of course, they'll transfer them to her. Otherwise we would be out of range for their seals the second they leave the dungeons."
+    Character("Sye") "It seems knocking her out did the trick though..." #Has magic.
+    Character("Sye") "Can you stand?" #Helps his wife get up.
+    Character("Sye") "We have to leave now."
+    z "..."
+    dohkong "..." #Wakes up.
+    #Sounds the alarm.	
+    Character("Sye") "?!"
+    Character("Sye") "Fuck! We have to leave."
+    Character("Sye") "Come on, Helle! We have to move quickly!"
+    Character("Helle") "I can't... My legs... They're too weak..."
+    z "..."
+    z "You two go. I'll hold them off."
+    z "It'll take them a while to get through me. Maybe it'll give the two of you a chance to escape."
+    Character("Sye") "..."
+    Character("Sye") "Thank you, [mc_name]. We won't forget this."
+    #They leave.
+    #Goblins enter the dungeon. Z is facing them.
+    #He's tied up and brought before the pale goblin.
+    #The minatours and his sister are behind her.
+    z "..."
+    z "You're the pale goblin?"
+    plgbln "..."
+    if succubus_incountered == 1:
+        nxi "Veka korak lo tek tem nok."
+    else:
+        Character("Succubus") "Veka korak lo tek tem nok."
+    z "?"
+    if succubus_incountered == 1:
+        z "Nixie?!"
+        nxi "Hello again, [mc_name]."
+        z "What are you doing here..."
+    else:
+        z "Who the fuck..."
+        Character("Succubus") "Hello, [mc_name]."
+        nxi "I am Nixie. A succubus at the service of lord Axius."
+        z "..."
+        z "So Axius is involved in this after all."
+    nxi "Lord Axius asked me to provide the goblins with counsel. That's all."
+    z "..."
+    plgbln "Vekat kor tek tem nok, var."
+    nxi "She says yes. That's what the elves call her."
+    z "Did you order that attack on the princess?"
+    nxi "Tek korak tok lo rak tek rak?"
+    plgbln "Var."
+    nxi "Yes."
+    z "..."
+    z "I'm assuming you knew we were coming because the information was leaked to you via the goblins working in the elven city, no?"
+    nxi "Korak tek morak vekat lorkak ar mora kora tek lo nokvat kor lo vekat tora, nar?"
+    plgbln "Lorat tokar vekat mora, korak."
+    nxi "She says the traitors brought us the information."
+    z "Traitors?"
+    plgbln "Lorat! Nokta vekat kor lo vekat tora!"
+    nxi "They have chosen to work for the enemy."
+    z "Thinking the elves are your enemies will bring you nowhere."
+    z "You must've also known from the goblins working in the city that the princess was trying to bring you peace."
+    z "She'd let you all in the city and name you citizens. How's that not a good thing? How's that not better than killing each other?!"
+    nxi "Veka korak tek vekat tora lora morat ar lora rakar vekat nokta lo lor vetor lo vekat tora."
+    nxi "Veka korak lo tek kora ar rakar vekta."
+    plgbln "Veka tek kor lora lo nar mor mora lor lorik ar lorek."
+    nxi "..."
+    z "What's she saying?"
+    nxi "She says you're a fool who doesn't understand loyalty or dignity."
+    plgbln "Nokvat lo vekat tora kor lo lorak lo kora rak lo kor lo vekat ar nar lora rakar."
+    nxi "She says the goblins in the city work at the bottom of the food chain in the jobs that the elves aren't willing to take."
+    plgbln "Nokvat nar korak lorak lo vekat lo tek lor."
+    nxi "The goblins and the elves will never be equal in their eyes."
+    z "..."
+    z "So... What exactly is your plan to fix that, pale goblin?"
+    nxi "Veka korak lo tek lork tek."
+    plgbln "Vek korak tokar veqat nokta! Korak lok tek!"
+    z "..."
+    z "What did she say?"
+    nxi "She says she'll kill all of them."
+    nxi "Look... I know you think that just because I work for lord Axius, I must be evil."
+    nxi "And I will admit... I have done plenty evil."
+    nxi "But the goblins are the ones being oppressed."
+    nxi "Even if the princess follows through with her promise to make the goblins citizens in the elven city. The goblins will always remain worth less than elves."
+    nxi "Look at how the goblins are treated in the city. They only get the dirty and dangerous jobs that no elf wants to take."
+    nxi "And believe me... I'm doing my best to avoid an all out war that wipes out the goblins or the elves..."
+    "Nar korik vekat lorik lo tek! Rakar tek lo korak tora!"
+    z "..."
+    #The goblins start dragging him away.
+    z "What are they doing?"
+    nxi "They're taking you to another dungeon."
+    z "..."
+    nxi "..." #Maintains eye contact while he's dragged away.
+
+#21) Dungeon visit:	
+    #Z is put in another cell where he's suspended from all his limbs.
+    z "..."
+    z "(Fuck...)"
+    z "(I can't use magic...)"
+    z "(I don't think there's a way for me to escape...)"
+    z "Hello!"
+    z "Anyone there?!"
+    z "..."
+    z "(Am I just going to starve to death here...)"
+    #Puts his head down.
+    #Sound.
+    z "?"
+    #The door opens.
+    nxi "How is it hanging?"
+    z "Very funny..."
+    nxi "I talked to the pale goblin. She'll have you transfered to the other dungeon you were in next week."
+    nxi "She said she wants to keep you here for a bit as punishment for trying to escape."
+    nxi "She orignially wanted to keep you here forever."
+    nxi "I'll talk to her again tomorrow to have you out of here sooner."
+    z "..."
+    z "Why would you help me exactly?"
+    nxi "You're an incubus. You think I'll let one of the few survivors of my race rot in a goblin dungeon in the middle of nowhere?"
+    z "..."
+    z "What exactly are you trying to do here, Nixie?"
+    nxi "Help the goblins beat the elves."
+    z "Why?"
+    nxi "Lord Axius's orders for one."
+    nxi "But..."
+    nxi "The goblins are not really very different from us succubi and incubi, are they?"
+    z "..."
+    nxi "You and I don't need to be enemies, [mc_name]..."
+    nxi "I've heard quite a bit about you, you know."
+    nxi "If what I've heard is true... I wouldn't even know how to kill you."
+    nxi "And I don't think I want to kill you, [mc_name]."
+    nxi "What I want... Most of all, is for us to be allies."
+    z "..."
+    nxi "You know..."
+    nxi "Irena seems to really like you."
+    nxi "She hides it underneath all that bad girl attitude, but I know Irena too well for any of that to fool me."
+    nxi "Aside from lord Axius, the three of us might as well be all that remains of our race, [mc_name]."
+    nxi "Should we really kill each other off?"
+    z "..."
+    z "Why are you saying all of that exactly?"
+    z "You speak of us being allies and yet here I am hanging from all my limbs."
+    nxi "I'd think if you wanted to talk to me while you don't trust me yet, you might do the same."
+    nxi "Espicially if I were strong enough to kill you without breaking a sweat."
+    z "..."
+    pause(1)
+    menu:
+        "Tell her you're not going to kill her.":
+            z "..."
+            z "I'm not going to kill you, Nixie."
+            nxi "..."
+            $ nxi_trst += 2
+            nxi "How can I trust anything you say, [mc_name]?"
+            nxi "I would love to trust you, I promise..."
+        "Don't promise anything.":
+            z "..."
+            nxi "Yeah... I thought as much..."
+    nxi "Look..."
+    nxi "The goblins have a lot in common with us..."
+    nxi "They also suffered a great injustice at the hands of these elves."
+    z "Does that justify killing innocent elves?"
+    nxi "Does it matter if it justifies it?"
+    nxi "That's the only way they can hurt the elves, isn't it?"
+    nxi "I'm pretty sure that's all the goblins care about."
+    nxi "Plus, do you actually think in a war of a goblin army against the elven army the goblins stood a chance until now?"
+    z "Until now?"
+    nxi "..."
+    z "Wait..."
+    z "You don't mean..."
+    z "You want my help?"
+    nxi "I don't want it..."
+    nxi "I need it."
+    nxi "A minotaur and a demi-god fighting with the goblins, and we might start looking like a winning side."
+    nxi "The elves haven't had a war in centuries."
+    nxi "Their warriors are not seasoned. Their army is not disciplined. Not a single elven soldier today has been withen a mile of a battle."
+    nxi "The pale goblin has been pushing for an all out attack for weeks now."
+    nxi "I've convinced her to wait for the right time. And she's listening for now, but not for long."
+    nxi "I told you. I don't want to massacre any of the two sides. But if we can overwhelm them quickly enough, the death toll will be minimised."
+    z "You're going to attack them..."
+    nxi "Eventually, yes. With or without you, I'm afraid."
+    z "So if I say no to joining you, you-"
+    nxi "I told you. I don't want to kill you."
+    nxi "I'll just keep you here. If you'd help the elves, that's a problem for us."
+    z "My friends are still in the elven city."
+    nxi "..."
+    nxi "I trust you know I can't do anything about that... If I send them a warning, the elves will know we're comming. And surprise on our side is something we can't throw away."
+    z "..."
+    nxi "I'll let you sleep on it."
+    nxi "I want an answer from you soon, [mc_name]."
+    z "..."
+
+#22) Dohkong visit:	
+    #Z dreams of being chained up like he is but in black void.
+    #He is also naked.
+    #A figure is approaching him.
+    z "..."
+    z "Who's there?"
+    z "..."
+    z "Athena?"
+    #It's auge.
+    z "Who..."
+    z "..."
+    z "I've seen you before..."
+    z "In my dreams..."
+    z "Who are you?"
+    Character("????") "..."
+    z "Are you a sleep nymph? Are you the one influencing my dreams?"
+    Character("????") "..."
+    z "..."
+    z "Have you come to just stare at me naked?"
+    z "Wel-"
+    Character("????") "Tsk. Tsk. Tsk..."
+    Character("????") "Quite good at putting yourself is situations like these, aren't you..."
+    #Gets really close to him.
+    Character("????") "You have lots to do for me..."
+    Character("????") "I can't have you rotting away in a place like this..."
+    Character("????") "Wouldn't you agree?"
+    #It's Seria behind her.
+    z "Seira?"
+    s "[mc_name]..."
+    #Z wakes up.
+    #It's morning.
+    Dohkong "..." #She's bringing him food.
+    z "..."
+    z "Dohkong..."
+    z "Are you okay?"
+    Dohkong "Yeah... It could've been much worse..."
+    Dohkong "He would've killed me..."
+    Dohkong "..."
+    Dohkong "You stopped him didn't you?"
+    z "Yeah..."
+    Dohkong "Why?"
+    Dohkong "Your chances of escaping would've been better if you let him finish the job."
+    z "I'm not a murderer Dohkong."
+    Dohkong "Even if it meant you being instead of running free?"
+    z "You guys can't hold me forever."
+    Dohkong "..."
+    Dohkong "I had hoped that Herra and Sye would've come to see me as a friend..."
+    z "..."
+    z "I'm sorry..."
+    Dohkong "Say..."
+    Dohkong "When we first met you said we were enemies you and me, didn't you?"
+    Dohkong "Is there anything I can do to make you change your mind?"
+    z "..."
+    z "I..."
+    z "I don't think that you and I are enemies, Dohkong..."
+    z "I was assigned to protect the princess from the goblins who almost killed her. So the goblins were my enemies."
+    z "But I have nothing against you personally."
+    z "I actually like you. That's why I saved your life, remember?"
+    Dohkong "..."
+    Dohkong "I see..."
+    Dohkong "..."
+    Dohkong "My instructions were to only free one of your hands to you can eat and only after leaving your cell."
+    Dohkong "..."
+    Dohkong "But..."
+    #Frees all his limbs.
+    z "..."
+    Dohkong "I can't let the man who saved my life struggle through eating his breakfast, can I?"
+    z "Thanks..."
+    #Sits down and eats.
+    Dohkong "I'm sorry... I know we don't cook great food..."
+    z "No, no. Don't worry about it... I've had worse..."
+    z "What am I eating exactly?"
+    Dohkong "How do you call that creature in your language..."
+    Dohkong "..."
+    Dohkong "Skeever! That's it!"
+    Dohkong "It's skeever stew basically..."
+    z "..." #Stops eating.
+    #Puts the bowl down.
+    z "I see..."
+    Dohkong "So will you tell me now what you're doing here?"
+    Dohkong "Nixie said you're a ninja. Is it true?"
+    z "Yeah."
+    Dohkong "Why would you protect the princess?"
+    z "I guess there's no point in not telling you... Nixie probably knows everything anyway."
+    z "I was hired to protect her on her birth week."
+    Dohkong "Why? Doesn't she have the royal guard for that?"
+    z "The princess asked for us instead of the royal guard because she wanted to go against her father's wishes by bringing a peace agreement to the goblins."
+    z "And the royal guard would've reported her plan to the crowned prince."
+    Dohkong "Oh..."
+    Dohkong "She really wanted to make us citizens?"
+    z "Yeah..."
+    Dohkong "I see..."
+    z "Would you like that?"
+    Dohkong "..."
+    Dohkong "I don't..."
+    Dohkong "No... I don't think so..."
+    z "How come?"
+    Dohkong "I actually do like it here..."
+    Dohkong "And I don't honestly think we'll ever be treated equally in there..."
+    Dohkong "I've lived in the city for years... I know the way elves look at me every time I walk around in their streets..."
+    z "..."
+    z "I see..."
+    Dohkong "But I guess there are also elves like you..."
+    Dohkong "And like Illya..."
+    z "..."
+    z "I'm not actually an elf, Dohkong."
+    Dohkong "..."
+    Dohkong "Eh?!"
+    z "I'm an incubus."
+    z "Same as Nixie. But, well... Male."
+    Dohkong "..."
+    Dohkong "Do you ever have a hard time because of it?"
+    Dohkong "Being who you are?"
+    z "Well, maybe a bit..."
+    z "There was this one woman in the ninja village who was wary of me for a while."
+    z "Ultimately though, she warmed up to me, I guess."
+    Dohkong "..."
+    Dohkong "Do you think that would happen if the princess's plan succeeds?"
+    z "Maybe..."
+    z "I can't say for sure..."
+    Dohkong "..."
+
+#23) Big woman visit:
+    #Skip to him sleeping with no chains cuz Dohkong doesn't chain him anymore.
+    #Woken up by the Big woman.
+    z "?!"
+    Character("Big woman") "No chains, huh..."
+    Character("Minatour") "Dohkong is such a soft little girl."
+    z "..."
+    z "What do you want?"
+    Character("Big woman") "You didn't get any brain damage from my punch, I hope?"
+    z "Not that I've noticed."
+    Character("Big woman") "You were too strong for me to hold back. I didn't think anything less than my full strength would knock you out."
+    z "..."
+    Character("Big woman") "So... No hard feeling?" #Wants to shake his hand.
+    z "..."
+    pause(1)
+    menu:
+        "Shake her hand.":
+            z "..."
+            Character("Big woman") "That's a good grip you have..."
+        "Refuse.":
+            Character("Big woman") "You're the serious type, I can tell..."
+            Character("Big woman") "Fine..." #Takes her hand back.
+    Character("Big woman") "It's been while since I've faced a man who could stand his ground againts me, kid."
+    Character("Big woman") "You don't look all that big maybe, but you know how to fight, huh..."
+    z "I was taught by the best."
+    Character("Big woman") "I see..."
+    z "The minatour doesn't seem as talkative as you..."
+    z "For some reason you have a similar vibe to him..."
+    z "So what exactly are you? Just naturally big? Or are you something else?"
+    Character("Big woman") "..."
+    Character("Big woman") "He's my little brother."
+    z "..."
+    Character("Big woman") "Half brother."
+    Character("Big woman") "Guess it's true what they say that the womb remembers."
+    Character("Big woman") "You inherit even a thing or two even from your parents previous partners."
+    z "Your father wasn't a minatour? Is that what you're saying?"
+    Character("Big woman") "Nah."
+    Character("Big woman") "Just a lad from where my mother lived. Sold bread on a wagon."
+    Character("Big woman") "Died a week after I was born. Plague took him, according to my mom at least..."
+    Character("Big woman") "But he wasn't big."
+    Character("Big woman") "I got that from my brother somehow. Or his father, I guess..."
+    z "Your brother's father, huh..."
+    z "He was-"
+    Character("Big woman") "A minatour. Yup."
+    z "..."
+    z "(I guess Anabelle and Yumi also somehow inherited their sun powers from Helios somehow, even though he wasn't their father...)"
+    z "..."
+    z "What's your name?"
+    jillia "Jillia."
+    z "I'm-"
+    jillia "We all know exactly who you are, [mc_name]..."
+    z "..."
+    z "And your brother... He..."
+    jillia "He was too weak at birth... My mother took him to the market and wanted to sell him as meat."
+    jillia "Then came a winged big man with two horns."
+    z "..."
+    z "Axius?"
+    jillia "Aye."
+    jillia "He offered to buy him."
+    jillia "Alive."
+    jillia "Took him away as I watched behind my mother's leg."
+    jillia "Then he stopped. Turned around and looked me right in the eye."
+    jillia "Then said he'd buy me for twice what he paid for my brother."
+    jillia "I didn't even think my mother would consider it."
+    jillia "Then she asked for three times as much."
+    jillia "He nodded."
+    z "..."
+    jillia "He shot my brother with half a dozen potions."
+    jillia "So he turned to what he is now."
+    jillia "But he lived."
+    jillia "Can't speak though. And as sharp as a butter knife, he is."
+    z "..."
+    z "So you are a slave?"
+    jillia "You can call it that..."
+    jillia "But if I had to a say in it, I'd still choose lord Axius."
+    z "Why?"
+    jillia "Because I have a place to belong to."
+    jillia "It's home."
+    jillia "I wouldn't want to be a stray."
+    jillia "And my brother wouldn't survive without his potions."
+    jillia "We need Axius more than he needs us."
+    z "..."
+    jillia "And you?"
+    jillia "Why did you choose to fight for the ninja village?"
+    jillia "Do you agree with every choice they make?"
+    jillia "Do you have a say in what they do and when and why they do it?"
+    jillia "Or are you there just because it's home?"
+    z "..."
+    jillia "Did they cut your tongue out, boy?"
+    z "I..."
+    jillia "You?" #Gets closer.
+    jillia "Speak up, boy!" #Gets very close.
+    z "I wouldn't..."
+    jillia "Do you need to whisper it in my ear like lovers?" #Gets close enough for him to whisper.
+    z "I wouldn't move closer to my prisoner so carelessly if I were you."
+    #Trips her over and gets on top of her.
+    jillia "?!"
+    jillia "You..."
+    #Chain locks.
+    jillia "..." #notices her hand has been chained to the wall.
+    jillia "Ughhhh!" #Pulls the chain really hard.
+    z "You won't be able to br-" #He's next to the door.
+    #Breaks it.
+    z "?!"
+    z "What the..."
+    jillia "That was a close one..."
+    jillia "To think you were able to push me down like that..."
+    #Walks up to him. The door is within her reach.
+    z "..."
+    z "(Fuck... She just broke that chain like it was nothing... There's no way I can beat her...)"
+    #Closes the door.
+    #Throws the key outside of the dungeon.
+    z "?!"
+    jillia "{i}Heavily breathing.{/i}"
+    z "..."
+    z "(Is she...)"
+    #Looks horny af.
+    z "(Fuck me...)"
+    z "You..."
+    #Strips.
+    #Choice to have sex with her or turn her down.
+    #I'm here W <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
+#24) Seira breaks Z out:
+    #&&&&&&&&MORE DETAILS&&&&&&&&&&&&
+    #Seira who saw Z imprisoned in the dream rushes to save him.
+    #Seira leads the others to be able to free Zycris.
+
+    #In the battle, Vollstahl and the soceress desert and are not there to protect the king.
+    #If Z sides with the goblins, the princess and some other elves seek refuge in the western elf village.
+
+#25) Either confront Pale goblin or Crowned prince depending on Z's choice.
+    #If confronts crowned prince, Vollstahl and the sorceress are noticibly nowhere to be found.
+
+#26) Gabbie gets kidnapped:
+    #Gabbie and Venus are gathering ingerdients from the woods nearby.
+    gbrla "Why not?"
+    vns "Well, Seira literally trained him, didn't she?"
+    vns "He's a quick learner, granted. But Seira has years of experience."
+    gbrla "But he's a demi-god."
+    vns "So is Seira."
+    gbrla "But..."
+    gbrla "Seira lost againts the other demi-god... Anabelle's brother."
+    vns "Sirius?"
+    vns "Everyone loses against Sirius, Gabbie."
+    vns "And [mc_name] lost against him too, didn't he?"
+    gbrla "Well, yes... But the fight lasted longer..."
+    gbrla "And he got injured."
+    vns "Not really enough to put [mc_name] above Seira."
+    vns "Every fight has its circumstances. Every fighter is more likely to win or lose against a certain type of fighting too."
+    vns "If I beat an opponent whom you lost against, that doesn't always mean that I'm stronger than you."
+    gbrla "..."
+    gbrla "Is that how it works."
+    vns "Yep."
+    #Zoom in to Venus.
+    vns "We need some mountain dale too, don't we?"
+    #Turns away from gabbie.
+    #Sound.
+    vns "?!"
+    vns "Gabbi-"
+    #Nari is carrying uncontious gabbie.
+    vns "What the-"
+    #Charges with lightning.
+    #Nari seems worried.
+    #Alura touches her head from behind.
+    alura "Sleep."
+    vns "..."
+    #Falls on the floor.
+    nari "That's not the Keres, is it?"
+    alura "Nope. Both have white-ish hair, but that's not her."
+    alura "Why do you ask?"
+    nari "For a second there, she felt quite dangerous..."
+    nari "..."
+    nari "It seems we underestimated them."
+    alura "..."
+    nari "..." #Looks at alura.
+    nari "Let's go."
+    #Nari and Alura take gabbie and leave unconscious venus there.	
+
+#NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES
+
+
+    #They specifically asked for Z after hearing about his exploits.
+    #They also ask for Centoria.
+    #Yumi, Zycris, and Centoria are sent.
+
+    #The Celebration with for the princess's birthday include several tournoments in which Z competes.
+    #When they get to the elf village, the tournoments have already begun.
+    #In the fencing tourny (no magic is allowed) Z is asked to compete by the princess.
+    #Vollstahl, the king's personal gaurd, wins againts Z. Vollstahl is a short man, who always wears an full armour and a helmet covering all of his body. (He's actually a goblin who betrays the elves later on and joins axius).
+    #The winner is decided by who stops just before hitting their opponent. Vollstahl is very respectful towards Z after winning.
+    #Before beating Z Vollstahl totally destroys Yumi.
+    #More games where the princess competes with Z giving them more time to build a friendship.	
+    #Many goblins work in the elf city in low paying jobs that the elves wouldn't do.
+    #Elves have strong magic that they always use.
+
+    #When Z leaves the city, he sees goblins going in at the gates having their work permits checked.
+    #Z's party is ambushed by a bunch of goblins and two minatours, the two goblins are shockingly killed immediately. He manages to draw the goblins away from the princess and tells them to run back to the city. Z is captured though using magic sealing spells by the goblins.
+
+    #In the dungeon, he meets elves being improsined there (one woman is pregnant with her husband).
+    #The pregnant elf tells Z she's about to give birth and she doesn't want her child to grow up in captivity.
+    #The guard (a goblin) is nice to the prisoners. Z is surprised she speaks his language. She says her parents worked for years in the elf city.
+    #Z takes the chance to talk to her, she tells him the place where the elves built their city belonged to the goblins.
+    #They were driven away according to her and many of them died while fighting the elves. Z tells her it's still not right to attack the elves killing innocents. She says she didn't make that decision.
+    #She says the pale goblin has a new advisor who advised him to do the attacks.
+    #Z wakes up to the elf woman giving birth. She begs the gaurd to help her deliver the baby. The gaurd hesitantly accepts. The gaurd helps her, the husband tries to kill the gaurd while she's occupied with the birth.
+    #Z stops him but the gaurd is knocked out.
+    #Z asks him wtf he just tried to do, the husband says they have to escape and it was the only way.
+    #The guard wakes up and sounds the alarm. They are surrouned by goblins with no magic, Z fights off the goblins with his bare hands while the others escape.
+
+    #Z is taken directly before the pale goblin. On his side is Nixie.
+    #The minatour from chapter 3 and a new minatour woman is also there.
+    #Z notices the old minatour.
+    #Nixie translates for him.
+    #Nixie tells him that even though she works for axius and she does plenty of evil. The goblins are in the right here.
+    #Z tells the pale goblin that many goblins work in the elven city and have good jobs.
+    #The pale goblin calls them traitors. And says they only get the jobs that are at the foot of the economy anyway.
+    #Z the pale goblin what his plan is. The pale goblin tells him he'll kill all the elves.
+
+    #&&&&&&&&MORE DETAILS&&&&&&&&&&&&
+    #Nixie visits asking him what he plans to do now.
+    #She says she doesn't trust him yet, so that's why she can't risk him escaping to use his magic.
+    #She says she knows from the others that she can't kill him normally cuz he'll regenerate. And she says she doesn't want to kill him.
+
+#Dev log:
+#We'll be meeting some new characters that will probably stick with us for a while. The conflict between the now more powerful Axius & the ninja village will start to to spark.
