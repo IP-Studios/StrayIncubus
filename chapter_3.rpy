@@ -224,7 +224,7 @@ label season2_chapter_3:
     #After the meeting, Axius is sitting infront of a chess board.
     #He's contacted by athena using an orb.
     athna "I hear you have been busy..."
-    athna "A dozen villages abandoned. Three burnt the ground."
+    athna "A dozen villages abandoned. Three burnt to the ground."
     athna "What is the meaning of this, incubus?"
     axs "You told me the ninja villages were our enemies, didn't you?"
     athna "What of it?"
