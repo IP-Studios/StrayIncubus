@@ -142,7 +142,7 @@ label season2_chapter_3:
             z "I made a deal with her..."
             z "Athena."
             z "I made her spare a boy's life in exchange for me not interfering with her curse over the town."
-            z "So even though this one person had been spared, the rest of them will still suffer."
+            z "So even though this one person has been spared, the rest of them will still suffer."
             z "I had a choice between walking away and trying to fight Athena."
             z "And she had a fury there too..."
             z "Venus was there too... She asked me to back off from the fight."
@@ -177,9 +177,9 @@ label season2_chapter_3:
         #Skip to him sleeping on his own in the darkness.
 
 #3) Meeting: 	
-    #-If fought athena, all the ninja celebrate Z's coming back asking about his fight with her. Helena is caught evesdroping on them looking conflicted (she believes that they actually have a chance against athena and is now willing to defy her.)
+    #-If fought athena, all the ninja celebrate Z's coming back asking about his fight with her. Helena is caught eavesdropping on them looking conflicted (she believes that they actually have a chance against athena and is now willing to defy her.)
     #-If didn't fight athena, Helena may not defy athena later on.
-    #Stephanie's mission returns with no casualities. She's frustrated saying they just let them go.
+    #Stephanie's mission returns with no casualties. She's frustrated saying they just let them go.
     #Anabelle reports that several cities have been abandoned after being attacked by bandits.	
 
     stfny "We were totally helpless... I couldn't even lay a finger on him."
@@ -276,7 +276,7 @@ label season2_chapter_3:
     z "..."
     z "Are you maybe here to issue a mission?"
     jnfr "I guess you can say that, yeah..."
-    jnfr "But I also wanted to help, and Helena told me I should join up if I want to help so I did. She said I could still leave any time I want, but I don't see that heppening any time soon..."
+    jnfr "But I also wanted to help, and Helena told me I should join up if I want to help so I did. She said I could still leave any time I want, but I don't see that happening any time soon..."
     z "What's-"
     tmra "Apparently, her betrothed has been trading with bandits and he doesn't feel safe trading with them anymore."
     tmra "And he thinks if they learn he cut ties with them, they might try to kill him or something."
@@ -435,7 +435,7 @@ label season2_chapter_3:
     z "Goblins?"
     tr "Yeah."
     tr "Like eight... No, nine of them."
-    z "They decided to raid the village on thier own?"
+    z "They decided to raid the village on their own?"
     tr "Well, not raid... More like kidnap women who they catch alone in the woods nearby."
     z "I see..."
     z "There were some goblins venturing all the way north when I joined the ninja village..."
@@ -444,12 +444,12 @@ label season2_chapter_3:
     a "No. It's not." #It's annie and yumi with the cat.
     z "Oh hey, guys! How long have you been standing there."
     #Yumi and the cat sit next to torr who doesn't look happy about the cat.
-    a "Goblins hardly venture into human territory. But we've been recieving several reports about them doing so in the last couple of days."
+    a "Goblins hardly venture into human territory. But we've been receiving several reports about them doing so in the last couple of days."
     z "..."
     z "What could that mean?"
     a "I'm not sure... But something is up..."
     a "Increased bandit activity is also being reported and we're being flooded with missions."
-    a "Aren't goblins tepically found near elf villages?"
+    a "Aren't goblins typically found near elf villages?"
     tr "Yeah. We have a goblin village close to us."
     cnt "Us too. There has been a conflict between my city and the nearby goblins for decades now."
     a "..."
@@ -462,12 +462,12 @@ label season2_chapter_3:
     #Skip to yumi, centoria and z being briefed by helena.
     z "They asked for me?"
     hlna "Personally, yes."
-    hlna "For Centoria too of course. And another high ranking ninja. As they said it's of the highest importance to them."
+    hlna "For Centoria too of course. And another high ranking ninja. As they said, it's of the highest importance to them."
     hlna "So I picked Yumi as she and Hailey are the least injured of the higher ranking ninjas. And I need Hailey for another mission."
     z "I understand Centoria and a high ranking ninja but why me?"
     hlna "Well, you've apparently become something of a celebrity around the continent."
     hlna "The demi-god ninja."
-    hlna "Of course, the title did not orignially belong to you. It's an old title that people have been hearing for years. That's probably why it took off again so quickly."
+    hlna "Of course, the title did not originally belong to you. It's an old title that people have been hearing for years. That's probably why it took off again so quickly."
     z "An old title?"
     ymi "My brother. That's what people used to call him. He was the first demi-god ninja."
     z "Sirius?"
@@ -480,16 +480,16 @@ label season2_chapter_3:
     z "I see..."
     z "That does sound dangerous..."
     z "Wait, did you say birth week?"
-    cnt "It's elven tradition to celebrate not the day on which you were born, but the whole week."
+    cnt "It's an elven tradition to celebrate not the day on which you were born, but the whole week."
     z "I see..."
-    cnt "Oh, and this is a major even, since the princess will turn twenty. It means she..."
+    cnt "Oh, and this is a major event, since the princess will turn twenty. It means she..."
     z "Hm?"
     cnt "It means she can make a major change to the elven way of life."
     cnt "It's supposed to teach her responsibility. She's expected to one day rule the city, after all."
     z "Hmmm..."
     hlna "Normally, seeing how many other missions we have, I'd not prioritise a mission like this."
     hlna "However, our alliance with the elves is paramount. I'll have to humour them on this."
-    hlna "You'll leave tomorrow at dawn. The mission leader will be Yumi. The objective is simple; protect the princess at all cost."
+    hlna "You'll leave tomorrow at dawn. The mission leader will be Yumi. The objective is simple; protect the princess at all costs."
     hlna "But... I would still try to limit the loss of goblin lives as much as I could."
     z "Yeah... Understood."
     hlna "We'll discuss your points from both missions after you return."
@@ -597,7 +597,7 @@ label season2_chapter_3:
     z "Honestly, you're totally right."
     z "We absolutely can't do this again... Any of it..."
     a "Oh, I'm so glad you understand... You are really mature, you know..."
-    a "And I just didn't want things to be awekward between us. I really think of you as my little brother and I didn't want to lose that, you know?"
+    a "And I just didn't want things to be awkward between us. I really think of you as my little brother and I didn't want to lose that, you know?"
     z "Of course. I didn't want to lose what we have either."
     z "And I have a huge amount of respect for you, Annie. I really think of you as my older sister."
     a "Ohhh... Thanks..."
@@ -635,8 +635,107 @@ label season2_chapter_3:
     z "(So much for it not being awkward...)"
 
 #8) Alchemist's hut:
-    #Going to his room.
-    #Scene with Margot and Gabbie.
+    #Z walking towards his room
+    z "(Whistling)..."
+    #Gabbie peeks out and grabs z - yeets him into alchemists hut
+    gbrla "Heyy [mc_name]... You got a minute for us?"
+    z "Uhhh, sure Gab, what can I help you with?"
+    gbrla "Well, Margot had an experiment that she wanted to test, and thought it might be easier if we got you to help us with it."
+    #Margot says the below suddenly appearing behind Z and purring in his ear
+    margot "Please [mc_name], won't you help us poor scientists with a little experiment?"
+    #Z jumps
+    z "AHH"
+    z "Margot... Hey..."
+    menu:
+        "Sure, I'll help. What do you need me to do?":
+            #margot and gabbie take their shirts off
+            gbrla "..." (Multiple=2)
+            margot "Oh you already know, stallion" (Multiple=2)
+            #scene starts - gab + margot on knees - one each side of z dick - licking
+            margot "Oh Gods I forgot how big you are..."
+            margot "Are you certain I can't experiment on you? I promise it won't hurt too much."
+            z "Yeah that's still not happening Margot. Get back to where you belong."
+            margot "Yes sir. Anything for this cock."
+            z "Gab? How you doing down there?"
+            gbrla "Mhhhhh I'm in love"
+            z "Glad to hear it. I think I might be too if you continue with this."
+            #z pushes m to the ground and grabs g and pushes her down on top of m's face
+            margot "Hmmmnnn..."
+            margot "This is exactly how I see our experiments going, [mc_name]"
+            z "I already told you, that's not going to happen. Let's see if you can put your mouth to better use, Gabbie, sit down."
+            gbrla "On her face? Are you sure?"
+            z "Yes I'm sure, sit down Gab."
+            gbrla "Oh, o-okay. Sorry Margot"
+            #g sits down on ms face
+            margot "Mmmmfff Hmmmmmmm"
+            gbrla "AHHHMMMM Oh my Gods she's moving her tongue so much. I-It's so go-"
+            #z kisses gabbie
+            $ gbrla_lst+=2
+            margot "MMMNFFF HMMMMNNNN-"
+            z "Gabbie get up and get on all fours."
+            #gabbie gets on all fours - dripping
+            z "How was that psycho? Good enough for you?"
+            #margot slightly quivering for line below
+            margot "Oh my- You're gon- gonna have to give me a-a couple of minutes. I don't think, haa- I don't think I've ever cum that hard before."
+            z "Good to hear. You ready Gabbie?"
+            gbrla "Please. [mc_name]. Please fuck me. I'm begging you."
+            z "You asked for it."
+            #slides his dick in completely in one go
+            z "Ohhhh shit that's tight."
+            gbrla "HAAAA-"
+            gbrla "I"
+            gbrla "LOVE"
+            gbrla "YOUR"
+            gbrla "COCK"
+            gbrla "HMMMMNN"
+            gbrla "Oh Gods I'm gonna CUUUU-"
+            $ gbrla_lst+=2
+            #z keeps going
+            gbrla "Wait! [mc_name]! Please!"
+            z "That's not gonna happen Gabs. You feel so fucking good."
+            z "Margot, get in front of Gabbie. Legs spread."
+            #margot crawls over and spreads her legs in front of gabbie
+            z "Gabbie, put your mouth to good use and help Margot out."
+            gbrla "Haaa... Hmmnn"
+            #z pushes gab head down into margots pussy - gab starts eating her out
+            margot "OH YES!"
+            gbrla "Hmmmnnn MMMMFffff"
+            margot "I think she's going to cum again, [mc_name]. She's licking so hard and breathing so heavily."
+            margot "HMMMMmNnn"
+            z "She's not the only one. Holy fuck"
+            margot "Where are you gonna finish stallion? Inside sweet Gabbie? Inside little old me? Or maybe you want to paint both of us?"
+            menu:
+                "Cum inside Gabbie":
+                    z "Gods Gabbie I'm cumming"
+                    #fills her up
+                    gbrla "HMMMMMNNNN"
+                    margot "AHHHHHHH"
+                    #margot crawls round to mc
+                    margot "Holy shit Gabbie he filled you to the brim."
+                    gbrla "mmmnnnn ha-"
+                    $ gbrla_lst+=2
+                "Cum inside Margot":
+                    z "Shit I'm gonna cum. Margot get over here!"
+                    #margot moves out from under gabbie - z inserts himself and fills her up
+                    margot "AHHHHHH"
+                    margot "Holy shit there's so much."
+                    #she grabs some that is leaking out and eats it
+                    margot "And it tastes amazing, Gods."
+                "Cover them both":
+                    z "Get on your knees both of you"
+                    #gab and margot kneel before z and start kissing his tip
+                    #z cums on their faces
+                    z "Holy shit that was amazing. You are both... Amazing"
+                    $ gbrla_lst+=2
+                    $ gbrla_aff+=2
+            margot "Thank you for that stud. Hope we can do this again soon."
+            gbrla "Haaaa... Cock... So good..."
+            z "You know, for once Margot, I agree with you."
+        "I'm kinda busy right now, sorry guys.":
+            $ dummy+=1
+            margot "Really? Ok I guess we'll see you another time."
+            gbrla "Bye [mc_name]"
+
 
 #9) Scene with Jenny:
     #Helena is showing Jenny and Jamie the bath.
@@ -647,7 +746,7 @@ label season2_chapter_3:
     hlna "Oh, Hey there, [mc_name]."
     hlna "I was showing Jenny and her betrothed around."
     z "Wouldn't that have been more convenient during the day?"
-    hlna "Yeah. But I had lots to attend to earlier. And I didn't have anyone available to do it. So I though why not do it myself."
+    hlna "Yeah. But I had lots to attend to earlier. And I didn't have anyone available to do it. So I thought why not do it myself."
     hlna "And I had nothing else to do for the rest of the evening..."
     z "I see..."
     jnfr "You guys have such a wonderful place here..."
@@ -655,7 +754,7 @@ label season2_chapter_3:
     jamie "Aww..." #Jenny hits him.
     jnfr "He's just in shock after everything that happened."
     z "..."
-    z "What did happen?"
+    z "What happened?"
     jnfr "..." #Looking at jamie
     jamie "I..."
     jamie "I was just dealing with the wrong people... And I was too deep in it..."
@@ -669,7 +768,7 @@ label season2_chapter_3:
             jamie "..."
             z "So? What do you say? Shall we?"
             jamie "I suppose why not."
-            jnfr "Hold on... I'm not going in to be the only girl with two guys..." #Sus.
+            jnfr "Hold on... I'm not going to be the only girl with two guys..." #Sus.
             z "Then Helena why don't you join us?"
             hlna "Eh?"
             z "You said you had nothing to do, right?"
@@ -689,7 +788,7 @@ label season2_chapter_3:
             jnfr "Pssst."
             z "?"
             #Hands him cards.
-            z "What's this."
+            z "What's this?"
             jnfr "Something to spice things up."
             z "..."
             #Looks at them.
@@ -728,7 +827,7 @@ label season2_chapter_3:
             jnfr "You draw a card..."
             jnfr "You read whatever is written on it."
             jnfr "For example this card says: Slap a player from the opposing team on any part on the body you want."
-            jnfr "Well... I'm supposed to do what's on the card and slap on of you guys. But I don't want to."
+            jnfr "Well... I'm supposed to do what's on the card and slap one of you guys. But I don't want to."
             jnfr "So... If I don't do what's written I have to drink."
             #drinks.
             jnfr "And... Well, once someone can't drink any more... They're out. They lose, basically."
@@ -850,7 +949,7 @@ label season2_chapter_3:
             z "Guess we have to drink, Helena."
             hlna "..."
             z "Okay, let's see."
-            z "Slap a player from the opposing team on any part on the body you want."
+            z "Slap a player from the opposing team on any part of the body you want."
             z "Oh, same card as the one we started with."
             jnfr "I guess some of them have replicas."
             z "Hmmm..."
@@ -891,7 +990,7 @@ label season2_chapter_3:
             hlna "Oh..."
             jnfr "You can drink instead if you're not comfortable with it..."
             hlna "Hmmm..."
-            hlna "No I'm okay... I've had plenty to drink already. I don't want to lose to early."
+            hlna "No I'm okay... I've had plenty to drink already. I don't want to lose too early."
             #Takes off her bra.
             jnfr "..."
             z "(Interesting...)"
@@ -904,7 +1003,7 @@ label season2_chapter_3:
             #Kneels.
             z "Helena?"
             #Grabs his hand.
-            #Sucks on his thumb secudtively.
+            #Sucks on his thumb seductively.
             $ hlna_lst += 1
             hlna "..." #Gets up.
             hlna "{i}Clears her throat.{/i} Who's next?"
@@ -917,9 +1016,9 @@ label season2_chapter_3:
             #Takes off her top.
             jnfr "I'm not losing."
             jamie "You could've just drunk..."
-            jnfr "I could've, but then we would've lost in a few round."
+            jnfr "I could've, but then we would've lost in a few rounds."
             jamie "Hmmm... I guess it's just a game..."
-            z "Eh? Wait we can't see your..."
+            z "Eh? Wait, we can't see your..."
             jnfr "Hm? Did you say something, Mr.Pervert?"
             z "But..."
             z "..."
@@ -993,7 +1092,7 @@ label season2_chapter_3:
             hlna "No, no. Let's do it."
             z "..."
             z "I'm not saying no to that."
-            #Hlna takes off Z's pants and admire his dick for a bit.
+            #Hlna takes off Z's pants and admires his dick for a bit.
             $ hlna_lst += 2
             jnfr "See something you like, Helena?"
             hlna "?!"
@@ -1006,7 +1105,7 @@ label season2_chapter_3:
             z "We can st-"
             jnfr "Na-uh. I'm fine. We can continue. I'm not gonna lose."
             z "Sure..."
-            jnfr "Kiss any member of the opposing team. If you do they must drink."
+            jnfr "Kiss any member of the opposing team. If you do, they must drink."
             jamie "..."
             jnfr "Well..."
             #Goes to Z.
@@ -1061,7 +1160,7 @@ label season2_chapter_3:
             jnfr "..."
             jnfr "Oh..."
             jamie "What?"
-            jnfr "Joker card: Your partner must give oral sex to a member of the opposing team and that person drinks thrice. If you refure, you drink five times."
+            jnfr "Joker card: Your partner must give oral sex to a member of the opposing team and that person drinks thrice. If you refuse, you drink five times."
             jamie "What?!"
             jnfr "..."
             jnfr "Well..."
@@ -1097,7 +1196,7 @@ label season2_chapter_3:
             jamie "..."
             jamie "How long do you have to do this..."
             jnfr "Hmmn~..."
-            z "Ehhh... I don't think she can talk right not..."
+            z "Ehhh... I don't think she can talk right now..."
             z "But to answer your question... I think until I finish?"
             jamie "Ughh..."
             jnfr "Hmnnn~... Uhhhmmnn~..."
@@ -1237,7 +1336,7 @@ label season2_chapter_3:
             z "Isn't that a good enough lesson in humility?"
             jnfr "Maybe it won-" (multiple=2)
             hlna "Thirty three..." (multiple=2)
-            jamie "Okay, okay... I lose..."
+            jamie "Okay, okay... I lost..."
             jnfr "..."
             jnfr "You actually admit you lost?"
             jamie "Yeah, so what?"
@@ -1302,7 +1401,7 @@ label season2_chapter_3:
     nari "No."
     axs "..."
     axs "You had very simple instructions, Nari."
-    axs "Get me the the town's alchemist."
+    axs "Get me the town's alchemist."
     axs "And kill anyone who interferes."
     nari "I did bring you the alchemist."
     axs "Yes. But you didn't kill a single ninja."
@@ -1413,7 +1512,7 @@ label season2_chapter_3:
     z "Hm?"
     z "The guy on the white horse?"
     cnt "That's him, yeah."
-    cnt "He's never lost a single tourny."
+    cnt "He's never lost a single tourney."
     cnt "He's the commander of the royal guards."
     cnt "Or well, he was when I was last here."
     z "I see..."
@@ -1433,11 +1532,11 @@ label season2_chapter_3:
     cnt "Eh?!"
     z "..."
     z "That was surprising..."
-    ymi "I thought Klyn has never lost before."
+    ymi "I thought Klyn had never lost before."
     z "You know what they say, first time for everything."
     cnt "I guess..."
     illya "Centoryyyy!"
-    #The princess hugs centoria similar to how torr's family huged her.
+    #The princess hugs centoria similar to how torr's family hugged her.
     vollstahl "My lady... That'sh no way for a prinshesh to behave."
     illya "Sorrrryyy..."
     illya "You must be [mc_name], right?"
@@ -1455,7 +1554,7 @@ label season2_chapter_3:
     illya "Ooooh, you guys look really scary with all of those weapons and armour and stuff."
     illya "Oh, speaking of lots of armour..."
     illya "This is Vollstahl. The commander of the royal guard."
-    cnt "Oh? I thought it was ser Klyn?"
+    cnt "Oh? I thought it was Ser Klyn?"
     klyn "Not since this guy showed up a few months back."
     klyn "I have yet to best him once."
     vollstahl "Sher Klyn ish too humble. I'm shure he beshted me onshe or twishe at least while shparring."
@@ -1466,7 +1565,7 @@ label season2_chapter_3:
     #They go to the castle.
 
 #12) Elven castle:
-    #The castle is magistic.
+    #The castle is majestic.
     ymi "Gods... Look at that..."
     cnt "Yeah... The castle has always been a marvel."
     z "Damn..."
@@ -1497,13 +1596,13 @@ label season2_chapter_3:
     z "What did you mean when you said that's why you needed us?"
     illya "..."
     illya "I..."
-    #Interepted by Vollstahl telling them they're about to meet the crowned prince.
+    #Intercepted by Vollstahl telling them they're about to meet the crowned prince.
     #The royal guard whom Z works with are all bald dark skinned topless women with nipple piercings.
     #Z asks why the guards have no weapons, the prince makes them demonstrate their powerful af magic saying that elves are specialists in magic.
-    #The don't have weapons, they can conjure them with magic, they also heavily rely on magic.
+    #They don't have weapons, they can conjure them with magic, they also heavily rely on magic.
     #The prince brags about how he provided well paying jobs for the goblins and helped civilise them. Gives some credits to illya.
-    #The prince says he'll also lend them a dozen of his personal gaurd when they leave to the nearby villages and says he doesn't understand why his daughter wants to visit these peasants.
-    #Z (with centoria) gets a mission to protect the princess of Centoria's vilage of some sort. Her father specifies that he's not to be further than 1 meter away outside of the city and can be instructed to be up to 20
+    #The prince says he'll also lend them a dozen of his personal guard when they leave to the nearby villages and says he doesn't understand why his daughter wants to visit these peasants.
+    #Z (with centoria) gets a mission to protect the princess of Centoria's village of some sort. Her father specifies that he's not to be further than 1 meter away outside of the city and can be instructed to be up to 20
     #meters away inside the city.
     #A magic bond is formed by a sorceress working in the castle.
     #The sorceress who works for the prince is a hooded figure who never shows any part of her skin (She's a goblin!)
@@ -1511,12 +1610,12 @@ label season2_chapter_3:
     #The sorceress made Illya a talking snow man.
 
 #13) Intimate situations with Yumi:
-    #Yumi has to apply a potion from gabbie and venus to heal up properly. Z has to apply it when Centoria isn't around leading to sexual stuff.
+    #Yumi has to apply a potion from Gabbie and Venus to heal up properly. Z has to apply it when Centoria isn't around, leading to sexual stuff.
 
 
 #14) Fencing tournament:
-    #In the fencing tourny (no magic is allowed) Z is asked to compete by the princess.
-    #Vollstahl, the king's personal gaurd, wins againts Z. Vollstahl is a short man, who always wears an full armour and a helmet covering all of his body. (He's actually a goblin who betrays the elves later on and joins axius).
+    #In the fencing tourney (no magic is allowed) Z is asked to compete by the princess.
+    #Vollstahl, the king's personal guard, wins against Z. Vollstahl is a short man, who always wears a full armour and a helmet covering all of his body. (He's actually a goblin who betrays the elves later on and joins axius).
     #The winner is decided by who stops just before hitting their opponent. Vollstahl is very respectful towards Z after winning.
     #Before beating Z Vollstahl totally destroys Yumi.
     #Z wins sth for second place.
@@ -1534,8 +1633,8 @@ label season2_chapter_3:
 
 #18) Goblin tournament:
     #This whole thing was suggested by Illya's father. She doesn't like the idea because it establishes that the goblins are beneath the elves and that they should transform.
-    #There is an event for goblins, who ever wins gets a potion that transorms them into elves.
-    #Z is surprised that such a potion exists. The elves explain that the and the goblins have a common ancestory and with a powerful potion you can accend to an elf as a goblin but the potion is very expensive. 
+    #There is an event for goblins, whoever wins gets a potion that transforms them into elves.
+    #Z is surprised that such a potion exists. The elves explain that the and the goblins have a common ancestry and with a powerful potion you can ascend to an elf as a goblin but the potion is very expensive. 
 
 #19) Illya's plan:
     #Later to Z's team alone after playing together in the tournament and bonding with them.
@@ -1584,7 +1683,7 @@ label season2_chapter_3:
     illya "And tell noone about this."
     z "..."
     z "I assume not even your father."
-    illya "Espicially not my father."
+    illya "Especially not my father."
     illya "Not until the foundation for the plan is laid down."
     illya "I'll tell him myself then."
     z "..."
@@ -1595,11 +1694,11 @@ label season2_chapter_3:
     ymi "I've killed a few goblins myself too."
     illya "..."
     ymi "But I've seen plenty of humans try to do the same..."
-    ymi "And I've heard all my life that I woman should not come withen two villages from an incubus."
+    ymi "And I've heard all my life that a woman should not come within two villages from an incubus."
     ymi "Yet here I am friends with one."
     ymi "So know this, Illya..."
     ymi "I'll go with you to where the goblins live..."
-    ymi "And make sure that if any of these green shits tries to lay a finger on you, they'll be cut them to shreds."
+    ymi "And make sure that if any of these green shits tries to lay a finger on you, they'll be cut to shreds."
     z "..."
     illya "Centory?"
     cnt "Of course I'll be with you, Illya."
@@ -1614,10 +1713,10 @@ label season2_chapter_3:
     ymi "I will."
     z "Princess, you'll keep your face hidden and dress like a handmaiden to hide your identity."
     illya "Okay, b-"
-    z "And I also want the two goblins I saw working outside the caslte to come with us."
+    z "And I also want the two goblins I saw working outside the castle to come with us."
     illya "Eh?"
     illya "Explain."
-    z "They're a sign of good faith. If the goblins see their own walking with the princess, they might get the imrpression that we come peacefully and that goblins and elves can cooperate."
+    z "They're a sign of good faith. If the goblins see their own walking with the princess, they might get the impression that we come peacefully and that goblins and elves can cooperate."
     illya "I see, I see..."
     illya "Not a bad idea at all."
     illya "Anything else?"
@@ -1643,9 +1742,9 @@ label season2_chapter_3:
     cnt "Let us through."
     cnt "And keep it down, will you? I don't want everyone to know about this."
     Character("Edgar") "But-"
-    z "Here are your orders from the prince himself. We didn't publically announce this for the princess's safety. You understand, I trust?"
+    z "Here are your orders from the prince himself. We didn't publicly announce this for the princess's safety. You understand, I trust?"
     Character("Edgar") "..." #Reads the letter.
-    Character("Edgar") "This is the prince's signiture..."
+    Character("Edgar") "This is the prince's signature..."
     z "Edgar. The prince knew you could be trusted. That's why we picked the time when you're the one stationed on the gate. So tell no one about this, yeah?"
     Character("Edgar") "The prince sai-"
     z "Not a word to anyone, get me?"
@@ -1691,11 +1790,11 @@ label season2_chapter_3:
     illya "Bu-"
     ymi "Fuck! He's right! Come on!" #Pulls illya
     illya "Wai-"
-    #Ymi pumps into a a big woman.
+    #Ymi pumps into a big woman.
     ymi "..." #Backs off to see there's actually also a minotaur.
     ymi "What the fuck..." #Terrified.
     #Wants to plant her sword into the ground.
-    #A magic chain is shown on her arm just before she hits in the ground.
+    #A magic chain is shown on her arm just before she hits the ground.
     #Her magic doesn't work.
     ymi "..."
     ymi "What?!"
@@ -1724,8 +1823,8 @@ label season2_chapter_3:
     Character("Big woman") "Why do you risk your life for them? You're not even an elf."
     z "(She can tell I'm not an elf?)"
     z "..."
-    z "(She looks almost half minatour but she's actually quite intelligent)"
-    z "(That's the minatour that attacked me when I was with Torr and Candy in the woods. I can tell.)"
+    z "(She looks almost half minotaur but she's actually quite intelligent)"
+    z "(That's the minotaur that attacked me when I was with Torr and Candy in the woods. I can tell.)"
     z "(I thought it served Axius... Is he involved in the goblin-elf conflict somehow?)"
     z "I can ask the same of you."
     z "Why would you fight alongside goblins?"
@@ -1736,7 +1835,7 @@ label season2_chapter_3:
     Character("Big woman") "..."
     Character("Big woman") "Minatours... Half-breeds... Goblins... Incubi... Does it really matter which we are and who we work with?"
     Character("Big woman") "The other races look at us like demons equally. Like vermin that should be eradicated."
-    Character("Big woman") "I would've hoped the attack on the incubus city would've tought you as much?"
+    Character("Big woman") "I would've hoped the attack on the incubus city would've taught you as much?"
     z "(I guess she's some kind of a half breed...)"
     z "..."
     z "So you just... Kill them? That's your solution?"
@@ -1754,7 +1853,7 @@ label season2_chapter_3:
     z "(I can't use magic?!)"
     z "(Can I even beat all of these goblins and this monster without magic?!)"
     z "(Fuck...)"
-    #The golins are closing in on him.
+    #The goblins are closing in on him.
     Character("Big woman") "Stand back. I'll handle him. You go after the princess."
     z "(Shit... I can't both stop the goblins and fight her.)" #Looks away from her at the goblins.
     Character("Big woman") "You sure you want to be looking away from me while we fight, boy?"
@@ -1813,15 +1912,15 @@ label season2_chapter_3:
     z "..."
     z "Awfully cheerful for someone in your position."
     Dohkong "Ahahahah..."
-    Dohkong "I know the prisoners have it hard. I don't see any reason to make thier stay here any harsher."
+    Dohkong "I know the prisoners have it hard. I don't see any reason to make their stay here any harsher."
     Dohkong "So? I gave you my name..."
     z "..."
     z "[mc_name]."
-    Dohkong "Are you hungry, [mc_name]? As I said I could get you something to eat."
+    Dohkong "Are you hungry, [mc_name]? As I said, I could get you something to eat."
     z "I'm fine... Thank you."
     Dohkong "How did you get captured, if I may ask?"
     z "..."
-    z "I was escorting the princess... And some goblins and a minatour being led by a huge woman ambushed us."
+    z "I was escorting the princess... And some goblins and a minotaur being led by a huge woman ambushed us."
     Dohkong "Oh? And what happened to the princess?"
     z "She got away. At least I hope so."
     Dohkong "So you stayed behind to give her a chance to escape?"
@@ -1854,9 +1953,9 @@ label season2_chapter_3:
     Dohkong "I know we the goblins are sadly the last ones to talk. I know goblins all around the continent commit all kinds of ugly deeds."
     Dohkong "But..."
     Dohkong "The elven city... The land where it's built belonged to the goblins long ago."
-    Dohkong "It's been more than a century since they first elves drove the goblins out of those lands, of course..."
+    Dohkong "It's been more than a century since the first elves drove the goblins out of those lands, of course..."
     z "..."
-    Dohkong "I'm sorry... I know you suffered a bit of head trauma before you got here... The last thing you need is to be thinking about such a complicated coflict..."
+    Dohkong "I'm sorry... I know you suffered a bit of head trauma before you got here... The last thing you need is to be thinking about such a complicated conflict..."
     Character("Helle") "Dohkong... I have a little stomachache... Can you get me something for that?"
     Dohkong "Sure thing. Give me a minute."
     z "..."
@@ -1888,7 +1987,7 @@ label season2_chapter_3:
     z "It's quite risky, wouldn't you say?"
     z "Your wife is pregnant here..."
     Character("Helle") "I..."
-    Character("Helle") "We don't our child to be born and grow up in captivity, [mc_name]..."
+    Character("Helle") "We don't want our child to be born and grow up in captivity, [mc_name]..."
     Character("Helle") "I'd rather take the risk..."
     z "..."
     z "Alright..."
@@ -1971,7 +2070,7 @@ label season2_chapter_3:
     #They leave.
     #Goblins enter the dungeon. Z is facing them.
     #He's tied up and brought before the pale goblin.
-    #The minatours and his sister are behind her.
+    #The minotaurs and his sister are behind her.
     z "..."
     z "You're the pale goblin?"
     plgbln "..."
@@ -2027,7 +2126,7 @@ label season2_chapter_3:
     z "What did she say?"
     nxi "She says she'll kill all of them."
     nxi "Look... I know you think that just because I work for lord Axius, I must be evil."
-    nxi "And I will admit... I have done plenty evil."
+    nxi "And I will admit... I have been plenty evil."
     nxi "But the goblins are the ones being oppressed."
     nxi "Even if the princess follows through with her promise to make the goblins citizens in the elven city. The goblins will always remain worth less than elves."
     nxi "Look at how the goblins are treated in the city. They only get the dirty and dangerous jobs that no elf wants to take."
@@ -2056,9 +2155,9 @@ label season2_chapter_3:
     #The door opens.
     nxi "How is it hanging?"
     z "Very funny..."
-    nxi "I talked to the pale goblin. She'll have you transfered to the other dungeon you were in next week."
+    nxi "I talked to the pale goblin. She'll have you transferred to the other dungeon you were in next week."
     nxi "She said she wants to keep you here for a bit as punishment for trying to escape."
-    nxi "She orignially wanted to keep you here forever."
+    nxi "She originally wanted to keep you here forever."
     nxi "I'll talk to her again tomorrow to have you out of here sooner."
     z "..."
     z "Why would you help me exactly?"
@@ -2075,7 +2174,7 @@ label season2_chapter_3:
     nxi "I've heard quite a bit about you, you know."
     nxi "If what I've heard is true... I wouldn't even know how to kill you."
     nxi "And I don't think I want to kill you, [mc_name]."
-    nxi "What I want... Most of all, is for us to be allies."
+    nxi "What I want... Most of all, it is for us to be allies."
     z "..."
     nxi "You know..."
     nxi "Irena seems to really like you."
@@ -2086,7 +2185,7 @@ label season2_chapter_3:
     z "Why are you saying all of that exactly?"
     z "You speak of us being allies and yet here I am hanging from all my limbs."
     nxi "I'd think if you wanted to talk to me while you don't trust me yet, you might do the same."
-    nxi "Espicially if I were strong enough to kill you without breaking a sweat."
+    nxi "Especially if I were strong enough to kill you without breaking a sweat."
     z "..."
     pause(1)
     menu:
@@ -2117,7 +2216,7 @@ label season2_chapter_3:
     nxi "I need it."
     nxi "A minotaur and a demi-god fighting with the goblins, and we might start looking like a winning side."
     nxi "The elves haven't had a war in centuries."
-    nxi "Their warriors are not seasoned. Their army is not disciplined. Not a single elven soldier today has been withen a mile of a battle."
+    nxi "Their warriors are not seasoned. Their army is not disciplined. Not a single elven soldier today has been within a mile of a battle."
     nxi "The pale goblin has been pushing for an all out attack for weeks now."
     nxi "I've convinced her to wait for the right time. And she's listening for now, but not for long."
     nxi "I told you. I don't want to massacre any of the two sides. But if we can overwhelm them quickly enough, the death toll will be minimised."
@@ -2128,7 +2227,7 @@ label season2_chapter_3:
     nxi "I'll just keep you here. If you'd help the elves, that's a problem for us."
     z "My friends are still in the elven city."
     nxi "..."
-    nxi "I trust you know I can't do anything about that... If I send them a warning, the elves will know we're comming. And surprise on our side is something we can't throw away."
+    nxi "I trust you know I can't do anything about that... If I send them a warning, the elves will know we're coming. And surprise on our side is something we can't throw away."
     z "..."
     nxi "I'll let you sleep on it."
     nxi "I want an answer from you soon, [mc_name]."
@@ -2155,7 +2254,7 @@ label season2_chapter_3:
     z "Have you come to just stare at me naked?"
     z "Wel-"
     Character("????") "Tsk. Tsk. Tsk..."
-    Character("????") "Quite good at putting yourself is situations like these, aren't you..."
+    Character("????") "Quite good at putting yourself in situations like these, aren't you..."
     #Gets really close to him.
     Character("????") "You have lots to do for me..."
     Character("????") "I can't have you rotting away in a place like this..."
@@ -2184,7 +2283,7 @@ label season2_chapter_3:
     z "..."
     z "I'm sorry..."
     Dohkong "Say..."
-    Dohkong "When we first met you said we were enemies you and me, didn't you?"
+    Dohkong "When we first met you said we were enemies, you and me, didn't you?"
     Dohkong "Is there anything I can do to make you change your mind?"
     z "..."
     z "I..."
@@ -2218,7 +2317,7 @@ label season2_chapter_3:
     z "Yeah."
     Dohkong "Why would you protect the princess?"
     z "I guess there's no point in not telling you... Nixie probably knows everything anyway."
-    z "I was hired to protect her on her birth week."
+    z "I was hired to protect her during her birth week."
     Dohkong "Why? Doesn't she have the royal guard for that?"
     z "The princess asked for us instead of the royal guard because she wanted to go against her father's wishes by bringing a peace agreement to the goblins."
     z "And the royal guard would've reported her plan to the crowned prince."
@@ -2346,7 +2445,7 @@ label season2_chapter_3:
     z "..."
     jillia "Did they cut your tongue out, boy?"
     z "I..."
-    jillia "You?" #Gets closer.
+    jillia "You?" #Get closer.
     jillia "Speak up, boy!" #Gets very close.
     z "I wouldn't..."
     jillia "Do you need to whisper it in my ear like lovers?" #Gets close enough for him to whisper.
@@ -2356,7 +2455,7 @@ label season2_chapter_3:
     jillia "You..."
     #Chain locks.
     jillia "..." #notices her hand has been chained to the wall.
-    jillia "Ughhhh!" #Pulls the chain really hard.
+    jillia "Ughhhh!" #Pull the chain really hard.
     z "You won't be able to br-" #He's next to the door.
     #Breaks it.
     z "?!"
@@ -2381,10 +2480,10 @@ label season2_chapter_3:
 
 #24) Seira breaks Z out:
     #&&&&&&&&MORE DETAILS&&&&&&&&&&&&
-    #Seira who saw Z imprisoned in the dream rushes to save him.
+    #Seira, who saw Z imprisoned in the dream, rushes to save him.
     #Seira leads the others to be able to free Zycris.
 
-    #In the battle, Vollstahl and the soceress desert and are not there to protect the king.
+    #In the battle, Vollstahl and the sorceress desert and are not there to protect the king.
     #If Z sides with the goblins, the princess and some other elves seek refuge in the western elf village.
 
 #25) Either confront Pale goblin or Crowned prince depending on Z's choice.
@@ -2398,7 +2497,7 @@ label season2_chapter_3:
     gbrla "But he's a demi-god."
     vns "So is Seira."
     gbrla "But..."
-    gbrla "Seira lost againts the other demi-god... Anabelle's brother."
+    gbrla "Seira lost against the other demigod... Annabelle's brother."
     vns "Sirius?"
     vns "Everyone loses against Sirius, Gabbie."
     vns "And [mc_name] lost against him too, didn't he?"
@@ -2408,7 +2507,7 @@ label season2_chapter_3:
     vns "Every fight has its circumstances. Every fighter is more likely to win or lose against a certain type of fighting too."
     vns "If I beat an opponent whom you lost against, that doesn't always mean that I'm stronger than you."
     gbrla "..."
-    gbrla "Is that how it works."
+    gbrla "Is that how it works?"
     vns "Yep."
     #Zoom in to Venus.
     vns "We need some mountain dale too, don't we?"
@@ -2416,7 +2515,7 @@ label season2_chapter_3:
     #Sound.
     vns "?!"
     vns "Gabbi-"
-    #Nari is carrying uncontious gabbie.
+    #Nari is carrying an unconscious gabbie.
     vns "What the-"
     #Charges with lightning.
     #Nari seems worried.
@@ -2433,7 +2532,7 @@ label season2_chapter_3:
     alura "..."
     nari "..." #Looks at alura.
     nari "Let's go."
-    #Nari and Alura take gabbie and leave unconscious venus there.	
+    #Nari and Alura take gabbie and leave the unconscious venus there.	
 
 #NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES
 
@@ -2482,3 +2581,4 @@ label season2_chapter_3:
 
 #Dev log:
 #We'll be meeting some new characters that will probably stick with us for a while. The conflict between the now more powerful Axius & the ninja village will start to to spark.
+
