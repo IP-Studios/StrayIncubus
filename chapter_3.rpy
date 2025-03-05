@@ -9,10 +9,20 @@ label season2_chapter_3:
     #Title: Of Goblins and Elves.
 
 #1) Alchemist's hut in the ninja village:
-    cndy ".,,"
+    pause(1.5)
+    stop background_s fadeout 1.0
+    stop background_s2 fadeout 1.0
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
+    play background_s2 "audio/Ambient_ninja_village_night.mp3" volume 0.4 fadeout 1.0 fadein 1.0 loop
+    scene v151 with Dissolve(1.5)
+    cndy "..."
+    scene v152 with Dissolve(1.5)
     cndy "Is she gonna be okay?"
+    scene v153 with Dissolve(1.5)
     gbrla "Yeah... She's just unconscious."
     #Torr waltzes in.
+    scene v154 with Dissolve(1)
     tr "Centoria!!!"
     cndy "?!" (multiple=2)
     gbrla "?!" (multiple=2)
@@ -636,52 +646,85 @@ label season2_chapter_3:
 
 #8) Alchemist's hut:
     #Z walking towards his room
+    #scene 1
     z "(Whistling)..."
-    #Gabbie peeks out and grabs z - yeets him into alchemists hut
+    #Gabbie peeks out and grabs z - yeets him into alchemists hut - anim 1
+    #scene 2
     gbrla "Heyy [mc_name]... You got a minute for us?"
+    #scene 3
     z "Uhhh, sure Gab, what can I help you with?"
+    #scene 4
     gbrla "Well, Margot had an experiment that she wanted to test, and thought it might be easier if we got you to help us with it."
-    #Margot says the below suddenly appearing behind Z and purring in his ear
+    #Margot says the below suddenly appearing behind Z and purring in his ear - scene 5
     margot "Please [mc_name], won't you help us poor scientists with a little experiment?"
-    #Z jumps
+    #Z jumps - scene 6
     z "AHH"
+    #scene 7
     z "Margot... Hey..."
     menu:
         "Sure, I'll help. What do you need me to do?":
-            #margot and gabbie take their shirts off
+            #margot and gabbie take their shirts off - scene 8
             gbrla "..." (Multiple=2)
             margot "Oh you already know, stallion" (Multiple=2)
-            #scene starts - gab + margot on knees - one each side of z dick - licking
+            #scene starts - gab + margot on knees - one each side of z dick - licking - anim 2
+            margot "Hmmmnnnn"
+            gbrla "Mmmmffff"
+            #scene 9
             margot "Oh Gods I forgot how big you are..."
+            #scene 10
             margot "Are you certain I can't experiment on you? I promise it won't hurt too much."
             z "Yeah that's still not happening Margot. Get back to where you belong."
+            #scene 12
             margot "Yes sir. Anything for this cock."
+            #scene 13
             z "Gab? How you doing down there?"
+            #scene 14
             gbrla "Mhhhhh I'm in love"
+            #scene 15
             z "Glad to hear it. I think I might be too if you continue with this."
-            #z pushes m to the ground and grabs g and pushes her down on top of m's face
+            #scene 16
+            gbrla "Happily."
+            #anim 2 again
+            z "Let's get a bit more comfortable girls."
+            #z pushes m to the ground and grabs g and places her over m's face - scene 17
             margot "Hmmmnnn..."
+            #scene 18
             margot "This is exactly how I see our experiments going, [mc_name]"
+            #scene 19
             z "I already told you, that's not going to happen. Let's see if you can put your mouth to better use, Gabbie, sit down."
+            #scene 20
             gbrla "On her face? Are you sure?"
+            #scene 21
             z "Yes I'm sure, sit down Gab."
+            #scene 22
             gbrla "Oh, o-okay. Sorry Margot"
-            #g sits down on ms face
+            #g sits down on ms face - scene 23
             margot "Mmmmfff Hmmmmmmm"
+            #anim 3
             gbrla "AHHHMMMM Oh my Gods she's moving her tongue so much. I-It's so go-"
-            #z kisses gabbie
+            #z kisses gabbie - scene 24
             $ gbrla_lst+=2
-            margot "MMMNFFF HMMMMNNNN-"
+            #back to anim 3
+            gbrla "Oh Gods. I think she's close."
+            #scene 25
+            gbrla "HMMMMMNNNN" (multiple=2)
+            margot "MMMNFFF HMMMMNNNN-" (multiple=2)
+            #scene 26
             z "Gabbie get up and get on all fours."
             #gabbie gets on all fours - dripping
+            #scene 27
             z "How was that psycho? Good enough for you?"
-            #margot slightly quivering for line below
+            #margot slightly quivering for line below - anim 4
             margot "Oh my- You're gon- gonna have to give me a-a couple of minutes. I don't think, haa- I don't think I've ever cum that hard before."
+            #scene 28
             z "Good to hear. You ready Gabbie?"
-            gbrla "Please. [mc_name]. Please fuck me. I'm begging you."
+            #scene 29
+            gbrla "Please. [mc_name]. Please fuck me. Please. I'm begging you."
             z "You asked for it."
-            #slides his dick in completely in one go
+            #slides his dick in completely in one go - anim 5
+            #scene 30
             z "Ohhhh shit that's tight."
+            #anim 6
             gbrla "HAAAA-"
             gbrla "I"
             gbrla "LOVE"
@@ -689,52 +732,70 @@ label season2_chapter_3:
             gbrla "COCK"
             gbrla "HMMMMNN"
             gbrla "Oh Gods I'm gonna CUUUU-"
+            #scene 31
+            gbrla "MMMMMFFFFFF"
             $ gbrla_lst+=2
+            #anim 6 again
             #z keeps going
             gbrla "Wait! [mc_name]! Please!"
             z "That's not gonna happen Gabs. You feel so fucking good."
-            z "Margot, get in front of Gabbie. Legs spread."
-            #margot crawls over and spreads her legs in front of gabbie
             z "Gabbie, put your mouth to good use and help Margot out."
             gbrla "Haaa... Hmmnn"
-            #z pushes gab head down into margots pussy - gab starts eating her out
+            #z pushes gab head down into margots pussy - scene 32
             margot "OH YES!"
+            #anim 7
             gbrla "Hmmmnnn MMMMFffff"
             margot "I think she's going to cum again, [mc_name]. She's licking so hard and breathing so heavily."
             margot "HMMMMmNnn"
             z "She's not the only one. Holy fuck"
+            #scene 33
             margot "Where are you gonna finish stallion? Inside sweet Gabbie? Inside little old me? Or maybe you want to paint both of us?"
             menu:
                 "Cum inside Gabbie":
+                    #scene 34
                     z "Gods Gabbie I'm cumming"
                     #fills her up
                     gbrla "HMMMMMNNNN"
                     margot "AHHHHHHH"
-                    #margot crawls round to mc
+                    #margot crawls round to mc - scene 35
+                    #scene 36
                     margot "Holy shit Gabbie he filled you to the brim."
                     gbrla "mmmnnnn ha-"
                     $ gbrla_lst+=2
                 "Cum inside Margot":
                     z "Shit I'm gonna cum. Margot get over here!"
                     #margot moves out from under gabbie - z inserts himself and fills her up
+                    #scene 37
                     margot "AHHHHHH"
                     margot "Holy shit there's so much."
+                    #scene 38
                     #she grabs some that is leaking out and eats it
+                    #scene 39
                     margot "And it tastes amazing, Gods."
                 "Cover them both":
                     z "Get on your knees both of you"
+                    #scene 40
                     #gab and margot kneel before z and start kissing his tip
+                    #scene 41
                     #z cums on their faces
+                    #scene 42
                     z "Holy shit that was amazing. You are both... Amazing"
                     $ gbrla_lst+=2
                     $ gbrla_aff+=2
+            #scene 43
             margot "Thank you for that stud. Hope we can do this again soon."
-            gbrla "Haaaa... Cock... So good..."
+            #scene 44
             z "You know, for once Margot, I agree with you."
+            #scene 45
+            gbrla "Haaaa... Cock... So good..."
         "I'm kinda busy right now, sorry guys.":
             $ dummy+=1
+            #scene 46
             margot "Really? Ok I guess we'll see you another time."
+            #scene 47
             gbrla "Bye [mc_name]"
+            #scene 48
+            z "See you soon girls."
 
 
 #9) Scene with Jenny:
@@ -1488,14 +1549,6 @@ label season2_chapter_3:
     irna "(Maybe...)"
     irna "(Just maybe...)"
 
-#) Nari dreams about his sister giving him his necklace and a big wave:
-    #He remembers someone saying Nari
-    #Auge appears and tells him that's not really his name.
-    #He asks Auge who she is and asks if she's the one giving him dreams.
-    #She says she's there to help him remember.
-    #Auge says "Remember..." and shows him a ship.	
-    #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-
 #11) Arrival at elven city:
     #Tourny is already beginning when they arrive.
     #It is a jousting competition at first.
@@ -1597,46 +1650,254 @@ label season2_chapter_3:
     illya "..."
     illya "I..."
     #Intercepted by Vollstahl telling them they're about to meet the crowned prince.
+    vollstahl "I'm shorry prinshesh, but your father ish waiting."
+    illya "Thank you Vollstahl. Apologies Centoria, [mc_name]. My father does not like to be kept waiting."
     #The royal guard whom Z works with are all bald dark skinned topless women with nipple piercings.
+    Character("Crown Prince") "My beautiful daughter, I'm so glad you could make it."
+    #illya and z bowing to father
+    illya "Father, thank you for seeing us today."
     #Z asks why the guards have no weapons, the prince makes them demonstrate their powerful af magic saying that elves are specialists in magic.
-    #They don't have weapons, they can conjure them with magic, they also heavily rely on magic.
+    z "Your Highness, how come your guards have no weapons?"
+    Charater("Crown Prince") "Oh? I'm sorry, I didn't explain, my guards are all proficient in magic, physical weapons are useless to them."
+    Character("Crown Prince") "See that dummy over there?"
+    z "Yes?"
+    Character("Crown Prince") "Guards."
+    #anim showing off the magic
+    z "Wow... That's pretty cool."
     #The prince brags about how he provided well paying jobs for the goblins and helped civilise them. Gives some credits to illya.
+    Character("Crown Prince") "I'm very proud of our attempts to integrate our societies. Myself and my daughter have been working for this to benefit both the elves and the goblins."
     #The prince says he'll also lend them a dozen of his personal guard when they leave to the nearby villages and says he doesn't understand why his daughter wants to visit these peasants.
+    Character("Crown Prince") "My daughter insists on visiting the nearby villages, I have no idea why. However, I trust her judgement. I will lend you a dozen of my personal guard to accompany you."
+    illya "Thank you, Father."
     #Z (with centoria) gets a mission to protect the princess of Centoria's village of some sort. Her father specifies that he's not to be further than 1 meter away outside of the city and can be instructed to be up to 20
-    #meters away inside the city.
+    Character("Crown Prince") "[mc_name], as my daughter's birthweek celebrations, she will be visiting the outskirts of the city. I want you to protect her."
+    z "Of course, Your Highness."
+    Character("Crown Prince") "As of tomorrow morning, you are not to be further than 1 meter away from her outside of the city."
+    z "And inside the city?"
+    Character("Crown Prince") "Inside the city, you may be up to 20 metres from her."
+    z "Yes, Your Highness."
     #A magic bond is formed by a sorceress working in the castle.
+    Character("Crown Prince") "I have asked the sorceress to create a bond between you two. She will be able to communicate with you through this bond."
+    illya "Father that is not necessary."
+    Character("Crown Prince") "Unfortunately daughter, this is non-negotiable."
+    z "It's fine Princess, it can't hurt."
+    Character("Crown Prince") "Excellent, I'm glad you understand."
+    #Sorceress enters
+    Character("Sorceress") "Your highness."
+    Character("Crown Prince") "Sorceress, please create the bond."
+    #The sorceress creates the bond.
+    Character("Sorceress") "It is done."
+    Character("Crown Prince") "Thank you, sorceress. You may take your leave."
+    #The sorceress leaves.
+    Character("Crown Prince") "Now, [mc_name], the goblins recently attacked the elf city. You must keep my daughter safe."
+    cnt "No harm will come to her Your Highness. You have our word"
+    Character("Crown Prince") "Thank you Centoria. I shall see you when you return."
     #The sorceress who works for the prince is a hooded figure who never shows any part of her skin (She's a goblin!)
     #The prince tells them that local goblins recently attacked the elf city a few times and the princess insists on visiting the outskirts of the city as a part of her birthweek celebrations like she always does. A body guard is needed for the princess.
-    #The sorceress made Illya a talking snow man.
+    #z, illya and centoria leave - sorceress waiting outside for them
+    Character("Sorceress") "Your plan will not succeed Princess."
+    illya "Sorceress? What do you mean?"
+    #The sorceress turns Illya and centoria into snowmen.
+    Character("Sorceress") "[mc_name], elves and goblins can never be integrated. You must make a choice."
+    #sorceress leaves - turns illya back
+    illya "Sorceress?"
+    illya "What in the worlds did she mean?"
+    z "I have no idea, Illya."
+    illya "We should prepare. We shall see you in the morning for the tournaments."
+    z "Goodnight Illya. Goodnight Centoria."
+    illya "Goodnight [mc_name]. Rest well."
+    cnt "Goodnight [mc_name]. Sleep well."
 
-#13) Intimate situations with Yumi:
+    #z goes back to his room - yumi waiting for him
     #Yumi has to apply a potion from Gabbie and Venus to heal up properly. Z has to apply it when Centoria isn't around, leading to sexual stuff.
 
 
-#14) Fencing tournament:
+
+
+
+
+#13) Fencing tournament:
+    z "So this is the fencing tournament? Impressive."
+    cnt "Yeah, it's a big deal here."
+    #illya appears next to them
+    illya "Indeed it is. We have been hosting these tournaments annually for centuries."
+    z "Tournaments?"
+    illya "Yes, we host a fencing tournament, a magic tournament and a goblin tournament."
+    z "A goblin tournament? How does that work?"
+    illya "The goblin tournament is only open for goblins. No humans or elves may participate."
+    z "I see."
+    z "This is impressive."
+    cnt "Yeah, the  a big deal here."
+    illya "I'm glad you think so. Yumi, [mc_name], would you do me the honour of participating?"
+    z "I'm not against it. How about you Yumi?"
+    ymi "I'm in."
+    illya "Excellent, I shall get you both signed up"
+    Character("Crown Prince") "WELCOME EVERYONE! TO THE 437TH ANNUAL FENCING TOURNAMENT!"
+    Character("Crown Prince") "OUR FIRST MATCH IS-!"
+    #skips to semi-finals - yumi vs vollstahl
+    Character("Crown Prince") "THE SECOND SEMI-FINALS IS HERE. OUR REIGNING CHAMPION, SER VOLLSHTAHL! VERSUS. OUR NEWCOMER, YUMI!"
+    illya "Unfortunately, Yumi does not stand a chance here [mc_name]."
+    z "I wouldn't be so sure, Illya. Yumi can be quite slippery when she wants to be."
+    illya "We shall see."
+    #vollstahl and yumi fight - yumi gets destroyed
+    Character("Crown Prince") "AND THE WINNER IS SER VOLLSHTAHL!"
+    illya "See, [mc_name]. I told you."
+    z "Yeah, you were right. He's quite the fighter."
+    illya "Indeed he is."
     #In the fencing tourney (no magic is allowed) Z is asked to compete by the princess.
+    Character("Crown Prince") "AND OUR FINAL MATCH IS HERE! OUR REIGNING CHAMPION, SER VOLLSHTAHL! VERSUS. POTENTIALLY HIS BIGGEST THREAT SO FAR, [mc_name]!"
+    #vollstahl - still in his full armour and z fight - it's close but z loses
+    Character ("Crown Prince") "LADIES AND GENTLE-ELVES! AFTER AN EXTREMELY CLOSE MATCHUP. YOUR CHAMPION, FOR THE 437TH ANNUAL FENCING TOURNAMENT IS SER VOLLSHTAHL!"
+    vollstahl "Well fought [mc_name]. You are a worthy opponent."
+    z "Thank you, Ser Vollstahl. You are just as impressive as the Princess said."
     #Vollstahl, the king's personal guard, wins against Z. Vollstahl is a short man, who always wears a full armour and a helmet covering all of his body. (He's actually a goblin who betrays the elves later on and joins axius).
+    #Z is asked to compete by the princess. He loses to Vollstahl in the finals.
+    Character("Crown Prince") "AT OUR CLOSING CEREMONY, OUR CHAMPIONS AND RUNNER UPS WILL BE PRESENTED WITH THEIR PRIZES!"
+    #z goes back to illya and centoria
+    illya "You did well, [mc_name]."
+    z "Not well enough. How is Yumi?"
+    cnt "She's a bit banged up, but nothing serious."
+    z "I'm glad. Vollstahl is extremely strong."
+    illya "Yes, he is. However, the next tournament is soon, we should make a move."
+    z "As you wish Illya."
+    #they go to the magic tournament
     #The winner is decided by who stops just before hitting their opponent. Vollstahl is very respectful towards Z after winning.
     #Before beating Z Vollstahl totally destroys Yumi.
     #Z wins sth for second place.
 
-#15) Magic tournament:
-    #Illya is in Z's team (boding between them)
+#14) Magic tournament: - in the evening
+    z "So this is the magic tournament?"
+    illya "Yes. Here, teams shall fight until one team is no longer able to continue."
+    z "So I assume that makes us a team?"
+    illya "As you can't leave my side, that would be the case."
+    z "In that case Princess, we should be fine with this one."
+    illya "Confident?"
+    z "Very. You may be Elves and strong with magic, but I am an Incubus. Magic is my forte."
+    illya "Well, I shall be expecting great things from our team."
+    #we watch the first matchup between elves
+    Character("Crown Prince") "AND THE WINNERS OF THE FIRST MATCH ARE THE ELVES FROM ESANKADI!"
+    z "Esankadi?"
+    illya "A small village in the East. They have some wonderful scenery, as you will see when we visit."
+    #skip to our first match
+    Character("Crown Prince") "AND THE NEXT MATCH IS HERE! OUR NEWCOMER, [mc_name] AND THE PRINCESS ILLYA! VERSUS! THE ELVES FROM NASAKADI!"
+    z "From where?"
+    illya "The North. Unimportant, pay attention to their fighting style."
+    z "Got it."
+    #fight starts - fairly even
+    #z takes a hit from an unknown magic
+    z "Interesting..."
+    illya "You OK, [mc_name]? I am hoping one hit does not take you out."
+    z "Fine Princess, that wasn't nearly enough to finish me off."
+    #they fight - z and illya win
+    Character("Crown Prince") "AND THE WINNERS OF THE SECOND MATCH ARE PRINCESS ILLYA AND [mc_name]! MY HOW INTERESTING THIS IS TURNING OUT TO BE!"
+    z "See Princess. I told you, nothing to sweat about."
+    illya "You are indeed quite strong. But do not get confident."
+    z "..."
+    illya "Did I not also tell you to call me Illya. Drop this Princess nonsense."
+    z "Apologies Illya, thought it might seem inappropriate if your bodyguard called you by your first name."
+    illya "I see. Do not fret. We are friends first, bodyguard and Princess second."
+    z "Understood."
+    illya "And if anyone complains. I shall have them exiled."
+    z "Exiled? Surely you can't do tha-"
+    illya "I was joking, [mc_name]."
+    z "Of course you were."
+    illya "Shall we continue watching some more fights?"
+    z "Absolutely."
+    #skip to the final.
+    Character("Crown Prince") "AND THE FINAL MATCH IS HERE! THE ELVES FROM ESANKADI! VERSUS! PRINCESS ILLYA AND [mc_name]!"
+    #shot on the elves from Esankadi
+    #shot on Illya and Z
+    Character("Crown Prince") "MAY THE STRONGEST TEAM WIN!"
+    #fight starts - elves shitting on illya and z
+    #illya and z both get hit and go down - z bleeding
+    z "SHIT!"
+    z "ILLYA! ARE YOU ALRIGHT?"
+    Character("Crown Prince") "IS IT OVER? [mc_name] AND THE PRINCESS ARE DOWN. SEEMINGLY FOR THE COUNT."
+    illya "DON'T FOCUS ON ME [mc_name]. THEY ARE GOING TO WIN."
+    z "DON'T WORRY ILLYA. I'VE GOT THIS!"
+    #z uses the same unknown magic from the first match - takes out one then teleports to the other and fus roh dah's the other
+    Character("Crown Prince") "OH MY! WHAT A TURNAROUND!"
+    Character("Crown Prince") "AFTER THAT INCREDIBLE MATCH, THE WINNERS ARE PRINCESS ILLYA AND [mc_name]!"
+    illya "THAT WAS AMAZING [mc_name]!"
+    z "I did tell you to trust me Illya."
+    illya "My apologies. I never should have doubted you."
+    z "No need to apologise. We won, that's all that matters."
+    illya "Indeed. However. How did you do that? Have you ever used that magic before?"
+    z "No. I am just a quick learner."
+    illya "I see. I'm glad you are helping me then."
+    Character("Crown Prince") "WELL, I SHALL SEE THE VICTORS AT THE CLOSING CEREMONY."
+    #Illya is in Z's team (bonding between them)
+    illya "Well, [mc_name]. As this is the last tournament of the day, we should go and get some cleaned up and get some rest."
+    z "As you wish Illya, let's get Centoria then head back."
     #The elves are absurdly strong in magic.
 
-#16) Illusion tournament:
-    #The sorceress who's fully covered puts them into an illusion they need to escape.
-    #Illya is again in Z's team (boding between them)
+#15) Taking a bath with Illya and Centoria:
+    z "Well. Illya, Centoria, I'll be waiting in the castle."
+    illya "Oh no, you have had the sorceress's bond placed on you. You are not allowed to leave our side."
+    z "But you are bathing? Men aren't allowed to be in the same bath as the Princess."
+    #illya looks at centoria curiously
+    illya "Oh? And I wonder how you found out about that rule?"
+    #centoria blushing
+    cnt "I... Uh..."
+    #illya giggles
+    illya "[mc_name]. You are my bodyguard. The rules do not apply completely the same to you as they do to the public."
+    illya "And it seems Centoria is not against the idea."
+    #centoria blushing again
+    z "I see. I shall be waiting in the bath then."
+    #z waiting in the bath - illya and centoria come in with towels wrapped around them
+    z "You two are taking a bath with towels on?"
+    illya "Yes. We are not allowed to be seen naked by anyone, remember?"
+    z "I thought the rules didn't apply to me?"
+    cnt "Illy, stop messing with him. Please."
+    #illya giggles again
+    illya "I'm sorry Centy, I couldn't resist. He's just so easy to tease."
+    z "Well, I'm glad I can bring you some amusement."
+    illya "We shall find out how much amusement you can bring me."
+    #illya and centoria drop their towels
+    z "Wow."
+    illya "I could have you executed right now."
+    z "I think I'd die happy if you killed me right now."
+    #centoria rolls her eyes
+    illya "You are a strange one, [mc_name]."
+    z "Would you be surprised if I told you that you aren't the first to tell me that?"
+    #illya rolls her eyes
+    #illya and centoria get into the bath - slowly crawl towards z
+    illya "So? [mc_name]? Can you entertain us?"
+    menu:
+        "Absolutely.":
+            cnt "Illy are you sure about this?"
+            illya "I have never been as sure about anything Centy"
+            $ cnt_lst=+1
+            #z kisses illya
+            illya "Hmmm. Not bad. This promises to be an interesting night."
+            illya "Come and have a go Centy."
+            cnt "Oh Illy. If you're sure."
+            z "You ready Centoria? Shall we do this again?"
+            illya "AGAIN? Centy you naughty girl."
+            #z kisses centoria
+            cnt "I'm sorry Princess. I couldn't resist."
+            illya "I'm not mad. I'm impressed."
+            illya "Now, [mc_name]. You have been entertaining us. Now, it is our turn to entertain you."
+            #illya pushes z back
+            illya "Centy, how about you get down and show him some love?"
+            cnt "It would be my pleasure Illya"
+            #centoria goes down on z
+            z "Ahh"
+            illya "That seems to be pleasurable?"
+            z "You have no idea."
+            illya "I wouldn't be too sure of that if I were you."
+            #z looks surprised
+            z "I think you should join me up here Princess"
+            illya "With pleasure [mc_name]."
+            #z and illya start kissing - z playing with illya tits
+            cnt "Mmmnnnn."
 
-#17) Taking a bath with Illya and Centoria:
-    #Since he can't be far from her, they all take a bath together.
-
-#18) Goblin tournament:
+#16) Goblin tournament:
     #This whole thing was suggested by Illya's father. She doesn't like the idea because it establishes that the goblins are beneath the elves and that they should transform.
     #There is an event for goblins, whoever wins gets a potion that transforms them into elves.
     #Z is surprised that such a potion exists. The elves explain that the and the goblins have a common ancestry and with a powerful potion you can ascend to an elf as a goblin but the potion is very expensive. 
 
-#19) Illya's plan:
+#17) Illya's plan:
     #Later to Z's team alone after playing together in the tournament and bonding with them.
     illya "I want us and the goblins to reach a peace agreement."
     illya "The constant fighting is not good for anyone."
@@ -1731,7 +1992,7 @@ label season2_chapter_3:
     illya "Hm?"
     #Skip
 
-#20) Outside the city:
+#18) Outside the city:
     #At the gate.
     Character("Guard") "Halt!" #Stops Z's wagon.
     z "..."
@@ -1874,7 +2135,7 @@ label season2_chapter_3:
     z "Fuck..." #Looks at his chains.
     #Turns to the big woman. She's punches him in the face and fade out.
 
-#21) Goblin camp:
+#19) Goblin camp:
     #Z wakes up in the dungeons.
     z "Ughhh..."
     "He's waking up..."
@@ -2139,7 +2400,7 @@ label season2_chapter_3:
     z "..."
     nxi "..." #Maintains eye contact while he's dragged away.
 
-#21) Dungeon visit:	
+#20) Dungeon visit:	
     #Z is put in another cell where he's suspended from all his limbs.
     z "..."
     z "(Fuck...)"
@@ -2233,7 +2494,7 @@ label season2_chapter_3:
     nxi "I want an answer from you soon, [mc_name]."
     z "..."
 
-#22) Dohkong visit:	
+#21) Dohkong visit:	
     #Z dreams of being chained up like he is but in black void.
     #He is also naked.
     #A figure is approaching him.
@@ -2355,7 +2616,7 @@ label season2_chapter_3:
     z "I can't say for sure..."
     Dohkong "..."
 
-#23) Big woman visit:
+#22) Big woman visit:
     #Skip to him sleeping with no chains cuz Dohkong doesn't chain him anymore.
     #Woken up by the Big woman.
     z "?!"
@@ -2478,18 +2739,17 @@ label season2_chapter_3:
     #Choice to have sex with her or turn her down.
     #I'm here W <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
-#24) Seira breaks Z out:
+#23) Seira breaks Z out:
     #&&&&&&&&MORE DETAILS&&&&&&&&&&&&
     #Seira, who saw Z imprisoned in the dream, rushes to save him.
     #Seira leads the others to be able to free Zycris.
 
     #In the battle, Vollstahl and the sorceress desert and are not there to protect the king.
     #If Z sides with the goblins, the princess and some other elves seek refuge in the western elf village.
-
-#25) Either confront Pale goblin or Crowned prince depending on Z's choice.
+    #Either confront Pale goblin or Crowned prince depending on Z's choice.
     #If confronts crowned prince, Vollstahl and the sorceress are noticibly nowhere to be found.
 
-#26) Gabbie gets kidnapped:
+#24) Gabbie gets kidnapped:
     #Gabbie and Venus are gathering ingerdients from the woods nearby.
     gbrla "Why not?"
     vns "Well, Seira literally trained him, didn't she?"
