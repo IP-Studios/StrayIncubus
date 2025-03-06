@@ -19,68 +19,115 @@ label season2_chapter_3:
     cndy "..."
     scene v152 with Dissolve(1.5)
     cndy "Is she gonna be okay?"
-    scene v153 with Dissolve(1.5)
+    scene v153 with Dissolve(1)
     gbrla "Yeah... She's just unconscious."
     #Torr waltzes in.
-    scene v154 with Dissolve(1)
+    scene v155 with Dissolve(1.5)
     tr "Centoria!!!"
+    scene v154 with Dissolve(1)
     cndy "?!" (multiple=2)
     gbrla "?!" (multiple=2)
+    scene v156 with Pause(1)
+    scene v157 with Dissolve(1)
     cndy "Torr?! When did you get ba-"
+    scene v158 with Dissolve(1)
     tr "Like 5 minutes ago!"
+    scene v159 with Dissolve(1)
     tr "What happened to Centoria?!"
+    scene v160 with Dissolve(1)
     gbrla "She's fine. Don't worry, Torr."
+    scene v161
     tr "..."
+    scene v162
+    gbrla "..."
+    scene v163
     tr "I heard Yumi and Stephanie got injured too?"
+    scene v164
     ymi "I'm okay, don't worry." #Comes in.
+    scene v165
     gbrla "I told Stephanie not to move too much for a day or two, but she seems fine too."
+    scene v166
     cndy "How did your mission go? Anyone injured?"
+    scene v167
     tr "Well, no... Thanks to Anabelle..."
+    scene v168
     tr "It was a handful of goblins kidnapping the women. They tried to attack us when we went to rescue the missing girls. They were no match for us though. Anabelle killed seven of them herself. I killed two and the midget didn't kill anyone."
+    scene v166
     cndy "I see... That's good."
+    scene v167
     tr "Did [mc_name] return yet?"
+    scene v166
     cndy "Not yet..."
     hly "{size=-10}Are you sure you're up to it?{/size}"
+    scene v169
     cndy "?" (multiple=2)
     tr "?!" (multiple=2)
+    scene v170
     vns "I'm fine, Hailey. I have stuff to do here..." #Venus and hailey go in.
+    scene v171
     gbrla "Venus?"
+    scene v172
     vns "I'm told a few people are injured?"
+    scene v171
     gbrla "Yeah... One of Stephanie's arms is swollen... I'm not sure if it's broken or not..."
+    scene 173
     vns "..."
+    scene v172
     vns "Where is she?"
+    scene v171
     gbrla "She's in the lab."
+    scene v174
     vns "I'll go take a look."
+    scene v156
     hly "Venus... Wait..."
     #She leaves.
+    scene v176
     gbrla "..."
+    scene v177
     gbrla "Is she okay?"
+    scene v178
     hly "..."
     #Skip
 
 #2) Zycris is going to his room.
+    scene v179
+    scene v180
     z "..." #It's dark.
+    scene v181
+    scene v182
+    scene v183
     #Sits down, looks sad.
     if s_lst >= 9:
+        scene v188
         s "Darling? Are you in here?" #Comes from the outside.
+        scene v187
         z "..."
         z "Seira..."
         z "I..."
+        scene v189
         s "..."
+        scene v190
         s "Are you okay?"
+        scene v191
         z "..."
+        scene v192
         z "I don't..."
         z "...know."
+        scene v193
         s "..."
+        scene v194
         s "What happened?"
         # if fought twice: against_athena = 14
         # if fought then left: against_athena = 9
         # if left then left: against_athena = 7
         # if left then fought: against_athena = 12
         # if left then negotiated: against_athena = 8
+        scene v193
         z "I did what I thought was right..."
+        scene v192
         s "..."
         if against_athena == 14:
+            scene v193
             z "I fought Athena."
             z "That's twice now."
             z "I almost won, Seira..."
@@ -88,14 +135,19 @@ label season2_chapter_3:
             z "Athena's..."
             z "Well, minion, I suppose. She interfered before I could finish Athena off..."
             z "And Venus had to kill her."
+            scene v194
             s "You almost finished Athena off?!"
+            scene v193
             z "Yeah..."
             z "I think..."
             z "But Seira..."
             z "Athena's minion..."
+            scene v192
             z "She was Venus's dear childhood friend..."
             z "And Venus had to kill her to protect me..."
+            scene v191
             s "..."
+            scene v193
             z "She didn't want to fight, actually..."
             z "Venus..."
             z "She just wanted us to back off."
@@ -103,11 +155,14 @@ label season2_chapter_3:
             z "What she did in the town of the faceless god."
             z "It's wrong."
             z "I couldn't let that stand."
+            scene v223
             s "..."
             s "You know there's no going back from decisions like these, I trust?"
+            scene v224
             z "Yeah..."
             s "..."
         elif against_athena == 12: #if fought once and left or the other way round
+            scene v193
             z "I fought Athena this time."
             z "I actually..."
             z "I..."
@@ -117,14 +172,19 @@ label season2_chapter_3:
             z "Athena's..."
             z "Well, minion, I suppose. She interfered before I could finish Athena off..."
             z "And Venus had to kill her."
+            scene v194
             s "You almost finished Athena off?!"
+            scene v193
             z "Yeah..."
             z "I think..."
             z "But Seira..."
             z "Athena's minion..."
+            scene v192
             z "She was Venus's dear childhood friend..."
             z "And Venus had to kill her to protect me..."
+            scene v191
             s "..."
+            scene v193
             z "She didn't want to fight, actually..."
             z "Venus..."
             z "She just wanted us to back off."
@@ -132,11 +192,14 @@ label season2_chapter_3:
             z "What she did in the town of the faceless god."
             z "It's wrong."
             z "I couldn't let that stand."
+            scene v223
             s "..."
             s "You know there's no going back from decisions like these, I trust?"
+            scene v224
             z "Yeah..."
             s "..."
         elif against_athena == 9 or against_athena == 7:
+            scene v192
             z "I left a boy to die..."
             z "I had a choice between letting him die and trying to fight Athena."
             z "And she had a fury there too..."
@@ -144,11 +207,14 @@ label season2_chapter_3:
             z "So I did..."
             z "The fury..."
             z "She was Venus's childhood friend... We would've had to kill her too..."
+            scene v223
             s "..."
             s "So you just left..."
+            scene v224
             z "Yeah..."
             s "..."
         else:
+            scene v193
             z "I made a deal with her..."
             z "Athena."
             z "I made her spare a boy's life in exchange for me not interfering with her curse over the town."
@@ -159,31 +225,46 @@ label season2_chapter_3:
             z "So I did..."
             z "The fury..."
             z "She was Venus's childhood friend... We would've had to kill her too..."
+            scene v223
             s "..."
             s "So you just left..."
+            scene v224
             z "I made Athena spare one boy. But yeah... We left."
             s "..."
+        scene v225
         s "Want to talk more about it?" #Gets close to him.
+        scene v226
         z "..."
+        scene v227
         z "No..."
+        scene v228
         s "..."
         #Grabs his face.
+        scene v229
         s "Look..."
+        scene v230
         s "I can't make these decisions for you..."
+        scene v231
         s "And I already told you there's no such thing as a right or a wrong choice in situations like these."
         s "Just know this, baby."
         s "I will always be at your back. Whatever you decide."
         s "And I will always be proud of you. Whatever you become."
+        scene v232
         z "..."
+        scene v233
         #Their faces are very close.
         #Z goes for a kiss.
         s "Hmmm~..."
+        scene v234
+        scene v235
         #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
         #Aggressively plays with her boobs while doing so.
         #Throws her on all four and rams her, has a choice to try anal.
         #Z warns S that he's gonna be rough, she says she'd like that.
     else:
+        scene v184
         $ dummy += 1
+        scene v185
         #Skip to him sleeping on his own in the darkness.
 
 #3) Meeting: 	
@@ -191,41 +272,66 @@ label season2_chapter_3:
     #-If didn't fight athena, Helena may not defy athena later on.
     #Stephanie's mission returns with no casualties. She's frustrated saying they just let them go.
     #Anabelle reports that several cities have been abandoned after being attacked by bandits.	
-
+    scene v195
     stfny "We were totally helpless... I couldn't even lay a finger on him."
     stfny "He was crazy strong."
+    scene v196
     hly "Stronger than your mom?"
+    scene v197
     stfny "Yeah... I think so..."
     stfny "I would say he's even stronger than Seira..."
+    scene v198
     stfny "His long ranged attack is ridiculous. My shield barely held against it for five second."
+    scene v196
     hly "How on earth did you all make it out of the fight, then?"
+    scene v199
     stfny "..."
+    scene v195
     stfny "They just..."
     stfny "Let us go..."
+    scene v196
     hlna "..."
+    scene v196
     hly "Why would they let you go?"
+    scene v197
     stfny "I don't know..."
+    scene v202
     stfny "A girl interfered... Axius's daughter, I think... She said something to him about me b-"
+    scene v203
     hlna "Look. It doesn't matter how exactly you all made it out alive. The important thing is that you all did."
+    scene v204
+    scene v205
     a "Next time, we may not be so lucky, Helena."
     a "We have four new missions already, and the last batch of ninjas just got home. A few of them are too injured to take a new mission. And almost all of them are still too tired to take one."
     a "So... Do we accept these missions? Or do we turn them down?"
+    scene v206
     hlna "..."
+    scene v207
     z "I can take a mission if needed. I'm not really tired."
     if against_athena >= 12:
+        scene v211
         hly "You fought Athena herself, [mc_name]... You should really get some rest..."
+        scene v213
         hlna "..." #Focus a bit on her.
+        scene v209
         a "Is it true you almost defeated her, [mc_name]?"
+        scene v210
         z "..."
+        scene v209
         z "Probably... If it weren't for her fury..."
         z "I might've..."
+        scene v210
         a "..."
     else:
+        scene v211
         hly "You faced Athena herself, [mc_name]... You should really get some rest..."
+        scene v210
         a "..."
+    scene v216
     a "Something is going on..."
     a "Something big..."
     a "On our way to our mission, we traveled through three villages. All three were abandoned recently."
+    scene v215
     a "It's almost as if someone is behind all this chaos..."
     #Cut to axius.
 
@@ -233,176 +339,298 @@ label season2_chapter_3:
 #4) Athena and Axius:
     #After the meeting, Axius is sitting infront of a chess board.
     #He's contacted by athena using an orb.
+    scene v218
+    scene v219
+    scene v220
+    scene v222
     athna "I hear you have been busy..."
     athna "A dozen villages abandoned. Three burnt to the ground."
     athna "What is the meaning of this, incubus?"
+    scene v221
     axs "You told me the ninja villages were our enemies, didn't you?"
+    scene v222
     athna "What of it?"
+    scene v221
     axs "Attacking them directly is not the way to go..."
     axs "This is."
     athna "..."
+    scene v222
     athna "You..."
+    scene v221
     axs "They are too strong to attack directly."
     axs "But... If we exhaust them first."
     axs "If the ninjas don't get the chance to sit down after one mission because they get sent on another right away..."
+    scene v220
     athna "..."
-    #Checkmate move on the chess board after spreading the pieces away from the king.
+    #Checkmate move on the chess board after spreading the pieces away from the king. - this needs animating
+    scene v221
     axs "That's how we'll beat them."
+    scene v220
     athna "..."
     #Cut.
 
 #5) Z meets Jenny in the ninja village:
     #Looks like he didn't get enough sleep.
+    scene v236
     z "..." #Going to check on the wounded.
+    scene v237
     cndy "[mc_name]?"
+    scene v238
     z "..."
     z "Hey, Candy."
     z "How are you?"
+    scene v239
     cndy "I'm okay, thanks for asking..."
+    scene v240
     z "No injuries or anything from your last mission?"
+    scene v239
     cndy "No. I'm fine."
+    scene v240
     z "I see..."
     cndy "..."
+    scene v241
     cndy "Are you okay? You look..."
+    scene v240
     z "Hm?"
+    scene v242
     Character("Voice from behind", color = "c44f00") "Like you didn't get enough sleep."
+    scene v243
     z "I actually didn't sleep very well..."
     z "..."
     z "Who-" #Turns around.
+    scene v244
     z "..."
+    scene v246
     z "......"
+    scene v247
     z "........."
+    scene v245
     z "I guess I'm still dreaming."
+    scene v248
     jnfr "No you're not, you dummy!"
+    scene v249
     z "..."
+    scene v250
     z "What?!"
+    scene v251
     z "Jenny?! The fuck are you doing here?!"
+    scene v253
     jnfr "Wow... That's quite the warm welcome..."
+    scene v251
     z "No! I didn't mean..."
+    scene v252
     z "It's just... Does Jamie have business with the ninja village or something?"
     z "But if so, why are you wearing a white belt? Did you both join the ninja village?"
+    scene v254
     z "Or did you two brea-"
+    scene v255
     jnfr "No, not exactly..."
+    scene v250
     z "..."
+    scene v252
     z "Are you maybe here to issue a mission?"
+    scene v256
     jnfr "I guess you can say that, yeah..."
+    scene v255
     jnfr "But I also wanted to help, and Helena told me I should join up if I want to help so I did. She said I could still leave any time I want, but I don't see that happening any time soon..."
+    scene v254
     z "What's-"
+    scene v257
     tmra "Apparently, her betrothed has been trading with bandits and he doesn't feel safe trading with them anymore."
+    scene v258
     tmra "And he thinks if they learn he cut ties with them, they might try to kill him or something."
+    scene v259
     tmra "I just had to listen to what he had to say. For their safety, they'll stay here for the time being until the bandit issue has been settled."
+    scene v260
     jnfr "..."
+    scene v261
     jnfr "Hey, cutie."
     jnfr "Tamara, right?"
+    scene v262
     tmra "Yeah... Hey..."
+    scene v263
     z "I see..."
+    scene v264
     jnfr "Jamie has always been secretive about who he does business with, so I don't know too much about it... I just know that he and my mom were dealing with fishy people..."
+    scene v265
     z "So they're both potentially asking for protection from the same people..."
+    scene v266
     tmra "Yeah... I think that might be the case too."
     tmra "Sadly, both of them refuse to share all the details, so we can't really be sure."
+    scene v269
     gbrla "Jenny!"
+    scene v270
     gbrla "Oh hey, [mc_name]!"
+    scene v271
     z "Hi there, Gabbie."
+    scene v272
     gbrla "Can I borrow Jenny for a few minutes? She's helping us with treating the injured."
+    scene v274
     z "Oh?"
+    scene v273
     jnfr "Yeah... I'm not really good at it, but it's the least I can do to be useful around here. Seeing how you guys are protecting us, giving us food and a place to stay, and all of that..."
+    scene v275
     #They leave.
+    scene v276
+    scene v277
     tmra "..."
+    scene v278
     tmra "What are you looking at?"
+    scene v279
     z "Nice to see you too, Tamara."
     #Leaves.
+    scene v280
     cndy "I kinda wanna eat something..."
+    scene v281
     z "I could use something to eat too..."
+    scene v282
     z "Wanna go grab something?"
+    scene v283
     cndy "Sure..."
 
 #6) Eating scene:
     #Skip to them at the foody place
+    scene v291
     z "What was she like?" #Walking towards the foody place
+    scene v292
     cndy "Well, I don't really remember much..."
     cndy "She somehow got Centoria first."
+    scene v293
     cndy "Even though Centoria had three clones."
+    scene v294
     cndy "She was somehow able to tell which one was the real Centoria, and then-"
     cnt "And then she approached me. Really quickly. She's probably more or less as fast as you."
+    scene v296
     z "Oh. Hey, Centoria."
+    scene v297
     cnt "Hey, [mc_name]. Hey, Candy."
     if invite_misty >= 1:
+        scene v299
         cnt "What do you guys wanna eat? We have roasted birds, potato chips, and turtle soup."
+        scene v301
         z "Turtle soup?"
+        scene v302
         misty "It's my own recipe. You haven't tried it so far?"
+        scene v303
         z "I don't believe so..."
+        scene v304
         misty "You should really try it."
+        scene v305
         z "..."
         z "By the way, how are you doing, Misty?"
+        scene v304
         misty "I'm doing just fine, thanks, [mc_name]."
+        scene v307
         misty "How about you? I heard your last mission was crazy."
+        scene v306
         z "Ehh... I'm okay... It's Venus I'm most worried about..."
+        scene v307
         misty "Yeah... I heard about that too..."
         z "..."
+        scene v308
         cndy "Can I have the potato chips?"
+        scene v309
         misty "Sure."
         pause(1)
         menu:
             "Get the turtle soup.":
+                scene v311
                 z "I want to try the turtle soup, actually."
+                scene v313
                 misty "Oh? Okay, you got it!"
                 $ misty_aff += 2
+                scene v314
             "Get something else.":
+                scene v311
                 z "I'll have the same, please."
+                scene v312
                 misty "Sure!"
         #Skip a bit.
         #Centoria and misty are sitting down with them.
+        scene v324
         misty "Why?"
+        scene v327
         cnt "I think her ability doesn't work unless she whispers it in your ear?"
+        scene v315
         cndy "Yeah. Something similar happened to me."
         cndy "I was hiding behind a tree. I don't know how she was able to spot me, but she whispered to me too..."
         cndy "And then..."
+        scene v316
         cndy "..."
+        scene v317
         cndy "I just remember waking up like 30 minutes after."
         cndy "I must've lost consciousness..."
+        scene v316
         z "..."
+        scene v318
         z "Do you remember what she said to you?"
+        scene v319
         cndy "..."
+        scene v317
         cndy "No..."
         cndy "I just remember it being..."
         cndy "Hmmm..."
+        scene v320
         cnt "Soothing?"
+        scene v323
         cnt "Like my mother singing me a lullaby before going to bed."
+        scene v332
         cndy "Yeah..."
+        scene v333
         cnt "I actually..."
         cnt "I do actually remember my mother singing to me now..."
+        scene v329
         cnt "When I was young..."
         cnt "I didn't remember anything from my parents before, but now..."
         cnt "Which makes sense because my mother died giving birth to me and my father never stuck around long enough for even that..."
+        scene v332
         z "..."
+        scene v324
         misty "I'm sorry..."
+        scene v328
         cnt "Thanks, Misty..."
+        scene v329
         cnt "I remember it though..."
         cnt "My mother's face..."
         cnt "But it's weird, because she's not..."
+        scene v336
         z "..."
         z "Not what?"
+        scene v333
         cnt "Well, I think it's just the magic... I'm just confused..."
+        scene v337
         tr "You started eating without me?!"
+        scene v338
         z "Oh. Hey, Torr."
         z "How are you do-"
+        scene v339
         tr "Na-uh!"
+        scene v340
         tr "How are YOU doing?"
+        scene v341
         z "..."
         z "I'm fine, Torr. Thanks."
+        scene v343
         tr "..."
+        scene v342
         tr "Can I get some food?"
         misty "I'll get you some right away."
         #Sits down.
     else:
         #if didn't invite misty, there's a spider in the bg.
+        scene v299
         cnt "What do you guys wanna eat? We have roasted skeevers or potato chips?"
+        scene v300
         cndy "Can I have the potato chips?"
+        scene v301
         z "Me too please..."
+        scene v299
         cnt "Sure."
         #Skip a bit.
         #Centoria is sitting down with them.
+        scene v325
         z "Why?"
+        scene v326
         cnt "I think her ability doesn't work unless she whispers it in your ear?"
         cndy "Yeah. Something similar happened to me."
         cndy "I was hiding behind a tree. I don't know how she was able to spot me, but she whispered to me too..."
@@ -431,27 +659,41 @@ label season2_chapter_3:
         z "..."
         z "Not what?"
         cnt "Well, I think it's just the magic... I'm just confused..."
+        scene v337
         tr "You started eating without me?!"
+        scene v338
         z "Oh. Hey, Torr."
         z "How are you do-"
+        scene v339
         tr "Na-uh!"
+        scene v340
         tr "How are YOU doing?"
+        scene v341
         z "..."
         z "I'm fine, Torr. Thanks."
+        scene v343
         tr "..."
+        scene v342
         tr "Can I get some food?"
         cnt "Yeah. Give me a second."
         #Sits down.
+    scene v344
     z "Goblins?"
+    scene v345
     tr "Yeah."
     tr "Like eight... No, nine of them."
+    scene v344
     z "They decided to raid the village on their own?"
+    scene v345
     tr "Well, not raid... More like kidnap women who they catch alone in the woods nearby."
+    scene v344
     z "I see..."
     z "There were some goblins venturing all the way north when I joined the ninja village..."
     z "But those were mostly sent by Axius when he was looking for me, I think..."
     z "Is it normal for them to do things like this often?"
+    scene v346
     a "No. It's not." #It's annie and yumi with the cat.
+    scene v347
     z "Oh hey, guys! How long have you been standing there."
     #Yumi and the cat sit next to torr who doesn't look happy about the cat.
     a "Goblins hardly venture into human territory. But we've been receiving several reports about them doing so in the last couple of days."
@@ -460,188 +702,356 @@ label season2_chapter_3:
     a "I'm not sure... But something is up..."
     a "Increased bandit activity is also being reported and we're being flooded with missions."
     a "Aren't goblins typically found near elf villages?"
+    scene v350
     tr "Yeah. We have a goblin village close to us."
+    scene v351
     cnt "Us too. There has been a conflict between my city and the nearby goblins for decades now."
+    scene v352
     a "..."
     a "By the way, Centoria..."
-    a "There has been a litter from your city."
+    a "There has been a letter from your city."
+    scene v353
     cnt "Eh?!"
+    scene v354
     a "From the crowned prince himself."
     a "It involves you too, [mc_name]."
     z "?"
     #Skip to yumi, centoria and z being briefed by helena.
+    scene v356
     z "They asked for me?"
+    scene v355
     hlna "Personally, yes."
     hlna "For Centoria too of course. And another high ranking ninja. As they said, it's of the highest importance to them."
     hlna "So I picked Yumi as she and Hailey are the least injured of the higher ranking ninjas. And I need Hailey for another mission."
+    scene v357
     z "I understand Centoria and a high ranking ninja but why me?"
+    scene v358
     hlna "Well, you've apparently become something of a celebrity around the continent."
     hlna "The demi-god ninja."
+    scene v359
     hlna "Of course, the title did not originally belong to you. It's an old title that people have been hearing for years. That's probably why it took off again so quickly."
+    scene v360
     z "An old title?"
+    scene v361
     ymi "My brother. That's what people used to call him. He was the first demi-god ninja."
+    scene v362
     z "Sirius?"
+    scene v359
     hlna "And since Sirius is not active as a ninja any more, you seem to have inherited the title from him."
     hlna "I must admit, you have done really well yourself of course."
+    scene v367
     z "..."
+    scene v366
     hlna "Well, back to your mission..."
     hlna "The princess, Illya the Third. It's gonna be her birth week in two days. She needs a body guard while traveling around as a part of the celebration."
     hlna "She apparently wants to visit villages around the city walls as well. Which is probably going to be very dangerous, even more so considering that the local goblins have been repeatedly attacking the elven city recently."
+    scene v360
     z "I see..."
     z "That does sound dangerous..."
+    #need a scene of z looking confused here in same pose as the rest
     z "Wait, did you say birth week?"
+    scene v363
     cnt "It's an elven tradition to celebrate not the day on which you were born, but the whole week."
+    scene v364
     z "I see..."
+    scene v363
     cnt "Oh, and this is a major event, since the princess will turn twenty. It means she..."
+    scene v364
     z "Hm?"
+    scene v363
     cnt "It means she can make a major change to the elven way of life."
     cnt "It's supposed to teach her responsibility. She's expected to one day rule the city, after all."
+    scene v364
     z "Hmmm..."
+    scene v368
     hlna "Normally, seeing how many other missions we have, I'd not prioritise a mission like this."
+    scene v366
     hlna "However, our alliance with the elves is paramount. I'll have to humour them on this."
     hlna "You'll leave tomorrow at dawn. The mission leader will be Yumi. The objective is simple; protect the princess at all costs."
     hlna "But... I would still try to limit the loss of goblin lives as much as I could."
+    scene v367
     z "Yeah... Understood."
+    scene v368
     hlna "We'll discuss your points from both missions after you return."
 
 #7) Torr sparing with Anabelle:
     #Z is walking around.
     #Hears sparing sounds.
+    scene v369
+    scene v370
     z "?"
+    scene v371
     #Goes to it.
+    scene v372
     z "..."
+    scene v373
     z "(Is that...)"
+    scene v374
+    scene v375
     a "Good. Always minimise the area your opponent can hit."
+    scene v376
     a "Grip your sword more tightly."
+    scene v377
     tr "..."
+    scene v378
     a "Yeah. That's it."
+    scene v379
     a "Here I come."
+    scene v380
+    scene v381
+    scene v382
+    scene v384
+    scene v385
+    scene v386
+    scene v387
+    scene v388
+    scene v389
+    scene v390
     #Anabelle beats her easily. But Torr blocks a few times.
     #Z can tell when torr makes a mistake.
+    scene v391
+    scene v392
+    scene v393
+    scene v394
+    scene v395
+    scene v396
+    scene v397
     z "(No! Don't rush!)"
     #Torr's sword flies next to Z's foot when she falls.
+    scene v398
+    scene v399
+    scene v400
+    scene v401
     a "[mc_name]? How long have you been standing there?"
     z "Just a minute or two."
+    scene v402
     z "Did Torr ask you to train her?"
     a "Yeah... Actually..."
+    scene v403
     tr "I asked both her and Seira. But Seira is busy today, so only Anabelle is teaching me right now."
+    scene v404
     z "Hmmm..."
+    scene v405
+    scene v406
+    scene v407
     #Picks up the sword.
     a "..."
-    #Anabelle gives it to torr.
     tr "..."
+    scene v408
     z "Let's see what you learnt."
+    scene v409
+    scene v410
     tr "I don't think I can beat you just yet, [mc_name]."
     z "We're just practicing. It doesn't matter who wins."
+    scene v411
     tr "Okay, good point..."
+    scene v412
+    scene v413
+    scene v414
+    scene v415
+    scene v416
+    scene v417
+    scene v418
+    scene v419
+    scene v420
+    scene v421
+    scene v422
+    scene v423
+    scene v424
+    scene v425
+    scene v426
+    scene v427
+    scene v428
     #Beats Torr again.
     tr "Oh..."
+    scene v429
     z "Well, it was much better than what happened the first time we tried that..."
+    scene v430
     tr "Heh..." #Smiles.
+    scene v431
     a "Can I have that for a minute?"
+    scene v432
     tr "Sure."
     tr "I need to go talk to my team about tomorrow's mission anyway."
+    scene v433
     tr "Thanks for your help, Anabelle."
+    scene v434
     a "Any time, honey."
+    scene v435
     z "Your team?"
     z "You're the mission leader?"
+    scene v436
     tr "Yep."
     tr "First time I'm the mission leader. Hehehehe..."
+    scene v437
     z "Your team is..."
+    scene v439
     tr "Candy and Gabbie."
+    scene v438
     z "Oh, Gabbie is going on a mission?"
+    scene v440
     tr "Yeah... We needed a medic on the team, so it was supposed to be Venus. But Helena said she doesn't want to give her missions just yet."
+    scene v438
     z "Yeah... I see."
+    scene v440
     tr "See you, guys."
     a "Bye."
+    scene 441
     z "..."
     z "She's grown a lot more mature, hasn't she?"
+    scene v442
     z "I'm really prou-"
+    scene v443
     #Hits her head against sth.
     tr "Awww!"
+    scene v444
     tr "..."
+    scene v445
+    scene v446
     #Leaves.
+    scene v447
     z "..."
+    scene v448
     z "Wanna give it a go?"
+    scene v449
     a "Sure..."
+    scene v450
     a "..."
+    scene v451
+    scene v452
     a "You know..."
     a "I've been..."
+    scene v453
     a "...meaning to talk to you."
+    scene v454
     a "It's just we never got a chance to properly talk... With Sirius, and then the mission, and..."
+    scene v455
     z "Yeah... I get you."
     a "..."
+    scene v456
     a "About what happened in..."
     a "In Kalytro..."
+    scene v457
     a "After you fought Nari and we barely made it out alive..."
+    scene v455
     z "..."
     z "Yeah..."
+    scene v458
     z "Listen-" (multiple=2)
     a "So I w-" (multiple=2)
+    scene v455
     z "..." (multiple=2)
     a "..." (multiple=2)
     z "You go first."
     a "..."
+    scene v456
     a "Okay..."
     a "I just wanted to say..."
+    scene v457
     a "Should we just pretend it never..."
+    scene v458
     a "You know..."
+    scene v459
     z "..."
     z "I guess that's probably for the best..."
     z "(I really can't see myself being with this girl...)"
     z "(She's totally out of my league...)"
     z "(Right?)"
+    scene v457
     a "It was just a tiny mistake... I don't want things between us to be awkward forever..."
     z "(And her saying it was a mistake just proves that...)"
+    scene v455
     z "I get you. Yeah."
+    scene v457
     a "So..."
     a "We forget about it?"
+    scene v455
     z "Sure."
+    scene v457
     a "And swear to never do it again?"
+    scene v455
     z "Yeah."
+    scene v457
     a "You know, so... Like not even other stuff..."
+    scene v455
     z "Of course, that goes without saying..."
     z "You're like an older sister to me... It's just..."
+    scene v457
     a "Wrong."
+    scene v455
     z "Exactly."
     z "Honestly, you're totally right."
     z "We absolutely can't do this again... Any of it..."
+    scene v457
     a "Oh, I'm so glad you understand... You are really mature, you know..."
     a "And I just didn't want things to be awkward between us. I really think of you as my little brother and I didn't want to lose that, you know?"
+    scene v455
     z "Of course. I didn't want to lose what we have either."
     z "And I have a huge amount of respect for you, Annie. I really think of you as my older sister."
+    scene v457
     a "Ohhh... Thanks..."
     a "So let's just forget about it and never mention it in any way at all?"
+    scene v455
     z "Sounds good."
     z "Nothing of any sort regarding it. May it die in our memories and be done with it."
+    scene v457
     a "Exactly."
+    scene v455
     z "Right?"
+    scene v457
     a "Yeah..."
+    scene v455
     z "Yup..."
+    scene v457
     a "Hmmm..."
     z "..."
     a "..."
     z "..."
     a "..."
+    scene v458
     a "Sooo... Ready to spar?"
+    scene v459
     z "Yup. Let's do it!"
+    scene v460
     a "..."
+    scene v461
+    scene v462
+    scene v463
+    scene v464
+    scene v465
+    scene v466
     #looks at him while he's about to attack.
     #Suddenly blushes and loses her focus, so he beats her easily.
+    scene v467
     z "Eh?! Are you okay?"
+    scene v468
     z "Sorry! I think I swung a bit too hard?!"
+    scene v469
     a "No, no... It's not..."
+    scene v471
     a "Listen, I think I might've overestimated my stamina... I think I should take a break after all."
+    scene v470
     z "I see."
+    scene v469
     a "Let's call it a day?"
+    scene v470
     z "Sure."
+    scene v469
     a "Sorry we had to cut it short... I'll make it up to you some other time, I promise..."
+    scene v470
     z "It's okay, you don't need to worry about that."
+    scene v472
     z "Here... Let me help you up."
+    scene v473
     #Pulls her a bit too close to him.
+    scene v474
+    scene v475
     a "..." #Blushes again.
+    scene v476
     a "See you around!" #Leaves.
+    scene v477
     z "..."
+    scene v478
     z "(So much for it not being awkward...)"
 
 #8) Alchemist's hut:
@@ -754,333 +1164,552 @@ label season2_chapter_3:
                 "Cum inside Gabbie":
                     #scene 34
                     z "Gods Gabbie I'm cumming"
-                    #fills her up
+                    #fills her up - scene 35
                     gbrla "HMMMMMNNNN"
                     margot "AHHHHHHH"
-                    #margot crawls round to mc - scene 35
-                    #scene 36
+                    #margot crawls round to mc - scene 36
+                    #scene 37
                     margot "Holy shit Gabbie he filled you to the brim."
-                    gbrla "mmmnnnn ha-"
+                    gbrla "mmmnnnn haaa-"
                     $ gbrla_lst+=2
                 "Cum inside Margot":
                     z "Shit I'm gonna cum. Margot get over here!"
                     #margot moves out from under gabbie - z inserts himself and fills her up
-                    #scene 37
+                    #scene 38
                     margot "AHHHHHH"
                     margot "Holy shit there's so much."
-                    #scene 38
-                    #she grabs some that is leaking out and eats it
                     #scene 39
+                    #she grabs some that is leaking out and eats it
+                    #scene 40
                     margot "And it tastes amazing, Gods."
                 "Cover them both":
                     z "Get on your knees both of you"
-                    #scene 40
-                    #gab and margot kneel before z and start kissing his tip
                     #scene 41
-                    #z cums on their faces
+                    #gab and margot kneel before z and start kissing his tip
                     #scene 42
+                    #z cums on their faces
+                    #scene 43
                     z "Holy shit that was amazing. You are both... Amazing"
                     $ gbrla_lst+=2
                     $ gbrla_aff+=2
-            #scene 43
-            margot "Thank you for that stud. Hope we can do this again soon."
             #scene 44
-            z "You know, for once Margot, I agree with you."
+            margot "Thank you for that stud. Hope we can do this again soon."
             #scene 45
+            z "You know, for once Margot, I agree with you."
+            #scene 46
             gbrla "Haaaa... Cock... So good..."
         "I'm kinda busy right now, sorry guys.":
             $ dummy+=1
-            #scene 46
-            margot "Really? Ok I guess we'll see you another time."
             #scene 47
-            gbrla "Bye [mc_name]"
+            margot "Really? Ok I guess we'll see you another time."
             #scene 48
+            gbrla "Bye [mc_name]"
+            #scene 49
             z "See you soon girls."
 
 
 #9) Scene with Jenny:
     #Helena is showing Jenny and Jamie the bath.
     #Z is passing by.
+    scene v561
     hlna "We didn't really have any men around here for such a long time that there are no rules against men and women using it at the same time."
     hlna "I guess now we should have some put in effec-"
+    scene v562
     z "Hey."
+    scene v564
     hlna "Oh, Hey there, [mc_name]."
     hlna "I was showing Jenny and her betrothed around."
+    scene v563
     z "Wouldn't that have been more convenient during the day?"
+    scene v564
     hlna "Yeah. But I had lots to attend to earlier. And I didn't have anyone available to do it. So I thought why not do it myself."
     hlna "And I had nothing else to do for the rest of the evening..."
+    scene v563
     z "I see..."
+    scene v566
     jnfr "You guys have such a wonderful place here..."
+    scene v567
     jamie "A bigger room would've been nice..."
+    scene v568
     jamie "Aww..." #Jenny hits him.
+    scene v569
     jnfr "He's just in shock after everything that happened."
+    scene v570
     z "..."
+    scene v571
     z "What happened?"
+    scene v572
     jnfr "..." #Looking at jamie
+    scene v573
     jamie "I..."
     jamie "I was just dealing with the wrong people... And I was too deep in it..."
+    scene v574
     z "What people? What did you-"
+    scene v575
     jamie "Look... If we're going to talk about this, at least get me a drink."
+    scene v576
     z "..."
     menu:
         "Invite him and Jenny to drink in the bath.":
+            scene v576
             z "There is wine in the bathing room..."
+            scene v577
             jnfr "Ohhh... I'm dying for a warm bath."
+            scene v580
             jamie "..."
             z "So? What do you say? Shall we?"
+            scene v581
             jamie "I suppose why not."
+            scene v582
             jnfr "Hold on... I'm not going to be the only girl with two guys..." #Sus.
+            scene v583
             z "Then Helena why don't you join us?"
+            scene v584
             hlna "Eh?"
+            scene v585
             z "You said you had nothing to do, right?"
+            scene v586
             hlna "Yeah..."
+            scene v587
             jnfr "So it's settled then?"
+            scene v588
             z "Yup. Let's go."
+            scene v589
             jnfr "You guys go on ahead. I'll get something from my room and be right behind you."
+            scene v590
             #Skip.
+            scene v591
             hlna "Ahhhh... This is so good..."
+            scene v592
             jamie "Yeah... It's not bad at all..."
+            scene v593
             jamie "Wasn't expecting something so luxurious here..."
+            scene v594
             jnfr "Sorry to keep you guys waiting."
+            scene v595
             z "No worries."
+            scene v596
             z "I'll get the wine."
+            scene v597
             jnfr "I'll help."
+            scene v598
             z "Hmmm... This sho-"
+            scene v599
+            scene v600
             jnfr "Pssst."
+            scene v601
             z "?"
             #Hands him cards.
+            scene v602
             z "What's this?"
             jnfr "Something to spice things up."
+            scene v603
             z "..."
             #Looks at them.
+            scene v604
             z "Where did you get this..."
+            scene v605
             jnfr "Esyl, I think..."
             jnfr "This fat guy with a weird mustache was selling them..."
+            scene v606
             z "..."
+            scene v607
             jnfr "So? Shall we?"
+            scene v606
             z "Sure..."
+            scene v608
             z "So..."
             z "Instead of just drinking..."
+            scene v609
             #Shows them the cards.
             z "Jenny and I have an idea on how to make this more interesting."
+            scene v610
             jamie "Interesting?"
+            scene v611
             hlna "What are those cards?"
+            scene v612
             jnfr "They are game cards I got from Esyl."
+            scene v611
             hlna "What kind of game? I'm not usually good at games..."
+            scene v613
             jnfr "It's just a drinking game. And don't worry, it doesn't involve skills at playing or anything like that."
+            scene v613
             hlna "Drinking game?"
             hlna "Those games where you'll ultimately get drunk?"
+            scene v613
             jnfr "Pretty much."
+            scene v615
             hlna "I don't know if I should be getting drunk... I have to protect the village if anything happens..."
+            scene v616
             z "You've been stressed over the village's safety for a while now, Helena. Even you have to let go a little sometimes."
             z "I single handedly dealt with the attacker the last time. And I'm pretty sure at least Anabelle and Seira are even more capable than me."
             z "In the unlikely scenario where something should happen while you and I are here, those two will manage."
+            scene v617
             hlna "..."
             hlna "I suppose you have a point."
             hlna "So? How does one play?"
+            scene v618
             jnfr "Okay, so..."
+            scene v619
             jnfr "We're supposed to play in pairs. Since Jamie and I are betrothed, it makes sense that we should be a pair."
+            scene v620
             z "I guess you and I are a pair then, Helena."
+            scene v621
             hlna "Okay, sure."
+            scene v622
             jnfr "Great!"
+            scene v623
             jnfr "I'll start to show you guys how it's done."
             #Physically explains how it's done.
+            scene v624
             jnfr "You draw a card..."
             jnfr "You read whatever is written on it."
+            scene v625
             jnfr "For example this card says: Slap a player from the opposing team on any part on the body you want."
             jnfr "Well... I'm supposed to do what's on the card and slap one of you guys. But I don't want to."
             jnfr "So... If I don't do what's written I have to drink."
+            scene v626
             #drinks.
+            scene v625
             jnfr "And... Well, once someone can't drink any more... They're out. They lose, basically."
             jnfr "Easy enough, right?"
+            scene v627
             hlna "Yeah."
+            scene v625
             jnfr "Okay, let's play clockwise."
             jnfr "Helena, you're up."
+            scene v628
+            scene v629
             #Draws a card.
             hlna "..."
+            scene v630
             hlna "Your partner must take off their top."
+            scene v361
             hlna "..."
             z "But I'm not wearing a top..."
+            scene v632
             jnfr "Well that means she drinks."
+            scene v621
             hlna "Ah..."
+            scene v635
+            scene v633
+            scene v634
             #Drinks.
             #Jamie draws.
+            scene v636
+            scene v637
             jamie "Drink twice."
+            scene v638
             jamie "Oh... That's not great..."
+            scene v639
             #Drinks twice.
+            scene v460
             jamie "This wine is really good quality, I have to admit..."
+            scene v642
             jnfr "See? I told you the village is not such a bad place..."
+            scene v641
             jamie "Maybe you're right..."
+            scene v642
             z "Okay, I'm up."
             #Draws.
+            scene v643
+            scene v644
             z "Arm wrestle a member of the opposing team. If you lose, drink twice. If you win, kiss the other."
+            scene v645
             jamie "Eh?"
             jamie "I'm guessing you're going to arm wrestle me."
+            scene v646
             z "No, Imma wrestle Jenny and kiss you..."
             z "Of course I'm gonna wrestle you, dude..."
+            scene v647
             jamie "..."
             #They arm wrestle.
+            scene v648
             jamie "You're quite jacked, huh..."
             jamie "I guess you need to be if you're going to be a ninja."
+            scene v649
             z "We do get quite a bit of physical exercise, so yeah..."
+            scene v650
+            scene v651
             jamie "Heh... But in arm wrestling, technique is more important than muscle."
+            scene v653
             z "Is it now?"
+            scene v652
             jamie "Of course! I'll show you how I'll beat you with my technique."
+            scene v653
             z "You do a lot of arm wrestling in your day?"
+            scene v650
             jamie "..."
+            scene v651
             jamie "Well, no. But I-"
+            scene v652
             jamie "Oh, this is just a foolish trick to try to annoy me before we start, you sneaky bastard!"
+            scene v653
             z "Not really..."
+            scene v652
             jamie "Let's let our arms talk for us, shall we?"
+            scene v653
             z "Sure."
+            scene v657
+            scene v659
             #Z wins in a second.
+            scene v660
             jamie "Wait! No! I wasn't ready!"
             jamie "Someone should count down from three!"
+            scene v654
             jnfr "I'll do it."
             jnfr "Three..."
+            scene v657
             jnfr "Two..."
             jnfr "One..."
             jnfr "Go!"
+            scene v659
             #Z wins in a second.
+            scene v658
             jamie "Ah!"
             jamie "Wait! I thought it'd be three, two, one, zero!"
+            scene v653
             z "Dude..."
+            scene v650
             jnfr "Come on, Jamie... It's just a game..."
+            scene v652
             jamie "No, no, dear. This guy is just using my unpreparedness."
             jamie "You know how sneaky those ninjas are."
+            scene v654
             z "Jenny, can you count down from three to zero?"
+            scene v626
             jnfr "Yeah, fine..."
+            scene v655
             z "When we hear zero, we both start. Sounds good?"
+            scene v656
             jamie "Heh... You should've taken the win you got while you could."
             jamie "Deal!"
+            scene v655
             z "Let's go, Jenny."
+            scene v657
             jnfr "Three..."
             jnfr "Two..."
             jnfr "One..."
             jnfr "Zero!"
             #Jamie manages to hold Z for a second.
+            scene v658
             jamie "See?! It's working! Now I can turn this ar-"
+            scene v659
             #Z totally destroys him.
             jamie "..."
             jamie "No! Wai-"
+            scene v665
             z "Shhhhhhhh..."
+            scene v666
             z "Excuse me, I have a kiss to claim."
+            scene v667
             jamie "..."
+            scene v668
             z "..."
+            scene v669
             z "Ready?" #To jenny.
+            scene v670
             jnfr "Y-Yeah..."
+            scene v671
             z "(Jamie is kinda looking...)"
             z "(And so is Helena.)"
             z "(Guess I should...)"
+            scene v672
             menu:
                 "(...go all out with a strong kiss.)":
+                    scene v673
+                    scene v674
                     jnfr "Hmm..."
+                    scene v675
                     jnfr "Hmmmnnn~?"
+                    scene v676
                     jnfr "Ahhhnn~..."
+                    scene v677
+                    scene v679
+                    scene v679
+                    scene v680
                     jnfr "Hanhhh~..."
                     $ jnfr_lst += 1
                     $ hlna_lst += 1
                     $ jxj -= 3
                 "(...give her a nice PG-13 kiss.)":
+                    scene v673
                     jnfr "Hmm..."
+                    scene v675
                     jnfr "Nnm..."
+            scene v681
             z "Okay... It's your turn, Jenny."
+            scene v682
             jnfr "Right..."
             jnfr "If there's someone shorter than you on the opposing team, they drink. And for every member taller than you, you drink once."
+            scene v683
             jnfr "Hmmm... So Helena is slightly shorter than I am..."
+            scene v684
             jnfr "And you're way taller, [mc_name]..."
+            scene v685
             z "So both you and Helena drink."
+            scene v686
             jnfr "Damn... You haven't drunk a single time so far..."
+            scene v687
             z "What can I say, I'm just good."
+            scene v688
             jnfr "Hmmm..." #Sus.
+            scene v689
             jnfr "Cheers."
+            scene v690
             hlna "Cheers!"
+            scene v691
             #They drink.
+            #need helena with a card in her hand here - no scene for it
             hlna "The opposing team drinks."
+            #scene of jenny looking annoyed
             jnfr "Damn..."
+            #2 scenes - one of of jamie drinking and one of jenny drinking
             #They drink.
+            #scene of jamie pulling a card
             jamie "The opposing team drinks twice, but you have to be blindfolded for the rest of the game."
+            #scene of jamie looking confused
             jamie "Eh?"
             jamie "Wh-"
+            scene v692
             jnfr "Do it Jamie. [mc_name] hasn't drunk the whole game. We'll totally end up losing unless he gets to drink."
+            scene v693
             jamie "..."
+            scene v694
             jamie "Okay, good point... Must be why he managed to beat me in arm wrestling."
+            scene v695
             z "Ahuh..."
+            scene v696
             jamie "Okay... I can't see anything." #Puts on a blindfold.
+            scene v697
             z "Guess we have to drink, Helena."
+            scene v698
             hlna "..."
+            scene v699
+            scene v700
             z "Okay, let's see."
             z "Slap a player from the opposing team on any part of the body you want."
             z "Oh, same card as the one we started with."
+            scene v701
             jnfr "I guess some of them have replicas."
+            scene v702
             z "Hmmm..."
+            scene v703
+            z "I'll slap..."
             menu:
                 "Use the card to spank Jenny.":
-                    z "I'll slap..."
                     z "Jenny."
+                    scene v704
                     jnfr "Hmmmm..."
                     jnfr "I wonder where you'll do it..."
+                    scene v705
                     z "Me too..."
                     jamie "..."
+                    scene v706
                     #Bends over and gives him her ass.
                     z "..."
                     hlna "..." #Surprised.
+                    scene v707
+                    scene v708
                     jnfr "Awwww~!!!"
+                    scene v709
                     jnfr "Ahh~..."
                     jamie "Jenny?! Are you okay?"
+                    scene v710
                     jnfr "Yeah... It..."
+                    scene v711
                     jnfr "It wasn't bad, don't worry..."
+                    scene v712
                     jamie "Hmmm..."
                 "Use the card to slap Jamie.":
-                    z "I'll slap..."
                     z "Jamie."
+                    scene v713
                     jamie "Ugh..."
                     jamie "Let's get it ov-"
+                    scene v714
                     #Slaps him.
+                    scene v716
+                    scene v715
                     jamie "Offghh!"
                     jamie "Awwww..."
                     jamie "Did you have to do it so hard..."
+                    scene v717
                     jnfr "It's just a game, Jamie... Man up."
+                    scene v718
                     jamie "Humpf..."
                 "Drink.":
                     z "I'll just skip this one."
+                    scene v717
                     jnfr "Boooo..."
+                    scene v718
                     z "Yeah, yeah."
+            #scene of jenny holding a card
             jnfr "Okay, my turn."
+            #jenny reading the card
             jnfr "All players on the opposite team must take off their tops."
+            scene v719
             hlna "Oh..."
+            scene v720
             jnfr "You can drink instead if you're not comfortable with it..."
+            scene v721
             hlna "Hmmm..."
+            scene v722
             hlna "No I'm okay... I've had plenty to drink already. I don't want to lose too early."
+            scene v723
             #Takes off her bra.
             jnfr "..."
             z "(Interesting...)"
+            scene v724
             jnfr "I guess since [mc_name] isn't wearing a top, I guess I have to drink."
+            scene v725
             hlna "Suck on on whichever body part of your partner's that you want. If you do so, the other team drinks."
+            scene v726
             hlna "..."
             z "Eh... It-"
             #Approaches him.
             jnfr "..."
+            scene v727
             #Kneels.
             z "Helena?"
+            scene v728
+            scene v729
+            scene v730
+            scene v731
+            scene v732
+            scene v733
+            scene v734
+            scene v735
             #Grabs his hand.
             #Sucks on his thumb seductively.
             $ hlna_lst += 1
+            scene v736
             hlna "..." #Gets up.
+            scene v737
             hlna "{i}Clears her throat.{/i} Who's next?"
+            scene v738
             jamie "Me..."
             jamie "Oh... How am I supposed to rea-"
+            scene v739
             jnfr "I'll do it." #Takes it from him.
             jnfr "Your partner must take off their top."
+            scene v740
             jnfr "Oh no, oh no... Whatever am I to do..."
+            scene v741
             jamie "What are yo-"
             #Takes off her top.
+            scene v742
             jnfr "I'm not losing."
+            scene v743
             jamie "You could've just drunk..."
+            scene v742
             jnfr "I could've, but then we would've lost in a few rounds."
+            scene v743
             jamie "Hmmm... I guess it's just a game..."
+            scene v744
             z "Eh? Wait, we can't see your..."
+            scene v745
             jnfr "Hm? Did you say something, Mr.Pervert?"
+            scene v746
             z "But..."
             z "..."
             z "Fine... My turn."
@@ -1091,60 +1720,109 @@ label season2_chapter_3:
             menu:
                 "Fuck Jenny and marry Helena.":
                     z "I'd fuck Jenny... Marry Helena... And kill Jamie."
+                    scene v747
                     jnfr "Oooh, how romantic..." #Sus.
+                    scene v748
                     z "I must admit I'm more into doing one than the other two."
+                    scene v749
                     jnfr "..."
                     $ jnfr_lst += 1
+                    scene v752
                     jamie "I'm guessing it's killing me?"
+                    scene v753
                     z "Heh... Sure..."
                 "Fuck Helena and marry Jenny.":
                     z "I'd fuck Helena... Marry Jenny... And kill Jamie."
+                    scene v751
                     hlna "..."
                     $ hlna_lst += 1
+                    scene v750
                     jnfr "That was a romantic proposal..."
+                    scene v749
                     z "More romantic than the one you currently have, I imagine..."
                     jnfr "..."
+                    scene v752
                     jamie "Hey... I can be very romantic, you know..."
+                    scene v753
                     jnfr "Of course you can, dearest..."
                 "More options." if y_r_u_g_counter == 0:
                     #Why are you geh meme.
                     $ y_r_u_g_counter = 1
                     jump y_r_u_g
+            scene v755
             jnfr "Okay, let's see."
+            scene v756
             jnfr "Give a lap dance to someone from the opposing team. They must drink after."
+            scene v757
             jnfr "Easy."
+            scene v758
             jamie "Wait, you're really going to do this?!"
+            scene v759
             jnfr "Oh, don't worry, Jamie. [mc_name] is like a little brother to me."
+            scene v760
             jamie "Hmmm..."
+            scene v761
+            scene v762
+            scene v763
+            scene v764
+            scene v765
+            scene v766
+            scene v767
+            scene v768
+            scene v769
+            scene v770
+            scene v771
+            scene v772
             #Gives Z a lap dance.
             #He gets an erection.
             $ jnfr_lst += 1
+            scene v775
             hlna "..."
             $ hlna_lst += 1
+            scene v773
             jnfr "I can see I did well..."
+            scene v774
             z "I guess so..."
             #Z drinks.
+            scene v776
             hlna "Okay..."
             hlna "Pick two people you'd have a threesome with. Anyone not picked must drink."
+            scene v777
             hlna "..."
+            scene v778
             hlna "Well... I guess [mc_name]..."
+            scene v779
             hlna "And Jenny..."
+            scene v780
             jnfr "Ooooh... That sounds interesting..."
+            scene v781
             jamie "Your loss..."
+            scene v782
             #Drinks.
+            scene v783
             jnfr "I'll get it for you, dear."
             jnfr "Take one drink for every player you've had sex with."
+            scene v784
             jamie "Oh..."
+            scene v785
             #Doesn't drink.			
             #IF THEY FUCKED, THEY BOTH DRINK.
             label they_fucked:
+                scene v786
                 jnfr "..." #Looks at Z.
+                scene v788
+                scene v789
+                scene v791
                 hlna "..."
+                scene v790
                 hlna "Wha..."
                 jamie "Hm? What?"
+                scene v791
                 hlna "..."
+                scene v792
                 hlna "No, it's nothing..."
                 $ hlna_lst += 1
+                #renders 794 through 797 need recreating - grey box at bottom of screen?
             #If they didn't fuck, no one drinks.			
             z "Okay, my turn."
             z "You and your partner each take a piece of clothing off each other. If you don't, you both drink."
@@ -1153,46 +1831,79 @@ label season2_chapter_3:
             hlna "No, no. Let's do it."
             z "..."
             z "I'm not saying no to that."
+            scene v799
+            scene v800
+            scene v801
             #Hlna takes off Z's pants and admires his dick for a bit.
             $ hlna_lst += 2
             jnfr "See something you like, Helena?"
+            scene v802
             hlna "?!"
+            scene v803
             hlna "That's not..."
+            scene v804
             hlna "..."
             hlna "Who's next..."
+            scene v801
             jnfr "That'd be me..." #Stands up to grab a card
+            scene v805
             jnfr "Oh..." #Falls on Z. Her boobs are in his face.
+            scene v806
+            scene v807
+            scene v808
             jnfr "Sorry... I think I'm a bit tipsy..."
+            scene v809
             z "We can st-"
+            scene v810
             jnfr "Na-uh. I'm fine. We can continue. I'm not gonna lose."
+            scene v811
             z "Sure..."
+            scene v812
             jnfr "Kiss any member of the opposing team. If you do, they must drink."
+            scene v813
             jamie "..."
             jnfr "Well..."
             #Goes to Z.
             jnfr "By the way, Jamie. I'm only doing this so we can win."
+            scene v814
             jnfr "[mc_name] is literally like a little bro-"
+            scene v815
             jnfr "Hmmmn~..." #Z starts kissing her.
+            scene v816
             jnfr "Hmmmnnnn~... Uhmmnn~..." #They make out.
+            scene v817
             jnfr "Hmnn~..." #They break the kiss.
+            scene v818
             $ jnfr_lst += 1
             jnfr "..."
+            scene v819
             jnfr "Now, drink."
+            scene v820
+            scene v821
             z "Yeah, yeah."
             #Drinks.
             menu:
                 "Tell Jenny she can also do the same to Helena.":
+                    scene v823
                     z "Wait."
+                    scene v824
                     z "You want to win, right?"
+                    scene v825
                     jnfr "Of course!"
+                    scene v826
                     z "The card didn't say you can only do this to one member of the other team, did it?"
+                    scene v827
                     jnfr "..."
                     #Checks the card.
+                    scene v828
                     jnfr "I guess not..."
+                    scene v829
                     jnfr "..." #looks at Helena.
+                    scene v830
                     hlna "..."
                     #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
                     #Goes to her.
+                    scene v831
                     jnfr "I've..."
                     jnfr "I've never... You know... With a girl..."
                     hlna "I haven't either..."
@@ -1447,91 +2158,160 @@ label season2_chapter_3:
             #I'm here W <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
         "Drop the subject.":
+            scene v578
             z "Well. I should get going anyway."
             z "I'll leave you guys to your tour."
+            scene v579
             jnfr "Good night."
             z "Night..."
+            
+    #) Nari dreams about his sister giving him his necklace and a big wave:
+    #He remembers someone saying Nari
+    #Auge appears and tells him that's not really his name.
+    #He asks Auge who she is and asks if she's the one giving him dreams.
+    #She says she's there to help him remember.
+    #Auge says "Remember..." and shows him a ship.
+    #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 
 
 #10) Axius and the team that attacked Stephanie's team:
+    scene v479
     axs "..."
+    scene v480
     axs "Are they dead?"
+    scene v481
     nari "..."
+    scene v482
     axs "Are they?"
+    scene v484
     nari "No."
+    scene v483
     axs "..."
+    scene v486
     axs "You had very simple instructions, Nari."
     axs "Get me the town's alchemist."
     axs "And kill anyone who interferes."
+    scene v488
     nari "I did bring you the alchemist."
+    scene v486
     axs "Yes. But you didn't kill a single ninja."
     axs "Were they stronger than you and your team?"
+    scene v487
     nari "..."
+    scene v486
     axs "Grown weak, have you? Four kunoichi can beat your team now?"
+    scene v487
     nari "..."
+    scene v486
     axs "Perhaps next time Alura should lead the missions?"
+    scene v488
     nari "No."
     nari "Alura works for me, not you Axius."
+    scene v489
     axs "Most of the work she does for you seems to be in the bedroom these days."
+    scene v490
+    scene v491
     nari "How dare you..."
+    scene v492
     nari "Say that again."
+    scene v493
     axs "..."
+    scene v494
     alura "..." #Scared.
+    scene v495
     nari "Go on."
+    scene v496
     irna "..."
+    scene v497
     axs "You're dismissed."
+    scene v498
     axs "All of you."
+    scene v499
     axs "Nari..."
+    scene v500
+    scene v501
+    scene v502
     axs "Do not fail me again."
     axs "Or it'll be the last time you do."
+    scene v503
+    scene v504
+    scene v505
+    scene v506
+    scene v507
+    scene v508
     #They leave.
     #Irna is walking back to her room (ALONE!)
     #Opens the door and wants to change.
     irna "*{i}Sighs.{/i}"
+    scene v509
     nari "Why did you stop me?"
+    scene v510
     irna "EEEP?!"
+    scene v511
     irna "..."
+    scene v512
     irna "What are you doing here, Nari?"
+    scene v513
     nari "..."
     nari "Irena."
     nari "Why did you stop me from killing the girl?"
+    scene v514
     nari "What is that you know?"
+    scene v515
     irna "..."
     irna "I..."
     irna "It's just..."
     irna "It's how incubi are, Nari."
     irna "My father isn't special in this regard, really."
+    scene v516
     nari "..."
+    scene v514
     nari "Expl-"
+    scene v517
     irna "Go and ask Nixie about it."
     irna "She's the same as that girl."
     irna "There's others too, I'm sure..."
     irna "The only difference Nixie was from the rest of them is that her mother was a succubus and thus my father found her useful."
+    scene v518
     nari "..."
     nari "You mean..."
     nari "How many bast-"
+    scene v519
     irna "Probably dozens of them out there."
+    scene v520
     nari "..."
     nari "How could you tell that girl was one of them?"
+    scene v519
     irna "I can always tell..."
     irna "Can't say I like the fact that I do. But I can tell."
+    scene v520
     nari "..."
+    scene v519
     irna "You..."
+    scene v522
     nari "Hm?"
+    scene v519
     irna "You could've just ignored me and killed them all."
     irna "Why didn't you?"
+    scene v521
     nari "..."
     nari "Do you think it's right?"
     nari "What we're doing..."
+    scene v523
     irna "..."
     nari "..."
+    scene v524
     nari "Good night, my lady." #Leaves.
+    scene v525
     irna "Nari."
+    scene v526
     nari "?"
+    scene v527
     irna "Do you..."
     irna "Do you remember anything now?"
     irna "From your past?"
+    scene v528
     nari "..."
     nari "A bit..."
     nari "Sometimes... In my dreams... I can see little shards of it..."
@@ -1539,8 +2319,10 @@ label season2_chapter_3:
     nari "..."
     nari "Irena..."
     nari "Does your father have sleep nymphs under his command?"
+    scene v529
     irna "Sleep nymphs?"
     irna "Not that I know of..."
+    scene v530
     nari "I see..."
     #Leaves.
     irna "..."
@@ -1697,7 +2479,7 @@ label season2_chapter_3:
     #z, illya and centoria leave - sorceress waiting outside for them
     Character("Sorceress") "Your plan will not succeed Princess."
     illya "Sorceress? What do you mean?"
-    #The sorceress turns Illya and centoria into snowmen.
+    #The sorceress turns illya, centoria and yumi into snowmen.
     Character("Sorceress") "[mc_name], elves and goblins can never be integrated. You must make a choice."
     #sorceress leaves - turns illya back
     illya "Sorceress?"
@@ -1705,10 +2487,10 @@ label season2_chapter_3:
     z "I have no idea, Illya."
     illya "We should prepare. We shall see you in the morning for the tournaments."
     z "Goodnight Illya. Goodnight Centoria."
-    illya "Goodnight [mc_name]. Rest well."
-    cnt "Goodnight [mc_name]. Sleep well."
+    illya "Goodnight [mc_name], Yumi. Rest well."
+    cnt "Goodnight [mc_name], Yumi. Sleep well."
 
-    #z goes back to his room - yumi waiting for him
+    #z and yumi go back to their room:
     #Yumi has to apply a potion from Gabbie and Venus to heal up properly. Z has to apply it when Centoria isn't around, leading to sexual stuff.
 
 
@@ -1891,11 +2673,62 @@ label season2_chapter_3:
             illya "With pleasure [mc_name]."
             #z and illya start kissing - z playing with illya tits
             cnt "Mmmnnnn."
+            #illya pulls away from the kiss
+            illya "Mmmnff. Centy I think it's my turn."
+            #centoria pulls z out of her mouth
+            cnt "Of course Illy, get down here and I'll show you how to do it properly."
+            #illya starts to go down - z stops her
+            z "How about we get more comfortable?"
+            illya "That would be much appreciated."
+            #get out of bath and z lies on the edge of the bed with illya between his legs - centoria kneeled showing her what to do
+            illya "So like this?"
+            cnt "Yeah, exactly like that. Look at his face, see how he likes it."
+            z "Haaaa... Illya this is... Amazing."
+            z "Centoria how about your come up here?"
+            cnt "Up there?"
+            z "Yes, up here." #indicates to his face
+            illya "You should Centy!"
+            z "See. Even the gracious Princess agrees with me."
+            #illya licks his tip
+            illya "Didn't I tell you not to call me Princess?"
+            z "I'm sorry Illya. You just look so royal down there."
+            #centoria laughs
+            cnt "Hehe. I'm inclined to agree Illy."
+            #centoria climbs up - legs over z's face
+            z "..."
+            #z pulls her down
+            cnt "EH!"
+            #z starts eating her out
+            cnt "AHHHH!"
+            illya "Hehe. Who's looking royal now Centy?"
+            #illya keeps sucking
+            cnt "HMNF! WHY DID HE START LICKING MO-HAAAAA??"
+            #z keeps eating her out
+            illya "Hmmmnn. Do you plan on only letting Centoria up there [mc_name]?"
+            #z lifts centoria off his face - centoria dripping
+            cnt "I was so close. Please."
+            z "Illya, your turn up here."
+            illya "With pleasure." #climbs up onto z's face
+            z "Centoria?"
+            cnt "Mhm?"
+            z "How about you climb on top of me elsewhere?"
+            cnt "Wait you mean?"
+            z "I want you to ride me."
+            illya "I think you should Centy."
+            cnt "OK, if you're sure."
+            #centoria climbs on top of z
+            cnt "Please be gentle..."
+            menu:
+                "Push her down slowly.":
+                    cnt "Haaaaaa..."
+                    cnt "Oh Gods you're so deep." #here
+
+
 
 #16) Goblin tournament:
     #This whole thing was suggested by Illya's father. She doesn't like the idea because it establishes that the goblins are beneath the elves and that they should transform.
     #There is an event for goblins, whoever wins gets a potion that transforms them into elves.
-    #Z is surprised that such a potion exists. The elves explain that the and the goblins have a common ancestry and with a powerful potion you can ascend to an elf as a goblin but the potion is very expensive. 
+    #Z is surprised that such a potion exists. The elves explain that them and the goblins have a common ancestry and with a powerful potion you can ascend to an elf as a goblin but the potion is very expensive. 
 
 #17) Illya's plan:
     #Later to Z's team alone after playing together in the tournament and bonding with them.
@@ -2835,10 +3668,11 @@ label season2_chapter_3:
     #Z the pale goblin what his plan is. The pale goblin tells him he'll kill all the elves.
 
     #&&&&&&&&MORE DETAILS&&&&&&&&&&&&
-    #Nixie visits asking him what he plans to do now.
+    #Nixie visits, asking him what he plans to do now.
     #She says she doesn't trust him yet, so that's why she can't risk him escaping to use his magic.
     #She says she knows from the others that she can't kill him normally cuz he'll regenerate. And she says she doesn't want to kill him.
 
 #Dev log:
 #We'll be meeting some new characters that will probably stick with us for a while. The conflict between the now more powerful Axius & the ninja village will start to to spark.
+
 
