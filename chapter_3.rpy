@@ -2492,12 +2492,6 @@ label season2_chapter_3:
 
     #z and yumi go back to their room:
     #Yumi has to apply a potion from Gabbie and Venus to heal up properly. Z has to apply it when Centoria isn't around, leading to sexual stuff.
-
-
-
-
-
-
 #13) Fencing tournament:
     z "So this is the fencing tournament? Impressive."
     cnt "Yeah, it's a big deal here."
@@ -2644,14 +2638,14 @@ label season2_chapter_3:
     z "Would you be surprised if I told you that you aren't the first to tell me that?"
     #illya rolls her eyes
     #illya and centoria get into the bath - slowly crawl towards z
-    illya "So? [mc_name]? Can you entertain us?"
+    illya "So? [mc_name]? Fancy comitting some more treason?"
     menu:
         "Absolutely.":
             cnt "Illy are you sure about this?"
             illya "I have never been as sure about anything Centy"
             $ cnt_lst=+1
             #z kisses illya
-            illya "Hmmm. Not bad. This promises to be an interesting night."
+            illya "Hmmm. Not bad. This promises to be a fun night."
             illya "Come and have a go Centy."
             cnt "Oh Illy. If you're sure."
             z "You ready Centoria? Shall we do this again?"
@@ -2669,6 +2663,7 @@ label season2_chapter_3:
             z "You have no idea."
             illya "I wouldn't be too sure of that if I were you."
             #z looks surprised
+            z "(Well that's bound to be interesting)"
             z "I think you should join me up here Princess"
             illya "With pleasure [mc_name]."
             #z and illya start kissing - z playing with illya tits
@@ -2712,16 +2707,61 @@ label season2_chapter_3:
             z "Centoria?"
             cnt "Mhm?"
             z "How about you climb on top of me elsewhere?"
-            cnt "Wait you mean?"
+            cnt "Wait... You mean?"
             z "I want you to ride me."
+            cnt "..."
             illya "I think you should Centy."
             cnt "OK, if you're sure."
             #centoria climbs on top of z
             cnt "Please be gentle..."
             menu:
-                "Push her down slowly.":
+                "Let her take her time.": #centoria 
                     cnt "Haaaaaa..."
-                    cnt "Oh Gods you're so deep." #here
+                    cnt "(Holy shit he's so big...)"
+                    $ cnt_aff += 2
+                    $ cnt_lst += 2
+                "Pull her down.":
+                    cnt "OH GODS WAIT!"
+                    cnt "(He's hitting my womb...)"
+                    $ cnt_lst += 2
+            illya "How does it feel Centy?"
+            #centoria not riding - panting
+            cnt "Oh I've never felt anything like it Illy..."
+            cnt "..."
+            illya "Hmmmnnn... I can't wait to feel him for myself"
+            z "(Oh Gods... If she's anywhere near as tight as Centoria then I don't know what I'll do.)"
+            illya "Ahhnnn~ FUCK!"
+            cnt "Such- AHHH! Such vulgar language Illy... What would your people think?"
+            illya "HNNNN~ WHO CARES?! THEY WOULD AHHHH-AGREE IF THEY HAD THIS TONGUE UNDER THEM!"
+            z "(Well I'm not sure I'd want to be under all of them but I'm sure she knows that.)"
+            z "Mmmmfff~"
+            illya "AH! He started moving his tongue faster! I think he's close!"
+            cnt "Hmmmnnnn... I'm so close"
+            illya "Ahnnnn! Me too Centy!"
+            cnt "HNNNNN!"
+            illya "HAAAAA!"
+            menu:
+                "Cum inside":
+                    $ cnt_lst += 2
+                    #illya climbs off z's face
+                    #centoria climbs off z's dick
+                    #cum spilling out (he's an incubus come on)
+                    illya "Oh Centy you look so full."
+                    cnt "Ahhn~ I don't think you would believe how full I feel."
+                "Pull out":
+                    $ cnt_lst += 1
+                    #illya climbs off z's face
+                    #centoria covered in cum (he's an incubus come on)
+                    illya "Oh Centy you look so pretty."
+                    cnt "Ahhn~ Thank you Illy."
+            illya "Hey [mc_name]. Think you can go again?"
+            z "Of course I can. You fancy climbing on?"
+
+                
+
+
+
+
 
 
 
