@@ -6,8 +6,21 @@ label season2_chapter_3:
     define jillia = Character("Jillia", color = "f5c13d")
     define illya = Character("Illya", color = "f5c13d")
     define Dohkong = Character("Dohkong", color = "f5c13d")
+    define plgbln = Character("Pale Goblin", color = "f5c13d")
     #Title: Of Goblins and Elves.
 
+    image v15m1 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m1.webm", loop=True)
+    image v15m2 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m2.webm", loop=True)
+    image v15m3 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m3.webm", loop=True)
+    image v15m4 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m4.webm", loop=True)
+    image v15m5 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m5.webm", loop=True)
+    image v15m6 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m6.webm", loop=True)
+    image v15m7 = Movie(size = (1920,1080), channel="movie", play="2.3/videos/v15m7.webm", loop=True)
+    default persistent.g_59_unlock = 0
+    default persistent.g_60_unlock = 0
+    default persistent.g_61_unlock = 0
+    default persistent.g_62_unlock = 0
+    default persistent.g_63_unlock = 0
 #1) Alchemist's hut in the ninja village:
     pause(1.5)
     stop background_s fadeout 1.0
@@ -70,7 +83,7 @@ label season2_chapter_3:
     vns "I'm told a few people are injured?"
     scene v171
     gbrla "Yeah... One of Stephanie's arms is swollen... I'm not sure if it's broken or not..."
-    scene 173
+    scene v173
     vns "..."
     scene v172
     vns "Where is she?"
@@ -78,10 +91,9 @@ label season2_chapter_3:
     gbrla "She's in the lab."
     scene v174
     vns "I'll go take a look."
-    scene v156
+    scene v176
     hly "Venus... Wait..."
     #She leaves.
-    scene v176
     gbrla "..."
     scene v177
     gbrla "Is she okay?"
@@ -90,147 +102,152 @@ label season2_chapter_3:
     #Skip
 
 #2) Zycris is going to his room.
-    scene v179
+    scene v179 with Pause(1.0)
     scene v180
     z "..." #It's dark.
     scene v181
     scene v182
     scene v183
     #Sits down, looks sad.
-    if s_lst >= 9:
-        scene v188
-        s "Darling? Are you in here?" #Comes from the outside.
-        scene v187
-        z "..."
-        z "Seira..."
-        z "I..."
-        scene v189
-        s "..."
-        scene v190
-        s "Are you okay?"
-        scene v191
-        z "..."
-        scene v192
-        z "I don't..."
-        z "...know."
+    scene v188
+    s "Darling? Are you in here?" #Comes from the outside.
+    scene v187
+    z "..."
+    z "Seira..."
+    z "I..."
+    scene v189
+    s "..."
+    scene v190
+    s "Are you okay?"
+    scene v191
+    z "..."
+    scene v192
+    z "I don't..."
+    z "...know."
+    scene v193
+    s "..."
+    scene v194
+    s "What happened?"
+    # if fought twice: against_athena = 14
+    # if fought then left: against_athena = 9
+    # if left then left: against_athena = 7
+    # if left then fought: against_athena = 12
+    # if left then negotiated: against_athena = 8
+    scene v193
+    z "I did what I thought was right..."
+    scene v192
+    s "..."
+    if against_athena == 14:
         scene v193
-        s "..."
+        z "I fought Athena."
+        z "That's twice now."
+        z "I almost won, Seira..."
+        z "I almost won."
+        z "Athena's..."
+        z "Well, minion, I suppose. She interfered before I could finish Athena off..."
+        z "And Venus had to kill her."
         scene v194
-        s "What happened?"
-        # if fought twice: against_athena = 14
-        # if fought then left: against_athena = 9
-        # if left then left: against_athena = 7
-        # if left then fought: against_athena = 12
-        # if left then negotiated: against_athena = 8
+        s "You almost finished Athena off?!"
         scene v193
-        z "I did what I thought was right..."
+        z "Yeah..."
+        z "I think..."
+        z "But Seira..."
+        z "Athena's minion..."
         scene v192
+        z "She was Venus's dear childhood friend..."
+        z "And Venus had to kill her to protect me..."
+        scene v191
         s "..."
-        if against_athena == 14:
-            scene v193
-            z "I fought Athena."
-            z "That's twice now."
-            z "I almost won, Seira..."
-            z "I almost won."
-            z "Athena's..."
-            z "Well, minion, I suppose. She interfered before I could finish Athena off..."
-            z "And Venus had to kill her."
-            scene v194
-            s "You almost finished Athena off?!"
-            scene v193
-            z "Yeah..."
-            z "I think..."
-            z "But Seira..."
-            z "Athena's minion..."
-            scene v192
-            z "She was Venus's dear childhood friend..."
-            z "And Venus had to kill her to protect me..."
-            scene v191
-            s "..."
-            scene v193
-            z "She didn't want to fight, actually..."
-            z "Venus..."
-            z "She just wanted us to back off."
-            z "But... What Athena was doing... What she's doing everyday to those people..."
-            z "What she did in the town of the faceless god."
-            z "It's wrong."
-            z "I couldn't let that stand."
-            scene v223
-            s "..."
-            s "You know there's no going back from decisions like these, I trust?"
-            scene v224
-            z "Yeah..."
-            s "..."
-        elif against_athena == 12: #if fought once and left or the other way round
-            scene v193
-            z "I fought Athena this time."
-            z "I actually..."
-            z "I..."
-            z "I liked it..."
-            z "I almost won, Seira..."
-            z "I almost won."
-            z "Athena's..."
-            z "Well, minion, I suppose. She interfered before I could finish Athena off..."
-            z "And Venus had to kill her."
-            scene v194
-            s "You almost finished Athena off?!"
-            scene v193
-            z "Yeah..."
-            z "I think..."
-            z "But Seira..."
-            z "Athena's minion..."
-            scene v192
-            z "She was Venus's dear childhood friend..."
-            z "And Venus had to kill her to protect me..."
-            scene v191
-            s "..."
-            scene v193
-            z "She didn't want to fight, actually..."
-            z "Venus..."
-            z "She just wanted us to back off."
-            z "But... What Athena was doing... What she's doing everyday to those people..."
-            z "What she did in the town of the faceless god."
-            z "It's wrong."
-            z "I couldn't let that stand."
-            scene v223
-            s "..."
-            s "You know there's no going back from decisions like these, I trust?"
-            scene v224
-            z "Yeah..."
-            s "..."
-        elif against_athena == 9 or against_athena == 7:
-            scene v192
-            z "I left a boy to die..."
-            z "I had a choice between letting him die and trying to fight Athena."
-            z "And she had a fury there too..."
-            z "Venus was there too... She asked me to back off from the fight."
-            z "So I did..."
-            z "The fury..."
-            z "She was Venus's childhood friend... We would've had to kill her too..."
-            scene v223
-            s "..."
-            s "So you just left..."
-            scene v224
-            z "Yeah..."
-            s "..."
-        else:
-            scene v193
-            z "I made a deal with her..."
-            z "Athena."
-            z "I made her spare a boy's life in exchange for me not interfering with her curse over the town."
-            z "So even though this one person has been spared, the rest of them will still suffer."
-            z "I had a choice between walking away and trying to fight Athena."
-            z "And she had a fury there too..."
-            z "Venus was there too... She asked me to back off from the fight."
-            z "So I did..."
-            z "The fury..."
-            z "She was Venus's childhood friend... We would've had to kill her too..."
-            scene v223
-            s "..."
-            s "So you just left..."
-            scene v224
-            z "I made Athena spare one boy. But yeah... We left."
-            s "..."
+        scene v193
+        z "She didn't want to fight, actually..."
+        hide v15m1
+        show v15m1 with Dissolve(1.0)
+        z "Venus..."
+        z "She just wanted us to back off."
+        z "But... What Athena was doing... What she's doing everyday to those people..."
+        z "What she did in the town of the faceless god."
+        z "It's wrong."
+        z "I couldn't let that stand."
+        scene v223
+        s "..."
+        s "You know there's no going back from decisions like these, I trust?"
+        scene v224
+        z "Yeah..."
+        s "..."
+    elif against_athena == 12: #if fought once and left or the other way round
+        scene v193
+        z "I fought Athena this time."
+        z "I actually..."
+        z "I..."
+        z "I liked it..."
+        z "I almost won, Seira..."
+        z "I almost won."
+        z "Athena's..."
+        z "Well, minion, I suppose. She interfered before I could finish Athena off..."
+        z "And Venus had to kill her."
+        scene v194
+        s "You almost finished Athena off?!"
+        scene v193
+        z "Yeah..."
+        z "I think..."
+        z "But Seira..."
+        z "Athena's minion..."
+        scene v192
+        z "She was Venus's dear childhood friend..."
+        z "And Venus had to kill her to protect me..."
+        scene v191
+        s "..."
+        scene v193
+        z "She didn't want to fight, actually..."
+        z "Venus..."
+        hide v15m1
+        show v15m1 with dissolve(1.0)
+        z "She just wanted us to back off."
+        z "But... What Athena was doing... What she's doing everyday to those people..."
+        z "What she did in the town of the faceless god."
+        z "It's wrong."
+        z "I couldn't let that stand."
+        scene v223
+        s "..."
+        s "You know there's no going back from decisions like these, I trust?"
+        scene v224
+        z "Yeah..."
+        s "..."
+    elif against_athena == 9 or against_athena == 7:
+        scene v192
+        z "I left a boy to die..."
+        z "I had a choice between letting him die and trying to fight Athena."
+        z "And she had a fury there too..."
+        z "Venus was there too... She asked me to back off from the fight."
+        z "So I did..."
+        z "The fury..."
+        z "She was Venus's childhood friend... We would've had to kill her too..."
+        scene v223
+        s "..."
+        s "So you just left..."
+        scene v224
+        z "Yeah..."
+        s "..."
+    else:
+        scene v193
+        z "I made a deal with her..."
+        z "Athena."
+        z "I made her spare a boy's life in exchange for me not interfering with her curse over the town."
+        hide v15m1
+        show v15m1 with dissolve(1.0)
+        z "So even though this one person has been spared, the rest of them will still suffer."
+        z "I had a choice between walking away and trying to fight Athena."
+        z "And she had a fury there too..."
+        z "Venus was there too... She asked me to back off from the fight."
+        z "So I did..."
+        z "The fury..."
+        z "She was Venus's childhood friend... We would've had to kill her too..."
+        scene v223
+        s "..."
+        s "So you just left..."
+        scene v224
+        z "I made Athena spare one boy. But yeah... We left."
+        s "..."
         scene v225
         s "Want to talk more about it?" #Gets close to him.
         scene v226
@@ -246,26 +263,17 @@ label season2_chapter_3:
         s "I can't make these decisions for you..."
         scene v231
         s "And I already told you there's no such thing as a right or a wrong choice in situations like these."
+        #cuddling saying this
         s "Just know this, baby."
         s "I will always be at your back. Whatever you decide."
         s "And I will always be proud of you. Whatever you become."
-        scene v232
         z "..."
-        scene v233
-        #Their faces are very close.
-        #Z goes for a kiss.
-        s "Hmmm~..."
-        scene v234
-        scene v235
-        #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-        #Aggressively plays with her boobs while doing so.
-        #Throws her on all four and rams her, has a choice to try anal.
-        #Z warns S that he's gonna be rough, she says she'd like that.
-    else:
-        scene v184
-        $ dummy += 1
-        scene v185
-        #Skip to him sleeping on his own in the darkness.
+        z "Thank you, Seira..."
+        s "Anytime [mc_name]."
+        s "Now. You've got a big job ahead of you. Get some rest."
+        z "Goodnight Seira. I love you."
+        s "Goodnight, darling. I love you too."
+        #seira gives him a kiss on the forehead then leaves
 
 #3) Meeting: 	
     #-If fought athena, all the ninja celebrate Z's coming back asking about his fight with her. Helena is caught eavesdropping on them looking conflicted (she believes that they actually have a chance against athena and is now willing to defy her.)
@@ -504,7 +512,7 @@ label season2_chapter_3:
     z "Oh. Hey, Centoria."
     scene v297
     cnt "Hey, [mc_name]. Hey, Candy."
-    if invite_misty >= 1:
+    if invited_misty >= 1:
         scene v299
         cnt "What do you guys wanna eat? We have roasted birds, potato chips, and turtle soup."
         scene v301
@@ -1530,7 +1538,6 @@ label season2_chapter_3:
                     scene v680
                     jnfr "Hanhhh~..."
                     $ jnfr_lst += 1
-                    $ hlna_lst += 1
                     $ jxj -= 3
                 "(...give her a nice PG-13 kiss.)":
                     scene v673
@@ -1681,7 +1688,6 @@ label season2_chapter_3:
             scene v735
             #Grabs his hand.
             #Sucks on his thumb seductively.
-            $ hlna_lst += 1
             scene v736
             hlna "..." #Gets up.
             scene v737
@@ -1735,7 +1741,6 @@ label season2_chapter_3:
                     z "I'd fuck Helena... Marry Jenny... And kill Jamie."
                     scene v751
                     hlna "..."
-                    $ hlna_lst += 1
                     scene v750
                     jnfr "That was a romantic proposal..."
                     scene v749
@@ -1778,7 +1783,6 @@ label season2_chapter_3:
             $ jnfr_lst += 1
             scene v775
             hlna "..."
-            $ hlna_lst += 1
             scene v773
             jnfr "I can see I did well..."
             scene v774
@@ -1821,7 +1825,6 @@ label season2_chapter_3:
                 hlna "..."
                 scene v792
                 hlna "No, it's nothing..."
-                $ hlna_lst += 1
                 #renders 794 through 797 need recreating - grey box at bottom of screen?
             #If they didn't fuck, no one drinks.			
             z "Okay, my turn."
@@ -1835,7 +1838,6 @@ label season2_chapter_3:
             scene v800
             scene v801
             #Hlna takes off Z's pants and admires his dick for a bit.
-            $ hlna_lst += 2
             jnfr "See something you like, Helena?"
             scene v802
             hlna "?!"
@@ -2018,12 +2020,10 @@ label season2_chapter_3:
                     hlna "Hmmmn~..."
                     hlna "Mmmm~..."
                     hlna "Hahhnn~..."
-                    $ hlna_lst += 2
                     z "Are you okay?"
                     hlna "Yeah..."
                     hlna "I just feel hot after doing that..."
                     hlna "This game is making me feel young again, heh..."
-                    $ hlna_aff += 4
                 "You both drink.":
                     z "Let's just both drink, Helena."
                     hlna "..."
@@ -2191,14 +2191,15 @@ label season2_chapter_3:
     #He remembers someone saying Nari
     "Nari..." #just on a white screen
     #Auge appears and tells him that's not really his name.
-    auge "Strange. Remembering something that isn't your name."
+    auge "Strange. Remembering something that isn't truly yours..."
+    auge "Especially something as important as a name."
     #He asks Auge who she is and asks if she's the one giving him dreams.
     nari "Who are you? Are you the one making me see these things?"
     #She says she's there to help him remember.
     auge "I'm here to help you remember."
     nari "Remember what?"
     #Auge says "Remember..." and shows him a ship.
-    auge "Remember..."
+    auge "Remember... Zephyr..."
     #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
     #fades to next scene
 
@@ -2605,7 +2606,7 @@ label season2_chapter_3:
     illya "Shall we continue watching some more fights?"
     z "Absolutely."
     #skip to the final.
-    Character("Crown Prince") "AND THE FINAL MATCH IS HERE! THE ELVES FROM ESANKADI! VERSUS! PRINCESS ILLYA AND [mc_name]!"
+    Character("Crown Prince") "AND THE FINAL MATCH IS HERE! THE ELVES FROM ESANKADI! VERSUS! PRINCESS ILLYA AND [mc_name!u]!"
     #shot on the elves from Esankadi
     #shot on Illya and Z
     Character("Crown Prince") "MAY THE STRONGEST TEAM WIN!"
@@ -2613,13 +2614,13 @@ label season2_chapter_3:
     #illya and z both get hit and go down - z bleeding
     z "SHIT!"
     z "ILLYA! ARE YOU ALRIGHT?"
-    Character("Crown Prince") "IS IT OVER? [mc_name] AND THE PRINCESS ARE DOWN. SEEMINGLY FOR THE COUNT."
-    illya "DON'T FOCUS ON ME [mc_name]. THEY ARE GOING TO WIN."
+    Character("Crown Prince") "IS IT OVER? [mc_name!u] AND THE PRINCESS ARE DOWN. SEEMINGLY FOR THE COUNT."
+    illya "DON'T FOCUS ON ME [mc_name!u]. THEY ARE GOING TO WIN."
     z "DON'T WORRY ILLYA. I'VE GOT THIS!"
     #z uses the same unknown magic from the first match - takes out one then teleports to the other and fus roh dah's the other
     Character("Crown Prince") "OH MY! WHAT A TURNAROUND!"
-    Character("Crown Prince") "AFTER THAT INCREDIBLE MATCH, THE WINNERS ARE PRINCESS ILLYA AND [mc_name]!"
-    illya "THAT WAS AMAZING [mc_name]!"
+    Character("Crown Prince") "AFTER THAT INCREDIBLE MATCH, THE WINNERS ARE PRINCESS ILLYA AND [mc_name!u]!"
+    illya "THAT WAS AMAZING [mc_name!u]!"
     z "I did tell you to trust me Illya."
     illya "My apologies. I never should have doubted you."
     z "No need to apologise. We won, that's all that matters."
@@ -3308,7 +3309,7 @@ label season2_chapter_3:
     Character("Sye") "Can you stand?" #Helps his wife get up.
     Character("Sye") "We have to leave now."
     z "..."
-    dohkong "..." #Wakes up.
+    Dohkong "..." #Wakes up.
     #Sounds the alarm.	
     Character("Sye") "?!"
     Character("Sye") "Fuck! We have to leave."
@@ -3527,7 +3528,7 @@ label season2_chapter_3:
     z "Yeah..."
     Dohkong "Why?"
     Dohkong "Your chances of escaping would've been better if you let him finish the job."
-    z "I'm not a murderer Dohkong."
+    z "I'm not a monster Dohkong."
     Dohkong "Even if it meant you being instead of running free?"
     z "You guys can't hold me forever."
     Dohkong "..."
@@ -3846,7 +3847,17 @@ label season2_chapter_3:
     alura "..."
     nari "..." #Looks at alura.
     nari "Let's go."
-    #Nari and Alura take gabbie and leave the unconscious venus there.	
+    #Nari and Alura take gabbie and leave the unconscious venus there.
+
+
+    scene black with fade
+    stop music fadeout 1.0
+    stop background_s fadeout 1.0
+    stop background_s2 fadeout 1.0
+    stop sound fadeout 1.0
+    pause(1.0)
+
+    $ MainMenu(confirm=False)()
 
 #NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES|NOTES
 
@@ -3926,3 +3937,78 @@ label season2_chapter_3:
     #If Z sides with the goblins, the princess and some other elves seek refuge in the western elf village.
     #Either confront Pale goblin or Crowned prince depending on Z's choice.
     #If confronts crowned prince, Vollstahl and the sorceress are noticibly nowhere to be found.
+
+    #seira scene for a later chapter:
+    #scene v232
+        #z "..."
+        #scene v233
+        #Their faces are very close.
+        #Z goes for a kiss.
+        #s "Hmmm~..."
+        #scene v234
+        #scene v235
+        #s "Hmmmmm~"
+        #if calling_s_mom == 1:
+            #z "What should I do with you, Mommy?"
+            #s "Why don't you come down here and find out sweetie?"
+            #z goes down and starts undressing seira whilst kissing her
+            #s "Mmmmf~"
+            #z "Have I ever told you how nice your tits are Mommy?" #playing with them aggressively
+            #s "Hnn~ You haven't baby, but-"
+            #s "AHN!"
+            #s "-With how hard you're playing with them now... I think I can tell."
+            #z "I need to try them. Please Mommy, lie down."
+            #seira lies down, holding her tits together
+            #s "Like this baby?"
+            #z "That's perfect Mommy. You're perfect."
+            #z starts fucking seira's tits
+            #z "Fuck they're so soft."
+            #s "Yeah baby? You can use them as you want. Hmmm~"
+            #z "Hnnng~"
+            #s "You feeling good? You can finish whenever you want..."
+            #z cums over seira's face and tits
+            #z "AHHHNN!"
+            #s "Wow... I can't believe how much you let out... Hopefully you've got some more in you?"
+            #menu:
+                #"For you? I could go forever.":
+                    #s "Then choose a hole..."
+                    #z "You mean?"
+                    #s "That's right baby, any hole."
+                    #z "Then..."
+                    #menu:
+                        #"I want your ass.":
+                            #s "Oh you wanna be my first?"
+                            #z "Your first? You mean?"
+                            #s "Yes. Nobody has been up there. Ever."
+                            #z "Well then bend over Mommy, let's get you prepared shall we..."
+                            #seira bends over - face down ass up that's the way she likes to fuck
+                            #z starts eating seira's ass
+                            #s "Hmmmnnn~"
+                            #s "Ahhhhnnn~ Oh Gods! I've never felt anything like this!"
+                            #z "Mmm? Mmmf?"
+                            #s "Hnnnmmm~ Honey! I think I'm going to cum!"
+                            #s "AHHNN!"
+                            #s "Oh Gods! I never thought that could feel so good!"
+                            #z "Are you ready now?"
+                            #seira wiggling her ass
+                            #s "Come on baby... Please fuck Mommy's ass..."
+                            #z "With pleasure."
+                            #z slowly inserts himself into seira's ass
+                            #s "Holy shit! I forgot how big you are... Please go slowly."
+                            #z "Gods that feels amazing Mommy."
+                            #s "AHhnn~ I agree honey!"                        
+        #else:
+            #z "What should I do with you, Seira?"
+            #s "Why don't you come down here and find out sweetie?"
+        #z goes down and starts undressing seira whilst kissing her
+            #s "Mmmmf~"
+            #z "Have I ever told you how nice your tits are Seira?"
+        #I'm here R <-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+        #Aggressively plays with her boobs while doing so.
+        #Throws her on all four and rams her, has a choice to try anal.
+        #Z warns S that he's gonna be rough, she says she'd like that.
+    #else:
+        #scene v184
+        #$ dummy += 1
+        #scene v185
+        #Skip to him sleeping on his own in the darkness.
