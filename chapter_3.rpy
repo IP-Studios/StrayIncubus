@@ -3849,6 +3849,22 @@ label season2_chapter_3:
     nari "Let's go."
     #Nari and Alura take gabbie and leave the unconscious venus there.
 
+#25) dungeon in the underworld:
+#gabbie strung up - arms above head in a Y position kinda? blindfolded too - facing towards the camera
+#athena, nari and axius all facing gabbie
+    athna "My... Nari, what a wonderful present you've brought me."
+    nari "Of course, Lady Athena. Anything that is needed for your plan."
+    athna "She shall be useful for us. The boy cares about her..."
+    axs "It is time my Lady..."
+    athna "Hmmm, unfortunate."
+    #turns to Gabbie
+    athna "I shall see you soon, Gabriella."
+    #athena leaves
+    nari "..."
+    nari "Are you sure about this Lord Axius? Trusting a God like her?"
+    axs "What other choice do we have Nari?"
+    #nari and axius leave
+
 
     scene black with fade
     stop music fadeout 1.0
